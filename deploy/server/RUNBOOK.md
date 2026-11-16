@@ -27,6 +27,11 @@ remote archive can avoid initial local node synchronization if available, but
 adds dependency/trust and must pass the same acceptance checks. No such endpoint
 is assigned. Do not substitute an explorer page or an unverified snapshot.
 
+See [database-download and fast-sync research](../../docs/server-bootstrap-options.md)
+for complete node transfers, raw-block imports, trust requirements and BLAZE's
+separate SQLite backup. No current maintainer-published mainnet/Chipnet BCHN
+snapshot provider was verified.
+
 Full metadata coverage scans from height 0. An activation-height scan can be
 faster but deliberately loses earlier metadata coverage; it is not silently
 enabled. BLAZE already yields to API requests while catching up and skips its
