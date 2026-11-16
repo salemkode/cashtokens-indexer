@@ -41,8 +41,8 @@ automatically choose or download a node binary.
 For a fresh checkout of the private repository:
 
 ```sh
-git clone --branch feature/cashtokens-indexer https://github.com/salemkode/blaze.git
-cd blaze
+git clone --branch main https://github.com/salemkode/cashtokens-indexer.git
+cd cashtokens-indexer
 ```
 
 Authenticate Git on the new machine with your own GitHub account. The default

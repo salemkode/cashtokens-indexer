@@ -2,6 +2,11 @@
 
 ## Private GitHub handoff
 
+The canonical standalone destination is now private `salemkode/cashtokens-indexer`.
+Its initial `main` publication uses the user-authorized completely-empty-remote
+exception; subsequent work stays on task branches. The older `salemkode/blaze`
+repository is retained. Installation instructions point to the standalone repo.
+
 The user requests this source on GitHub for their Linux machine. The private
 destination is `salemkode/blaze`, using task branch `feature/cashtokens-indexer`.
 The fresh-clone tuning template selects the source Dockerfile so `dist/` and a

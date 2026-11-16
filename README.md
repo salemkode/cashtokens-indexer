@@ -9,8 +9,8 @@ Chipnet configuration, daily stop/resume tools, backup and acceptance tests.
 Use Python 3, Docker Engine and Docker Compose v2+ on the new machine:
 
 ```sh
-git clone https://github.com/salemkode/blaze.git
-cd blaze
+git clone https://github.com/salemkode/cashtokens-indexer.git
+cd cashtokens-indexer
 ./install
 # Set disk paths and RPC credentials in deploy/server/*.env.
 ./install build
