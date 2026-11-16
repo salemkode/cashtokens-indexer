@@ -19,7 +19,7 @@
 
 ## Protected branches
 
-- `main` and `master` are permanently protected. Switch to a task branch before repository edits; never commit or push protected refs.
+- `main` and `master` are protected. Work and commit on task branches. The user-authorized global exception allows a single initial `HEAD:refs/heads/main` push to a verified completely empty remote, with a zero old SHA and a local commit as the sole update. It does not apply when any branch/tag/history already exists, and never applies to `master`. Existing protected branches remain blocked.
 - Never merge pull requests or enable auto-merge. The user performs merges manually.
 - Push task branches only with an explicit non-protected destination ref. Never bypass hooks.
 

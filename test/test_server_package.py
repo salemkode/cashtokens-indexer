@@ -16,7 +16,7 @@ class ServerPackageTests(unittest.TestCase):
             (root / folder).mkdir(parents=True, exist_ok=True)
         for name in ['package.json', 'package-lock.json', 'tsconfig.json', 'Dockerfile', 'Dockerfile.runtime',
                      'Dockerfile.runtime.dockerignore', '.dockerignore', '.gitignore', '.env.example',
-                     'compose.yaml', 'README.md', 'RELEASE-STATUS.md', 'WORK-STATUS.md', 'AGENTS.md',
+                     'compose.yaml', 'README.md', 'RELEASE-STATUS.md', 'WORK-STATUS.md', 'AGENTS.md', 'install',
                      'src/main.ts', 'scripts/package_server.py', 'dist/src/main.js', 'dist/scripts/server-acceptance.js', 'deploy/server/blaze']:
             (root / name).write_text('fixture: ' + name)
         (root / '.env').write_text('PRIVATE_VALUE=not-for-the-archive')
@@ -40,6 +40,7 @@ class ServerPackageTests(unittest.TestCase):
                 self.assertIn('deploy/server/mainnet.env.example', names)
                 self.assertIn('dist/src/main.js', names)
                 self.assertEqual(bundle.getmember('deploy/server/blaze').mode, 0o755)
+                self.assertEqual(bundle.getmember('install').mode, 0o755)
                 self.assertNotIn(b'not-for-the-archive', b''.join(bundle.extractfile(name).read() for name in names))
             self.assertTrue(result['archive_members_verified'])
 

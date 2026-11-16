@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+"""Prepare this CashTokens indexer checkout and build its Linux Docker image."""
+import os
+from pathlib import Path
+import platform
+import subprocess
+import sys
+
+
+def prepare(root):
+    created = []
+    directory = root / 'deploy/server'
+    for name in ['mainnet', 'chipnet', 'tuning']:
+        target = directory / (name + '.env')
+        if target.is_symlink():
+            raise ValueError('Refusing a symlinked private configuration file')
+        if target.exists():
+            continue
+        data = (directory / (name + '.env.example')).read_bytes()
+        descriptor = os.open(target, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+        with os.fdopen(descriptor, 'wb') as output:
+            output.write(data)
+        created.append(target.name)
+    return created
+
+
+def main():
+    if platform.system() != 'Linux':
+        raise ValueError('Run this installer on your Linux machine; macOS node hosting is disabled')
+    root = Path(__file__).resolve().parent
+    args = sys.argv[1:]
+    if args not in [[], ['build']]:
+        raise ValueError('Usage: ./install [build]')
+    if args == []:
+        created = prepare(root)
+        print('Prepared: ' + (', '.join(created) if created else 'existing private configuration retained'))
+        print('1. Set disk paths in deploy/server/tuning.env and RPC credentials in each network env file.')
+        print('2. Follow deploy/server/RUNBOOK.md for BCHN binaries, data directories and the daily stop timer.')
+        print('3. Run ./install build, then start the selected indexer using the runbook.')
+        print('No node, API or container was started.')
+        return
+    command = [str(root / 'deploy/server/blaze')]
+    subprocess.run(command + ['config', '--quiet'], check=True)
+    subprocess.run(command + ['build', 'mainnet'], check=True)
+    print('Built one image for both networks. Start only after configuring the required BCHN source and disk paths.')
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except (ValueError, OSError, subprocess.CalledProcessError) as cause:
+        print('Installation failed: ' + (str(cause) if isinstance(cause, ValueError) else 'check prerequisites, permissions and the command above'), file=sys.stderr)
+        raise SystemExit(1)

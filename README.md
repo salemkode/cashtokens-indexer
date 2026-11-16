@@ -2,6 +2,27 @@
 
 A Bitcoin Cash backend for [`salemkode/explorer`](https://github.com/salemkode/explorer), using **BCHN + SQLite + a small REST API**. No Chaingraph, Hasura, PostgreSQL, or GraphQL service is required. CashTokens only; legacy SLP indexing is outside this project.
 
+## Install on Linux
+
+This is one project: the CashTokens indexer, BCHN setup templates, mainnet and
+Chipnet configuration, daily stop/resume tools, backup and acceptance tests.
+Use Python 3, Docker Engine and Docker Compose v2+ on the new machine:
+
+```sh
+git clone https://github.com/salemkode/blaze.git
+cd blaze
+./install
+# Set disk paths and RPC credentials in deploy/server/*.env.
+./install build
+```
+
+`./install` creates private configuration without overwriting existing settings.
+The image build provides Node 24; host Node.js is unnecessary for this path.
+It does not silently start or install a BCH node. Continue with the
+[single server runbook](deploy/server/RUNBOOK.md) to configure the BCHN source,
+prepare the data directories and schedule the daily stop before starting a
+network. Full chain synchronization and BLAZE's indexing are separate stages.
+
 The historical explorer migration is preserved in [integration/explorer.patch](integration/explorer.patch). Its token, block, transaction, and mempool views use this REST API. Address history/balance use a configurable Electrum server. The indexer exposes confirmed BCMR authchain **discovery hints**; independent consumers must verify authority and content. See the [v1 authchain contract](docs/authchain-api-v1.md). It does not implement Nostr identity or certify issuer ownership.
 
 The smaller application stack is intended to reduce hosting overhead. The BCH full node still has its own substantial disk and synchronization requirements. No production cost or speed comparison with Chaingraph has been established. The synthetic microbenchmark is not evidence for mainnet capacity or VPS sizing. See the [storage-first extraction plan](docs/storage-and-extraction-plan.md) before choosing hosting.

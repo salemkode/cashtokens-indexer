@@ -31,7 +31,7 @@ def runtime_outputs(root):
 
 def deployment_inputs(root):
     names = {'Dockerfile', 'Dockerfile.runtime', 'Dockerfile.runtime.dockerignore', '.dockerignore',
-             'scripts/package_server.py'}
+             'scripts/package_server.py', 'install'}
     names.update(str(path.relative_to(root)) for path in (root / 'deploy/server').rglob('*')
                  if path.is_file() and path.suffix not in ('.env', '.pyc') and '__pycache__' not in path.parts)
     names.update(str(path.relative_to(root)) for path in (root / 'test').glob('test_server_*.py'))
@@ -46,7 +46,7 @@ def package(root, verification, destination):
         raise ValueError('Verification does not match current source and compiled runtime')
     names = ['package.json', 'package-lock.json', 'tsconfig.json', 'Dockerfile', 'Dockerfile.runtime',
              'Dockerfile.runtime.dockerignore', '.dockerignore', '.gitignore', '.env.example',
-             'compose.yaml', 'README.md', 'RELEASE-STATUS.md', 'WORK-STATUS.md', 'AGENTS.md']
+             'compose.yaml', 'README.md', 'RELEASE-STATUS.md', 'WORK-STATUS.md', 'AGENTS.md', 'install']
     for folder in ['src', 'scripts', 'test', 'docs', 'deploy/server', 'dist/src', 'dist/scripts']:
         if (root / folder).is_symlink():
             raise ValueError('Symlinked source directories are not permitted')
@@ -73,7 +73,7 @@ def package(root, verification, destination):
         with tarfile.open(fileobj=output, mode='w:gz') as bundle:
             for name, value in content.items():
                 entry = tarfile.TarInfo(name)
-                entry.mode = 0o755 if name in ['deploy/server/blaze', 'deploy/server/session-stop',
+                entry.mode = 0o755 if name in ['install', 'deploy/server/blaze', 'deploy/server/session-stop',
                                              'deploy/server/test-offline'] else 0o644
                 entry.size = len(value)
                 bundle.addfile(entry, io.BytesIO(value))
