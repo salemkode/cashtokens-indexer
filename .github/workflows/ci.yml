@@ -1,8 +1,7 @@
 name: Verify indexer
 on:
   pull_request:
-  push:
-    branches-ignore: [main, master]
+  push: {}
 permissions:
   contents: read
 jobs:
