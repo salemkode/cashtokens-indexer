@@ -1,0 +1,70 @@
+#!/bin/sh
+# Gracefully stop only this deployment; never power off or force-kill the host.
+set -eu
+if [ "$(uname -s)" != Linux ]; then
+  echo 'Run this only on the assigned Linux server.' >&2
+  exit 1
+fi
+blaze_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+blaze_ids=$("$blaze_dir/blaze" ps --status running -q mainnet chipnet)
+
+# Check all ownership before the first stop action.
+for blaze_id in $blaze_ids; do
+  case "$blaze_id" in *[!a-f0-9]*|'') echo 'Unexpected container identity; stopping nothing.' >&2; exit 1;; esac
+  blaze_labels=$(docker inspect --format '{{index .Config.Labels "com.docker.compose.project"}}|{{index .Config.Labels "com.docker.compose.service"}}|{{index .Config.Labels "com.docker.compose.project.config_files"}}' "$blaze_id")
+  case "$blaze_labels" in
+    "blaze-server|mainnet|$blaze_dir/compose.yaml"|"blaze-server|chipnet|$blaze_dir/compose.yaml") ;;
+    *) echo 'Container belongs to another deployment; stopping nothing.' >&2; exit 1;;
+  esac
+done
+blaze_owned_units=''
+for blaze_network in mainnet chipnet; do
+  if systemctl is-active --quiet "blaze-bchn@$blaze_network.service"; then
+    blaze_fragment=$(systemctl show --property=FragmentPath --value "blaze-bchn@$blaze_network.service")
+    blaze_dropins=$(systemctl show --property=DropInPaths --value "blaze-bchn@$blaze_network.service")
+    blaze_expected_exec=$(sed -n 's/^ExecStart=//p' "$blaze_dir/blaze-bchn@.service" | sed "s/%i/$blaze_network/g")
+    blaze_actual_exec=$(systemctl show --property=ExecStart --value "blaze-bchn@$blaze_network.service")
+    if [ -z "$blaze_fragment" ] || [ -n "$blaze_dropins" ] || ! cmp -s "$blaze_dir/blaze-bchn@.service" "$blaze_fragment"; then
+      echo 'BCHN unit does not match this deployment template; stopping nothing.' >&2
+      exit 1
+    fi
+    case "$blaze_actual_exec" in
+      *"argv[]=$blaze_expected_exec ;"*) ;;
+      *) echo 'Loaded BCHN command differs from this deployment; stopping nothing.' >&2; exit 1;;
+    esac
+    blaze_owned_units="$blaze_owned_units blaze-bchn@$blaze_network.service"
+  fi
+done
+
+# Prevent restart-policy races during the daily stop. Only validated containers.
+for blaze_id in $blaze_ids; do
+  docker update --restart=no "$blaze_id" >/dev/null
+done
+# Signal once, then observe. Do not use docker stop's eventual SIGKILL fallback.
+for blaze_id in $blaze_ids; do
+  docker kill --signal SIGTERM "$blaze_id" >/dev/null
+done
+blaze_deadline=$(( $(date +%s) + 300 ))
+for blaze_id in $blaze_ids; do
+  while [ "$(docker inspect --format '{{.State.Running}}' "$blaze_id")" = true ]; do
+    if [ "$(date +%s)" -ge "$blaze_deadline" ]; then
+      echo 'Indexer did not exit within five minutes. No force kill or poweroff; inspect the server.' >&2
+      exit 1
+    fi
+    sleep 2
+  done
+done
+for blaze_unit in $blaze_owned_units; do
+  if systemctl is-active --quiet "$blaze_unit"; then
+    systemctl stop "$blaze_unit"
+  fi
+done
+for blaze_network in mainnet chipnet; do
+  blaze_pid=$(systemctl show --property=MainPID --value "blaze-bchn@$blaze_network.service" 2>/dev/null || true)
+  case "$blaze_pid" in ''|0) ;; *) echo 'A BCHN process remains. Do not power off yet.' >&2; exit 1;; esac
+done
+if [ -n "$("$blaze_dir/blaze" ps --status running -q mainnet chipnet)" ]; then
+  echo 'An indexer is running again. No automatic second signal; inspect before powering off.' >&2
+  exit 1
+fi
+echo 'BLAZE indexers and dedicated BCHN units have stopped. Data is preserved; the host was not powered off.'

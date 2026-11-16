@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-11-16T00:05:45.144430+00:00",
+  "status": "source_ready_new_tests_deferred_until_root_end_ox_bootstrap",
+  "scope": "Only atomic publication of consumer-owner.json and connection.json; dedicated helpers",
+  "pretest_source_sha256": {
+    "scripts/atomic_handoff.py": "530439f7a72c4a5b009353f16621d52048f727426b4cd929b0ace330e6111e90",
+    "scripts/atomic-handoff.mjs": "a7bf7615d35a4030ace8eb318e9d74552576f02bc566df2299bbedf78ed65e5d",
+    "scripts/bounded_regtest.py": "a182fd015d55ad6b6b0e1dd121c6111655006a1efce52e39e50aa3937f69d14c",
+    "scripts/bounded-regtest-worker.mjs": "7da36f06b04d97ce7f6ed781b6a5ec2f3e742efc7657c47710c8a2b4aeeb0e3a",
+    "test/test_atomic_handoff.py": "55d7f5619bde4e5cdd8a25e92ffa9d57348c5e8f356f80f3457f1b95474deb63",
+    "test/atomic-handoff.test.mjs": "6ba52d70bba1c9a1943855ee38abb96bd77df5c39f08d513d38d5f0544d6ba43",
+    "test/helpers/atomic_handoff_fixture.py": "7e058b78dd56106d8e3ff977c44367e320f8dff5eaf6faa683685df0f78203bd",
+    "test/helpers/atomic-handoff-fixture.mjs": "0161e537da7fbf6490ae89df09f95c4f96f9909b9cb7f24e979763c15f35b3bf"
+  },
+  "tests": {
+    "execution": "NOT_EXECUTED",
+    "planned_python_cases": 4,
+    "planned_javascript_cases": 4,
+    "new_syntax_check_executed": false,
+    "serial_required": true,
+    "memory_budget_bytes": 536870912,
+    "temporary_budget_bytes": 134217728,
+    "commands_after_release": [
+      "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_atomic_handoff.py' -v",
+      "node --max-old-space-size=96 --test --test-concurrency=1 test/atomic-handoff.test.mjs"
+    ]
+  },
+  "publication": "Same-dir exclusive0600 temp; full write/fsync; atomic no-clobber link; parent fsync; only matching owned temp removal/fsync. Final entries never overwritten.",
+  "global_guard_save_new_changed": false,
+  "reader_owner_profile_maturity_gate_runtime_api_changed": false,
+  "actual_native_image_mount_api_lease_mining_p2p": false,
+  "resource_probe_build_pack_install": false,
+  "old_test_cohort_rerun": false,
+  "post_test_hash_freeze_and_small_receipt": "PENDING explicit test release and results; earlier evidence not rewritten",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false
+}

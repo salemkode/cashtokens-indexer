@@ -1,0 +1,16 @@
+.build/
+node_modules/
+dist/
+.env
+/deploy/server/*.env
+/server-reports/
+data/
+*.sqlite*
+coverage/
+
+# Independent T3 projects; each repository owns its files.
+/projects/
+
+# Operator supervisor test/import caches.
+__pycache__/
+*.pyc

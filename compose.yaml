@@ -1,0 +1,25 @@
+services:
+  indexer:
+    build: .
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 20s
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    mem_limit: ${INDEXER_MEMORY_LIMIT:-1g}
+    cpus: ${INDEXER_CPUS:-2}
+    pids_limit: 128
+    env_file: .env
+    environment:
+      HOST: 0.0.0.0
+      PORT: ${PORT:-3001}
+      DATABASE_PATH: /app/data/cashtokens.sqlite
+    ports:
+      - "127.0.0.1:${PORT:-3001}:${PORT:-3001}"
+    volumes:
+      - indexer-data:/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+volumes:
+  indexer-data:

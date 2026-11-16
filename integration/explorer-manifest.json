@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/salemkode/explorer",
+  "base_commit": "87af1dfe67d918df9c29c7996e9be11b4b5183e4",
+  "branch": "feature/lightweight-cashtokens",
+  "patch": "explorer.patch",
+  "validation": {
+    "provider_tests": 5,
+    "typecheck": "passed",
+    "static_generation": "passed",
+    "patch_reverse_check": "passed",
+    "browser_ui": "not run",
+    "live_mainnet": "not run"
+  },
+  "published": false
+}

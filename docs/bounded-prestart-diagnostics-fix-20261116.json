@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-11-16T02:04:46.612238+00:00",
+  "status": "sanitized_prestart_and_explicit_isolation_alignment_tests_passed",
+  "snapshot": ".build/diagnostics/bounded-prestart-source-64896526",
+  "old_refusal_preserved": "docs/bounded-regtest-actual-refusal-20261116.json; reason remains unknown",
+  "frozen_sha256": {
+    "scripts/bounded_regtest.py": "4f58a2fb089c80325b2a708448a73a6fe01cbe1d693e328d9681f0ac8d3d860e",
+    "scripts/bounded-regtest-worker.mjs": "abd4084015850b27798501adb9745a3eb3731120389bc5525ee54d117cfdb3c3",
+    "scripts/bounded-regtest-contract.mjs": "182ab045d6e13c8f198e56e5dae825e9940dcf98055ee3926714ea7e7930ca2c",
+    "scripts/prestart_diagnostics.py": "e2fa0106c240e8ae497f61b0467924943401e5e395754e900fdf3c3d8d88b156",
+    "test/test_prestart_diagnostics.py": "edb30368e183d542c4ab4a8346dc026ac225238ebef19bb4f97068e368c383eb",
+    "test/bounded-regtest-isolation.test.mjs": "4cdfe2646b8cbca16b17b7d502cfe9f2ecc67bf9b3cf00c812d23e4a3f3ac471",
+    "test/bounded-regtest-contract.test.mjs": "296c51599960b8cf8f261e52d50a17e118c4654490e47d0df9c29d42844c1774"
+  },
+  "tests": {
+    "diagnostics_mock_cases_passed": 5,
+    "isolation_and_affected_contract_cases_passed": 8,
+    "native_cli_in_tests": false,
+    "new_host_samples_in_tests": false
+  },
+  "changes": "New private pre-start diagnostic namespace with only allowlisted stages/reasons/bounded measured fields; explicit MCP profile from actual native/owned argv facts at future publication. No threshold/guard/owner/maturity/API changes.",
+  "actual_new_attempt_released": true,
+  "actual_new_attempt_executed_yet": false,
+  "new_actual_attempt_limit": 1,
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false
+}

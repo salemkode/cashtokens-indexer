@@ -1,0 +1,1129 @@
+{
+  "date": "2026-11-15",
+  "goal": "Advance all BLAZE projects to maximum genuinely implemented/tested completion; Focus Garden remains Opus-owned and coordinator follows only.",
+  "status": "active",
+  "existingGoalUsed": true,
+  "newGoalCreated": false,
+  "noNewThreadsOrDelegates": true,
+  "defaultModel": "gpt-6.1-sol",
+  "defaultReasoningEffort": "high",
+  "focusOverride": {
+    "provider": "claudeAgent",
+    "model": "claude-opus-5-5",
+    "effort": "high",
+    "coordinatorRole": "follow_only"
+  },
+  "projects": [
+    {
+      "key": "cashtokens-indexer",
+      "threadId": "mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8",
+      "link": "[Blaze Indexer \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "PRIMARY SHARED PREREQUISITE: re-read current owner contracts/provenance/supervisor and actual host resources. User newly authorizes continuing toward maximum testnet completion. Root explicitly reviews prior clean pressure-stop and authorizes ONE further bounded stage only AFTER a sustained >=60s quiet preflight: normal pressure, stable swap, no heavy builds, >=12GiB free, exact owned processes/ports/image, guard+byte caps intact. Prefer verified supported resume of preserved detached stage image/data, keep previous receipts and cumulative counters; do not double allocate an image or reset limits silently. Total bounded stage <=30min/2GiB owned allocation/2GiB application received (prior counters included), checkpoint115252 stop, reserve8GiB/earlystop9GiB, RSS2GiB/swapgrowth512MiB, all existing stop/heartbeat/ownership/no-auto-retry rules. No full sync unless >=25GiB free or assigned storage AND a concrete updated root review. No deletion of foreign caches, new daemon bypass, expiry changes or resource-threshold weakening. If gate fails, do not keep launching; complete independent source/operator integration and report measured blockers plus exact smallest resource change. Prepare real validating read/txindex/prevout contract usable by siblings when genuinely ready, never promote height0/regtest. Do not grab credential cards or purchase. Coordinate any owner-only bounded process-backed REGTEST interoperability target separately and explicitly label it; no competing node while Chipnet stage active."
+    },
+    {
+      "key": "xo-wallet",
+      "threadId": "mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95",
+      "link": "[OX Wallet \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "Continue remaining independent OX implementation and protocol/recovery tests from current141 checkpoint, not just documentation. Preserve actual native invoice/WC/partialWizard evidence and installed-build distinctions. Same5558 is unresponsive after one scoped recovery; do NOT repeat wedged controller/ADB probes, autonomous reboot/wipe/uninstall or switch devices. Prepare/complete deterministic actual-package FT/NFT selection/conservation/recovery and protocol fixtures, offline/no-signature native acceptance flows ready for the same recovered target, and a safe unexpired-used-invoice replay test plan without extra live payment. No new pairing until responsive and exact actor readiness. Review original feature matrix for actual code gaps and implement those independently. Plan dedicated PLAIN FT/NFT assets (not course covenant passes), exact receive identity/bounds and inventory acceptance requirements; send source-owner request for an unsigned bounded plan only, NO live issuance/funding now. No API gap assumed; coordinate actual grounded gaps with library. No repeated native compiles on unchanged code; no financial retries. Return concrete artifacts plus exact data-preserving device recovery prerequisite."
+    },
+    {
+      "key": "stripe-cash",
+      "threadId": "mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9",
+      "link": "[CashRelay \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "Continue beyond closed1042 journey toward maximum full scope: independently reconcile original feature matrix against implemented product. Preserve3027/8827 and user demo tabs/receipts. Identify/close remaining merchant/course/wallet UX/recovery/runtime gaps that do not need unavailable native target. Add meaningful payment idempotency/used-invoice handling evidence through actual HTTP/service state if a genuine gap remains, no extra live invoice/payment solely to prove replay. Original1042 paid/forward/journal proof stays immutable/historical where appropriate; expired native denial is not unexpired replay proof. Coordinate with OX on an UNSIGNED dedicated plainFT/NFT test-asset plan if requested: registered identity, existing treasury budgets/reserve/leases/current19764 and no added allocation until later explicit bounded issuance intent. Do not rerun helper/fund/mint/send/publish by this instruction. Provide tested reusable acceptance commands/status that automatically resume only when genuine owner prerequisites arrive; no repeated manual/CAPTCHA prompts. Close actionable own-code gaps, don't invent completion or stop merely at MVP."
+    },
+    {
+      "key": "cashcart",
+      "threadId": "mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd",
+      "link": "[CashCart \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "Resume remaining production feature/acceptance work after105 checkpoint; preserve buyer/merchant wallets/sessions,5196 and private backups. Complete independent digital/service/physical workflows and cancellation/restart/content recovery UI/code through actual browser with fixture-backed supporting evidence clearly labeled. Later physical journey must use NEW backed-key store, never replace historical shipping key. Address original IPFS/content-publication scope with local content-addressed encrypted export/CID validation and a gated storage/pinning adapter if appropriate; NO external upload/publication or fake pin-success claim. Review actual Cashonize transaction request/response compatibility against current SDK and both-party exact-account intent rules using never-funded fixtures; do not request live tx signatures/funding until verified source/write capability exists. No secret/seed inspection. Keep separate accepted server sessions versus attached signing sessions honest. Shared node remains unavailable; don't create one or duplicate secret cards. Implement genuine gaps and meaningful tests; keep GUI stable for user and no blind retries."
+    },
+    {
+      "key": "explorer",
+      "threadId": "mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6",
+      "link": "[BCH Explorer \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "Resume original full-scope parity and user-facing reliability from457 checkpoint. Read latest actual indexer activity/source/authority interfaces and identity receipts; independently identify/implement missing functionality rather than rerun unchanged457 tests. Prepare executable live browser acceptance with actual object/coverage prerequisites, exact snapshot409 recovery and source identity gating, archive/current-authority distinctions and error/reconnect paths. Complete portable deployable runtime/source packaging, content/config consistency and meaningful UI gaps. No deployment or external publication. Keep8791/own user-facing state, do not start a node/duplicate downloads. If no independent gap remains, produce precise ready-to-run acceptance input contract and consume a newly measured owner endpoint when it really arrives; do not claim Electrum as Blaze/authority."
+    },
+    {
+      "key": "token-issuer-identity",
+      "threadId": "mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441",
+      "link": "[Issuer Identity \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "Resume remaining independent issuer functionality after72/browser-native discovery checkpoint. Preserve actual305byte discovery acceptance and no-authority scope. Complete original signed identity/rotation/revocation/recovery UX and durable publication reconciliation using real local protocol/relay acceptance fixtures if needed, clearly distinguishing local/synthetic from approved live relay. No external publication or invented live issuer category. Implement missing source/HTTP/wallet cancellation/reorg/session lifecycle behavior without assuming shared BCHN exists. Establish concrete NIP07 dedicated-provider acceptance plan without seed/key capture; test provider harness is not external extension approval. Keep3217 and existing private URI histories; no fresh pairing until OX target ready, don't use5558. Coordinate exact live authority adapter requirements with soleIndexer and Explorer. Implement meaningful gaps; return exact remaining inputs and runnable workflow."
+    },
+    {
+      "key": "focus-garden",
+      "threadId": "mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e",
+      "link": "[Focus Garden \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e)",
+      "beforeStatus": "running",
+      "model": "claude-opus-5-5",
+      "dispatch": "steered_existing_Opus_follow_only",
+      "work": "Continue current direct user scope, report milestones; no coordinator implementation takeover."
+    },
+    {
+      "key": "bch-mcp",
+      "threadId": "mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe",
+      "link": "[BCH MCP \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "Resume at41-test immutableRC checkpoint. Implement grounded parity with NEW indexer activity-api-v1 as an additional read-only MCP capability if not already present: exact decimal strings, gross/net/input-only burns/unknown coverage, snapshot pagination409 and restart, source/network/readiness gating and cancellation bounds. Preserve all8oldtools/2resources APIs and original archives. Meaningful actual-schema tests plus fresh production-only packed consumer on supported minimumNode24; new immutable candidate version only if code changed, never overwrite prior tgz. No publication/node/faucet claim/CAPTCHA/manual cards. Actual sharedChipnet source unavailable; do not label fixtures/regtest live. Prepare consumer acceptance for the owner endpoint and known objects. Use actual process-backed source only on owner handoff; don't grab stale53314 or provision a duplicate."
+    },
+    {
+      "key": "react-native-libauth",
+      "threadId": "mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1",
+      "link": "[React Native Libauth \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "Continue grounded library completion independently of blocked devices. Preserve immutable0.2.0/0.2.1/rc1/rc2 artifacts and attributed OX evidence. Audit supported-version coverage of actual rc2 durable callback package: fresh isolated actual-tarball consumer across EACH exact supported Libauth version (rc2 next.8 proved; verify remaining declared supported version rather than assume), source/declaration/API/license/reproducibility and failure-before-mutation invariants. Implement a new version only for genuine defects or precise consumer capability requirements; no speculative generic signer for Jamiyah. No device5558 recovery, native build reruns, global installs or artifact overwrite. Coordinate exact token metadata/inventory and future covenant signing boundaries with owners, not sibling edits. Provide concrete release/use/recovery documentation and version-pinned runnable consumers with meaningful new evidence; do not call attributed consumer tests your own runtime proof."
+    },
+    {
+      "key": "jamiyah",
+      "threadId": "mcp:launch:ffb8affafdfe3583f1ed4c78bda79f0a54f4ad064d99bf8ef7d4459fee59c13a",
+      "link": "[Jamiyah \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:ffb8affafdfe3583f1ed4c78bda79f0a54f4ad064d99bf8ef7d4459fee59c13a)",
+      "beforeStatus": "completed",
+      "model": "gpt-6.1-sol",
+      "dispatch": "started",
+      "work": "Continue full product SOURCE work beyond running simulation GUI and fourth durable checkpoint; preserve4319/user tabs/reset state and all old source/evidence. No GUI hot changes while user-controlled, no closing server. Next concrete implementation: make recovery/fee/veto/minority policy a reviewable versioned candidate matching user family-majority trust; keep alternatives/disclosures explicit, no silent arbitrary migration/confiscation. Add bounded storage compaction/external checkpoint/release-policy design+meaningful crash/rollback tests if grounded, keeping original journal unresolved reservations held and no broadcast API. Progress actual deposit/consolidation or defensible split-resistant daily covenant slice using exact existing localVM tooling and synthetic never-funded fixtures; distinguish caller clock/fixed window/CSV cooldown/mining age, and never claim dollar/day guarantee or source chain truth. Keep simple demo usable; do not substitute GUI/model for onchain enforcement. No live source/node/wallet/keys/funds/deployment/nativebuild/globalinstall. Stage next code/VM checkpoint and exact remaining signing integration contract once grounded."
+    }
+  ],
+  "sharedLimits": [
+    "Keep existing device/session/ports and same OX5558 secure data; no autonomous reboot/wipe.",
+    "Sole Indexer may run one newly authorized bounded stage only after sustained resource gate; full sync requires separate resource review.",
+    "No new funding/asset mint/publication/deployment/protected refs by dispatch.",
+    "Live node/Electrum/regtest/fixture/VM/native distinctions remain exact.",
+    "Retain user-facing demo servers/tabs and immutable artifacts."
+  ],
+  "latestObservations": [
+    {
+      "key": "cashtokens-indexer",
+      "status": "running",
+      "items": [
+        {
+          "position": 1085,
+          "text": "The host currently has only **4.33 GiB free** and memory pressure is at warning level\u2014below both the 12 GiB entry gate and the 8 GiB reserve. I will not mount the image or start a node in this state. The 60-second observation is running; meanwhile I\u2019ll complete the resume validation and cumulative-budget code without allocating another image."
+        }
+      ],
+      "link": "[Blaze Indexer \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8)"
+    },
+    {
+      "key": "xo-wallet",
+      "status": "running",
+      "items": [
+        {
+          "position": 1895,
+          "text": "I found a token UI gap: the category total includes FT units attached to NFT outputs, but the fungible-send action doesn\u2019t distinguish them. I\u2019ll show the NFT-free spendable amount separately and add actual-package checks for exact NFT outpoint selection, conservation, cancellation and recovery with multiple holdings. These checks will use synthetic inputs only."
+        }
+      ],
+      "link": "[OX Wallet \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95)"
+    },
+    {
+      "key": "stripe-cash",
+      "status": "running",
+      "link": "[CashRelay \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9)",
+      "items": [
+        {
+          "position": 1390,
+          "text": "Root did NOT stop API8827, signal7641 or request any demo/API stop for a quiet window. There is NO active node window; preflightfailed4.33GiBfree/pressurewarning. Preserve3027/receipts/tabs. Proceed your exact-owner lifecycle/lease/DB safety diagnosis, fix automatic-provider disconnect/shutdown bug and retire ONLY your confirmed orphan API process safely; restore same lightweight8827 with same private config/DB after checking no competing writer/active ambiguity. No new invoices/sends/funding or broad kill; check durable forward/worker state first, don't bypass lease or uncertainty. Actual HTTP read-only paid-record/idempotency acceptance is useful, no duplicate payment. Report restored listening/readiness and bounded lifecycle regression evidence."
+        }
+      ]
+    },
+    {
+      "key": "cashcart",
+      "status": "running",
+      "items": [
+        {
+          "position": 1710,
+          "text": "I\u2019ll read the current repository guidance and handoff, then work on the remaining workflow, wallet-compatibility, and content-export gaps. I\u2019ll preserve the wallets, private backups, and port 5196, and keep browser fixture evidence separate from verified Chipnet activity."
+        }
+      ],
+      "link": "[CashCart \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd)"
+    },
+    {
+      "key": "explorer",
+      "status": "running",
+      "items": [
+        {
+          "position": 746,
+          "text": "The audit found three concrete gaps: the Explorer rejects the indexer\u2019s new root revision because its predecessor is null, token metrics don\u2019t consume the indexed reserve/circulating-supply API, and browser/proxy configuration can be packaged with different settings. I\u2019m fixing those and preparing the live browser acceptance path. I\u2019ll keep the issuer\u2019s wallet-discovery receipt separate from live authority evidence."
+        }
+      ],
+      "link": "[BCH Explorer \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6)"
+    },
+    {
+      "key": "token-issuer-identity",
+      "status": "running",
+      "items": [
+        {
+          "position": 549,
+          "text": "I\u2019ll read the current repository instructions and release evidence, then inspect the remaining identity, rotation, revocation and recovery paths for concrete gaps. I\u2019ll preserve the 305-byte discovery acceptance, port 3217 and private pairing histories, and avoid native or heavy builds.\n"
+        }
+      ],
+      "link": "[Issuer Identity \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441)"
+    },
+    {
+      "key": "bch-mcp",
+      "status": "running",
+      "link": "[BCH MCP \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe)",
+      "items": [
+        {
+          "position": 278,
+          "text": "The new endpoint reports transaction activity, including input-only burns, rather than category listings. It distinguishes gross issuance/burns from net changes and keeps missing historical detail as `null`.\n\n`token_activity` is now implemented. It requires a ready source, pins pages to the committed snapshot, and turns HTTP 409 into an explicit discard-and-restart error. It does not merge pages or retry automatically. I\u2019m testing those boundaries next.\n"
+        }
+      ]
+    },
+    {
+      "key": "react-native-libauth",
+      "status": "running",
+      "link": "[React Native Libauth \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1)",
+      "items": [
+        {
+          "position": 665,
+          "text": "I\u2019ll prioritize the cleanup and pause further consumer installs. I\u2019ll revalidate only the 16,827 listed files, check native-build and open-handle use, verify the protected checksum sets, and delete eligible files individually. I\u2019ll preserve the inventory and write a new receipt with exact counts, skipped-file reasons, and measured free space before and after."
+        }
+      ]
+    },
+    {
+      "key": "jamiyah",
+      "status": "running",
+      "items": [
+        {
+          "position": 398,
+          "text": "I\u2019ll leave the running demo and its tab untouched. I\u2019ll read the current handoff, then develop a separate versioned recovery policy and measure the next deposit or allowance slice with local VM fixtures. The GUI and previous evidence will remain preserved."
+        }
+      ],
+      "link": "[Jamiyah \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:ffb8affafdfe3583f1ed4c78bda79f0a54f4ad064d99bf8ef7d4459fee59c13a)"
+    }
+  ],
+  "resourceCoordination": {
+    "freeGiBOwnerMeasured": 23.30126953125,
+    "memoryPressure": "warning",
+    "nodeWindowActive": false,
+    "libraryCleanup": {
+      "status": "completed_exact_scoped_reproducible_objects_cleanup",
+      "receipt": "projects/react-native-libauth/artifacts/scoped-cleanup-20261115T185558Z/receipt.json",
+      "sha256": "219a647dfc87f0b0d4df30074e7d3cc4f2d487b294a2ee76f4d4fc52a73ff641",
+      "deletedFiles": 16827,
+      "skippedFiles": 0,
+      "deletedAllocatedGiB": 3.825939178466797,
+      "observedFreeGainGiB": 3.8257598876953125,
+      "freeGiBAfter": 7.896247863769531,
+      "protectedTreesAndInventoryUnchanged": true,
+      "nodeEntryGateMet": false,
+      "systemReserveMet": false,
+      "sourceScope": "No builds/devices/globalcleanups; exact .o/.pcm/.pch inventory only."
+    },
+    "cashrelayAPI": "Restored owned API8827/PID20017, same private DB/config; health/ready200 and paid1042 coveredQR409 independently checked. Shop3027/PID98410 preserved.",
+    "noAdditionalFinancialAction": true,
+    "next": "Normal1 source gate remains unmet; no repeat without meaningful resource change/root scope. Full Chipnet25GiB gate also unmet. Running user app states preserved; no further cleanup/compression authorized.",
+    "oxCleanup": {
+      "status": "exact_cleanup_finished_reviewed_protected_originals_unchanged",
+      "receipt": "projects/xo-wallet/artifacts/storage-inventory/cleanup-reviewed-receipt.json",
+      "sha256": "b899446f33264e5f6b6f67a7fe4431191ae10be5b249ab5d40c534a2c814a793",
+      "deletedFiles": 21133,
+      "protectedOriginalFiles": 44334,
+      "remainingApprovedFiles": 0,
+      "errors": 0,
+      "deletedAllocatedBytes": 4865732608,
+      "measuredFreeAfterBytes": 15028994048,
+      "measuredFreeDeltaBytes": 4720967680,
+      "expectedNewOutputChange": "Ownnewcleanup-execution.log only; rawreceipt/manifests retained, reviewed mismatches none.",
+      "nativeBuildOrDeviceAction": false
+    },
+    "coldImageArchive": {
+      "status": "five_inactive_owned_images_losslessly_archived_and_verified",
+      "receipt": "docs/cold-image-custody.json",
+      "sha256": "796b3cb6c11ef224a6caa8d1cbe6bc2851412d1bec30e6ec42cc012270d92e47",
+      "imageCount": 5,
+      "originalAllocatedBytes": 1811939328,
+      "archiveAndCustodyAllocatedBytes": 8052736,
+      "netOwnedReclaimBytes": 1803886592,
+      "hostFreeGiBAfterOwnerObserved": 9.290653,
+      "actualRestoreImplementedOrExecuted": "Small-fixture restore/new-inode support implemented/tested; actual stage image remains archived, not restored.",
+      "stage2Consumed": false,
+      "next": "Actual restore remains gated; no mount/node authorized after failed post-cleanup quiet observation."
+    },
+    "conditionalRestoreAndStage2": "Authorized after fresh60snormalpressure/stableswap/noheavybuild+decodedlength12GiB64MiB guard; postrestore12GiB; noautomaticretry/fullsync.",
+    "postCleanupQuietGate": {
+      "status": "postcleanup_gate_completed_storage_passed_pressure_failed_no_node",
+      "report": ".build/runtime/chipnet-after-ox-quiet-5b6c1e45.json",
+      "sha256": "f2d9034d6cbe7986d46aa844e2c71df43cd40a3b7ec1a5a0768926395739e8a2",
+      "elapsedSeconds": 60.164,
+      "samples": 31,
+      "minimumFreeBytes": 14939672576,
+      "requiredFreeBytes": 14562623488,
+      "pressure": "Both1and2 during window; last1 is not sustained normal.",
+      "swap": "stable",
+      "heavyCompilersObserved": false,
+      "actualRestoreOrMountOrNode": false,
+      "stage2ProcessClaimConsumed": false,
+      "automaticRepeat": false,
+      "webBuildDeferralLifted": true
+    },
+    "activeOwnerBuild": "Focus explicitly ceded heavy/native window, no active build/native QA; source-only direct-user product work continues. OX owns next conditional Family+rc3 compatible bundle/native QA window once feature/host inputs ready.",
+    "latestRootPointObservation": {
+      "freeBytes": 13517471744,
+      "pressure": 2,
+      "swapUsedMiB": 7582,
+      "scope": "Onehostreadonlyplanningmeasurement; no newquietgate/nodeattempt, not sustainedresources."
+    },
+    "evidenceCompression": {
+      "status": "completed-exact11-logical-bytes-unchanged",
+      "approval": "docs/resource-approvals/ox-evidence-compression-20261116.json",
+      "sha256": "92760eee6c94ac0072f46bb23fa5d52f5178e61d235f956c36efbd97f8d36713",
+      "files": 11,
+      "logicalBytesAndPathsImmutable": true,
+      "physicalMetadataChangesExplicitlyAllowed": true,
+      "sdkPermissionFromThisFile": false,
+      "receipt": "projects/xo-wallet/artifacts/native-acceptance/recovery-v3-corrected-20261116/compression-receipt.json",
+      "receiptSha256": "6ed39cdf474608e93e06630598de29c6768078924700b673d348168e1009817f",
+      "allocationReductionBytes": 166658048,
+      "observedFreeGainBytes": 165924864,
+      "rootVerifiedLogicalHashes": 11
+    },
+    "libraryRemainingArchives": {
+      "status": "COMPLETE64_deleted_0skip_0error",
+      "inventory": "projects/react-native-libauth/docs/build-storage-archives-inventory-20261116.json",
+      "sha256": "f44d76a752238fda802fea154db5511ef5f9c1cb485482700c2e304590eb7451",
+      "selectedFiles": 64,
+      "allocatedUpperBytes": 1326116864,
+      "rootIndependentlyVerifiedFullHashes": 64,
+      "noDirectoryOrProductRemoval": true,
+      "receiptPending": false,
+      "receipt": "projects/react-native-libauth/docs/build-storage-archives-cleanup-20261116-r2.json",
+      "receiptSha256": "c6bd3b9816adf40c85b4722340c3999e8d25fd97823cba2fcbf097bd93894d26",
+      "rootVerifiedAllSelectedPathsAbsent": true,
+      "observedFreeAfterBytes": 17797484544,
+      "observedFreeGainBytes": 1319141376,
+      "protectedMismatches": 0
+    },
+    "freeBytesLatestOwnerHistorical": 25019547648,
+    "focusBackground": {
+      "owner": "Opus",
+      "appPid": 70366,
+      "device": "9F3AAF75-0DD7-4F02-8F01-BFB3973A587E",
+      "scopedSimulatorServerRecycle": 1,
+      "homeDeliveredAndLauncherVerified": true,
+      "appStatePreserved": true,
+      "metroPid": 69457,
+      "metroPort": 8083,
+      "noGlobalOrForeignServiceAction": true,
+      "rootPointObservedAfter": {
+        "at": "2026-11-16T02:11:21.628930+00:00",
+        "rssKiB": 903312,
+        "cpuPercent": 0,
+        "pressure": 2,
+        "osAvailabilityPercent": 46,
+        "freeBytes": 24741654528
+      },
+      "causalOrSustainedResourceProof": false
+    },
+    "libraryDwarfInventory": {
+      "report": "projects/react-native-libauth/docs/dwarf-metadata-inventory-20261116.json",
+      "scope": "Owner metadata only,3retaineddwarfbinaries; no fullSHA/compression/deletion",
+      "allocatedUpperBytes": 374403072,
+      "notEnoughGuaranteedReclaim": true,
+      "actualCompressionApproved": false
+    }
+  },
+  "updatedAt": "2026-11-16T03:24:11.108562+00:00",
+  "progressClassification": "Actual Android authenticated controller/cold encrypted wallet health and partial Wizard lifecycle earned; shared Chipnet still unavailable, exact supporting-node interoperability in progress.",
+  "runtimeProgress": {
+    "cashrelayApiRestored": true,
+    "coordinatorHealthReady200": true,
+    "paid1042Qr409": true,
+    "bchMcpActivity": "RC2 ninth tool plus 20 focused tests, actual API/store fixture interop and fresh production-only packed consumer passed; immutable tgz independently hash checked. No live Chipnet acceptance.",
+    "currentReadOnlyAvailability": {
+      "observedAt": "2026-11-16T02:35:55.967796+00:00",
+      "statuses": {
+        "cashrelayHealth": 200,
+        "cashrelayShop": 200,
+        "cashcart": 200,
+        "explorer": 200,
+        "jamiyahSimulation": 200,
+        "issuerCapabilities": 200
+      },
+      "scope": "Root bounded HTTP availability only; no browservisual/livechain/authenticatedworkspace or transaction claim."
+    }
+  },
+  "completedIndependentCheckpoints": {
+    "bch-mcp": {
+      "status": "rc2_activity_implemented_packedconsumer_passed_livechipnet_pending",
+      "artifact": "projects/bch-mcp/artifacts/0.1.0-rc.2-1794769277295/blaze-bch-mcp-0.1.0-rc.2.tgz",
+      "sha256": "a55fd0e9d691fd1bae37390c33ef06cd55b0fa34bc49a85f7a5e8ee30ae24886",
+      "runtime": "Node24.0.0",
+      "readOnlyTools": 9,
+      "resources": 2,
+      "newTool": "token_activity",
+      "focusedTestsPassedOwnerReported": 20,
+      "testCohorts": "7activity+13affectedprotocol/lifecycle; historical41fullsuite not recounted or rerun.",
+      "interop": "ActualparentSchema/API/SQLiteinmemoryregtest-shapedfixtures only, no node. Exact>2^53burn/issuance, missingcoverage/null, metadataexclusion, snapshot409restart.",
+      "packedConsumer": "Productiononly install,9tools/2resources/bothbins/exports/pagingconflict+explicitrestart/cancellation passed per owner.",
+      "scope": "All8existingtoolAPIs/2resourceURIs retained. Source/network/readiness before+after gates including observed nodelag; no automatic retry.",
+      "oldArchives": "RC1bothhashes unchanged per owner.",
+      "next": "Measured owner Chipnet Blaze/activity-v1 endpoint/trustedgenesis+checkpoint/knownobjects+prevouts; configured/livechipnet consumer ready.",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false,
+      "coordinatorScope": "Read current owner thread and independently hashed newtarball; no tests rerun."
+    },
+    "stripe-cash": {
+      "status": "runtime_restored_shutdown_and_paid_record_replay_fixed",
+      "paidHttpEvidence": "projects/stripe-cash/docs/proof/paid-http-acceptance-2026-11-15.json",
+      "sha256": "9650ce00a1ea11d3da6cfe08ff0eebfc4e0ef70c0cd7d1b785b8b33a8b72c42c",
+      "apiPort": 8827,
+      "newOwnedPid": 20017,
+      "execSession": 54476,
+      "shopPort": 3027,
+      "shopPid": 98410,
+      "serverTestsPassedOwnerReported": 115,
+      "serverFiles": 9,
+      "typecheck": "passed",
+      "scope": "Server-only serial tests, no SDK/shop fullsuite recount; actual persisted1042HTTP replay200/conflict422/coveredQR409/historicalJSON200/countunchanged, no invoice or payment created.",
+      "shutdown": "Automatic provider orphan fixed; drainHTTP/workers/requests/DB before exit; childprocess idlehandle exit/reopenDB regression.",
+      "planOnly": "Own plain-token source plan: confirmed5000satunreserved source, outputbacking4000/fee1000/untouchedreserve898201. No construction/reservation/keyread/sign/mint/send; live target verification+narrowguardedissuer+explicitintent still missing.",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false,
+      "narrowPlainAssetIssuer": {
+        "status": "narrow_issuer_offline_core_tested_live_capability_absent",
+        "source": "projects/stripe-cash/apps/server/src/plain-asset-issuer.ts",
+        "evidence": "projects/stripe-cash/docs/proof/plain-asset-issuer-tests-2026-11-15.json",
+        "evidenceSha256": "d17cc154c8f04471757920946d115047d23584b897e9fbb9193b0460f3cafc52",
+        "fixture": "projects/stripe-cash/docs/fixtures/plain-asset-issuer-v1.json",
+        "fixtureSha256": "4322ddc045847ae0194a9194cdf0d7025761f9d4dcb8862bf4556eb445c6a591",
+        "testsPassed": 45,
+        "files": 2,
+        "serverTypecheck": "passed",
+        "cohort": "NEWtargetedtests only; prior115server/full202cohorts historical",
+        "actualVMs": "BCH2025+2026 syntheticneverfundedfixture",
+        "policy": "FT80+NFT10/20/30,none/mutable/minting01/02/03;4x1000sat/fee1000/source5000/nochange;categoryfromconsumedparentindex0NOTissuancetxid",
+        "production": "Unconditionallyblocked beforecallergetters; noenv/booleanactivation/keyloader/signer/RPC/submit. No liveconstruction/allocation/sign/mint/send.",
+        "durability": "Syntheticexactoriginalfsync+FULLSQLite uniqueintent/reopen, duplicate/ambiguousreconstructionrefused evenifsource spent/budgetbooked",
+        "protectedOriginalHashesOwnerReported": 22,
+        "runtime": "SameAPI20017/8827+shop98410/3027; norestart",
+        "remaining": "NativeactualtokenAddress/ownedresponsive target, laterexactboundedissuanceapproval, reviewedtrustedactivationadapter; not course/pass inputs",
+        "testnetFunctionalReady": false,
+        "publicReleaseReady": false
+      }
+    },
+    "token-issuer-identity": {
+      "status": "independent_identity_lifecycle_code_local_acceptance_complete_live_gates_pending",
+      "artifact": "projects/token-issuer-identity/artifacts/testnet-functional/continuation-session-checkpoint.json",
+      "sha256": "5401520f2b200f6c84e5978d84229eb24a16077da6a30420e11a087c76ebfb6b",
+      "sourceRevisionOwnerReported": "eb6104a9c3c8824e5df25ce6d99cb6bd6d46e458622dcca2a64a438cc90b84a2",
+      "testsPassed": 78,
+      "typesAndBuilds": "Source/test types+Node/browser builds passed per owner.",
+      "implemented": "PublicationCAS/staleACK guards/future-stalesnapshotdenial/contextcancellation+latesigners/sessioncleanup/rotationexportpersistimport/exactIDarchiverecovery/retaincancellation/abortcapacity.",
+      "actualLocalEvidence": "HTTP+WS+SQLite signed lifecycle/lostACK/restart/noresend/discovery/rotation/revocation/archive/syntheticreorg+authoritydenial.",
+      "browserEvidence": "OwnedT3 pendinglock/lateNIP07harnessdiscard/importexportdownloadhash/missingarchive/contextreset; harness NOT external extension approval.",
+      "liveAuthority": false,
+      "runningWorkbenchPort": 3217,
+      "authorityConfigured": false,
+      "remaining": "Real validated BCHN+completeauthchain/pins/tip, dedicated currentissueroutput0/testwallet, dedicated actualNIP07 provider/twoidentities+approvals and approvedrelay/publication.",
+      "noNewPairingOrDeviceOrFinancialAction": true,
+      "preserved": "Actual305byteOXdiscovery and privateURIhistories.",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false,
+      "coordinatorScope": "Read current owner thread, hashed immutable checkpoint; no unchanged tests rerun."
+    },
+    "cashcart": {
+      "status": "independent_content_wallet_and_unfunded_workflows_complete_live_settlement_pending",
+      "artifact": "projects/cashcart/artifacts/functional-content-wallet-checkpoint.json",
+      "sha256": "4edbbdcdce51a8015fbd8a548af92fe36fa17cd2a078a0e576d6e7a7e0993a41",
+      "testsPassed": 122,
+      "typesContractVite": "passed; bundlewarning retained",
+      "sourceTreeSha256OwnerReported": "f4cd6ff2b30c7eb0a04c61b4125d48b82adf3287f4b37a61348415a62f95739e",
+      "content": "CanonicalCIDv1raw catalog/image/encryptedpackage validation, privateimmutableblockstore, operatorgatedKuboadapter. NOexternalupload; disabledroute503, simulatedpin transport only.",
+      "walletCompatibility": "PinnedCashonizeff731f9d signingroutine applied to corrected emptyfundingunlock templates in localBCH2026VM neverfundedfixtures; account reread/role/context/cancel/late-response guards. Not deployedwallet/live transaction proof.",
+      "browser": "All3fixtureflows complete+decryption/actorplaintextclear/backuprestore; independentproduction newbackedkeystore unsigned3reservationsreload/cancel/stock1 and CIDtamperchecks.",
+      "productionStore": "cashcart-backed-workflows-20261115/e320bfbc-216d-4023-8ca9-c4dffe0f2723, historicalshippingkey unchanged.",
+      "runtime": "5196/PID36348 preserved per owner",
+      "remaining": "VerifiedretainedChipnetsource+prevouts+write/dedicatedcoins/actualtwopartyapprovals+confirmations+productionfulfillment/reorg/walletphraserecovery; externalpin availability requires laterpublicationauthorization.",
+      "coordinatorScope": "Read owner thread and verifiedartifacthash; no browser/transaction/test rerun.",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false
+    },
+    "xo-wallet": {
+      "status": "reviewed_same_target_recovery_plan_no_safe_supported_boot_yet",
+      "directory": "projects/xo-wallet/artifacts/native-acceptance/recovery-plan-v1",
+      "sha256sums": "a1bf0f050f0b3bc88e9593c3b40f6ae8da7f55dfa019add54da4b0af6d91bc8d",
+      "verifiedEntries": 4,
+      "deviceActions": 0,
+      "bootAttempts": 0,
+      "currentReadiness": false,
+      "capabilityGap": "Argent automatic default_boot restore has no exposed cold-only/no-snapshot-load or fixed-serial selector; snapshot predates1042. No force/patch/snapshot mutation/controller bypass authorized.",
+      "resourceEntry": "12GiB total free includes8GiB reserve; no20GiB gate.",
+      "futureAttempt": "Only after supported current-disk-only operation and explicit bounded review; at mostone180s attempt, no retry.",
+      "hostEvidence": "No exact ownedQEMU/namedAVD open handles on plan observation; NOT clean shutdown or wallet health proof.",
+      "ownership": "SameBlaze_OX_Libauth_20261115/last5558/OXsession/8097 retained.",
+      "tests": "Owner final existing log145/145 zero skipped, predates urgentstoragephase; not rerun. Changed source unbuilt/uninstalled.",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false,
+      "plainAssetWireAcceptance": {
+        "status": "independent_ox_cashrelay_synthetic_wire_acceptance_passed",
+        "artifact": "projects/xo-wallet/artifacts/native-acceptance/plain-asset-wire-acceptance.json",
+        "sha256": "6f5dd74ea64e62e038d04ea51548ea6e6c7e959aecab718008c6df720f598b60",
+        "targetedTestsPassed": 2,
+        "prior145FullSuiteNotRerun": true,
+        "scope": "Exactsyntheticparent/issuance/category/outputscript-values/140FT/3NFT/fee1000, installedXOrecipientvalidation, bothBCHVMs andtamperedsource refusal; OXhost80NFTfree/60attached strictselection.",
+        "nativeInventoryVerified": false,
+        "distinctUnsafeFixtureRecipient": true,
+        "liveRpcDeviceSigningOrSubmission": false,
+        "testnetFunctionalReady": false,
+        "publicReleaseReady": false
+      },
+      "rc3OfflineHostAdoption": {
+        "status": "rc3_source_host_offline_adopted_native_still_rc2",
+        "manifest": "projects/xo-wallet/artifacts/rc3-host-boundary-20261115/ox-offline-adoption.json",
+        "sha256": "1809b39a6441efcec5187e66fbb3168f9386195f282f69292d8f8a35123ee888",
+        "sourceHashEntriesVerified": 25,
+        "effectivePackedFilesByteCompared": 23,
+        "effectiveXoVersion": "0.2.2-rc.3",
+        "fullHostTestsPassed": 173,
+        "cohort": "Includes25actualpacked-core/defaultcontrols+1UI; notadditionaltests",
+        "typecheckLint": "passed",
+        "setup": "Trackedselection/vendorarchive/guardedoverlay, automaticpostinstallafterexistinghooks, appliedtwice. Peers/nativeunchanged; package-lockdependencymapsmatch.",
+        "fullFreshInstallOrCiProved": false,
+        "livePreviewEnabled": false,
+        "nativeBuildInstallOrDeviceActions": false,
+        "existingNativeApkXo": "0.2.2-rc.2",
+        "remaining": "Data-preserving sameAVDrecovery; newcompatiblebundle/nativepolicy/privatejournal/restore/disconnect/liveassets andseparateoptinacceptance.",
+        "testnetFunctionalReady": false,
+        "publicReleaseReady": false
+      },
+      "recoveryPlanV2": {
+        "directory": "projects/xo-wallet/artifacts/native-acceptance/recovery-plan-v2",
+        "sha256sums": "99a95b24faa926523177a89619cb548af7294ac6648261f68abf6bece6d8fb2f",
+        "entriesVerified": 14,
+        "officialSDK": "36.4.9.0 no-snapshot-load/no-snapshot-save/port5558 supportedsetup, allUIArgent",
+        "copyOrStartOrDeviceProbe": false,
+        "resourceGate": "CLOSED: pressure2 warning, proposedcustody6.5GiBincrementalrisk+8reserve=14.5GiB needsreview, no invented20GiBgate",
+        "nodeGatesUnchanged": true
+      },
+      "additionalCompilerCleanup": {
+        "report": "projects/xo-wallet/artifacts/storage-inventory/compiler-output-cleanup-20261116/review-summary.json",
+        "sha256": "ef1d69e313c474b838a093d3dbb710afe589b24f23e605d6bdfb3326278f73b6",
+        "deleted": 6359,
+        "remainingCmakeArchives": 6,
+        "remainingAllocatedBytes": 52109312,
+        "measuredFreeGainBytes": 1593270272,
+        "protectedFilesChecked": 38485,
+        "protectedMismatch": 0,
+        "gitDirectoryBoundary": "mtime/ctime-only causeunknown; readonlygitbranch/status/fsck0. Acceptedcompiler-scopecloseout, no baselineGitcontentsclaim; rawreceiptretained.",
+        "sixRemainingNowExplicitlyApproved": true
+      }
+    },
+    "jamiyah": {
+      "status": "frozen_existing_v4_candidate_integrating_admission_journal",
+      "manifest": "projects/jamiyah/evidence/checkpoints/candidate-v4-manifest.json",
+      "sha256": "b8615099b887bc21406c37de5b89d43940f6624673524cc066bc4c7347a2719c",
+      "entriesVerified": 17,
+      "vmCases": 58,
+      "compactionTests": 5,
+      "offlineReviewTests": 4,
+      "actualKillBoundariesOwnerReported": 6,
+      "scope": "Local selected2026VM fixtures, new opt-in recovery/deposit candidates, protected originals/GUI unchanged. No live source/signing/broadcast.",
+      "next": "Integrate EXISTING MemberVaultV4 with exact-source admission, durable held reservations and offline review. Missing authenticated MTP facts deny withdrawal. No new covenant or GUI rewrite.",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false,
+      "vaultIntegration": {
+        "status": "existing_v4_vault_admission_journal_offline_review_integrated",
+        "manifest": "projects/jamiyah/evidence/checkpoints/member-vault-integration-v4-manifest.json",
+        "sha256": "daab9c1ba83692f73e94b461a4df2245d7949bdd8f8049db65e76bec7e2ea85c",
+        "entriesVerified": 10,
+        "frozenV4EntriesStillMatch": 17,
+        "testsPassed": 7,
+        "actualKillBoundaries": 1,
+        "scope": "Fixture-only exactgenesis/source/raw/VM admission, state+allfunding reservations, restart/outage/reorg/competingfunding reconciliation, MTPgated offlinewithdrawreview.",
+        "example": "200000+27000-3000=224000; withdrawal6000+3000 ->215000; reorgrestores224000 withheldinputs/history.",
+        "liveUseSigningBroadcast": false,
+        "remaining": "Actualexistingvalidating-source adapter/interface; fullfamilyglobalgovernance/recovery/savings stillconditional."
+      },
+      "sourceBridge": {
+        "status": "unconfigured_bchn_operator_read_v4_bridge_frozen",
+        "manifest": "projects/jamiyah/evidence/checkpoints/bchn-read-adapter-v4-manifest.json",
+        "sha256": "ac865e598fb32d76baa5e9000d093a7d6e971b350d18d9d7408b272765471caf",
+        "entriesVerified": 11,
+        "targetedTests": 11,
+        "actualNetworkOrSocketOrNode": false,
+        "scope": "Unsignedrequest-bound operator-nodeprovenance/internalbrandedviews,V4admission/journal/offlinereview; no phantomEd25519service. Same-tip/raw/header/MTP/UTXO/pins/floor/timeout/streamabort checks; nullUTXOwithoutknownconfirmedspenderUNKNOWN.",
+        "epoch": "Time-basedBIP68unchangedsource predicate;FULLsigneddelay170not169; height/tick/coinbasecontextsdeny. Notgeneric2027VM/nativeacceptance.",
+        "localChainValidation": false,
+        "measuredAssignment": false,
+        "liveUseSigningBroadcast": false,
+        "remaining": "Actualsourceassignment/acceptance andboundedwalletagreement; fullfamilygovernance/savings/minority ongoing."
+      },
+      "unsignedWalletPreparation": {
+        "status": "unsigned_existing_v4_vault_preparation_frozen_root_interface_review_addenda_pending",
+        "manifest": "projects/jamiyah/evidence/checkpoints/vault-preparation-v4-manifest.json",
+        "sha256": "dd4c0b8e0c76d569b2e9cabb563aacdd18fa36aa451e26ab7fcd19355c3749a6",
+        "entriesVerified": 13,
+        "testsPassed": 9,
+        "actualSigkill": 1,
+        "capabilityRequest": "projects/jamiyah/evidence/vault-wallet-v4-capability.json",
+        "capabilitySha256": "4e2cf0f4a8dde281b4b6ebdb11f6be3c08f4fe5521fd77939b39129556f954b1",
+        "capabilityImplemented": false,
+        "rootMathChecks": "3signingdigests+3BitcoinparentTxids+3UTF8hexcontenthashes independentlyrecomputed; no signatures/network/walletcalls.",
+        "rootReview": "docs/jamiyah-vault-wallet-capability-review-2026-11-15.md",
+        "addenda": "Pinnedcompiledartifact/ABI/compiler+constructorencoding; normativehashdomains; explicitfutureauthenticatedchannel/lifecycle/deadline/cancel. No existingXOgenericcovenantworkaround/NFTpolicyreuse.",
+        "fullFamilyScope": "Owner-vaultsubsetonly; majorityrecovery/governance/savings/minorityongoing.",
+        "liveUseSigningBroadcast": false
+      }
+    },
+    "react-native-libauth": {
+      "status": "immutable_offline_rc3_delivered_ox_host_integration_authorized",
+      "directory": "projects/react-native-libauth/artifacts/xo-0.2.2-rc.3",
+      "artifactSha256": "b5d89a3c66c2561a9d3c40e9be6b28d5b4e28379551f0b3e646c499837c49f13",
+      "manifestSha256": "01cc9106f9b213019e981f9b5595461c13ed016975c266353d499736494c164f",
+      "sha256sums": "42e833c72b9d05363b2c2707a43245acb31b333fcea264b916f4ea8787dca277",
+      "checksumEntriesVerified": 84,
+      "tests": {
+        "affectedHost": 70,
+        "actualPackedNodecoreConsumer": 39,
+        "declarations": "passed",
+        "sourceHeader": 4,
+        "rawVmMatrix": 15,
+        "rawVmSubcases": 45
+      },
+      "policyId": "chipnet-preview2027-final-p2pkh-v1",
+      "scope": "Explicit source-backed noncoinbase final-P2PKH subset, max128; no genericVM2027/SPV/node/canonicalfork proof. Default40/exactrc2shapesanddeterministicfixturebytesmatchactualrc2control.",
+      "native": "68adapter/native/WASM/patch/runtimefilesidentical; NO rc3nativeproof",
+      "dependencies": "XOexactnext.8; adapter0.2.1or0.2.2-rc.1 unchanged. Nodecoreclosure locallyrepacked from prior pinnedconsumer, not freshupstream/RNnativeinstallproof.",
+      "postDurable": "Afterresolvedcallback failure retainsoriginalpending/raw/policy, approvalconsumed,noRPC/retry. Hostauthwholejournal/witnessmandatory.",
+      "oxScope": "Source/strictschema andofflinehost integrationonly; no device/nativebuild/liveenable/financialaction.",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false
+    },
+    "explorer": {
+      "status": "portable_export_and_current_ui_verified_actual_chipnet_inputs_pending",
+      "archive": "projects/explorer/.release/portable-export-20261115.tar.gz",
+      "sha256": "7f11f2e6a1a6afd4d4cde01647aad4891ea66eba076531dec6799d73ca92d296",
+      "bytes": 1459423,
+      "uncompressedBytes": 4702625,
+      "audit": "projects/explorer/artifacts/testnet/portable-export-20261115.audit.json",
+      "auditSha256": "4d354e7095085f1f2d2b53f4329570e4fc53eb01255ae82cdd97ef9345d11863",
+      "coordinatorVerified": "All272source+79static hashes,server/indexreceipts, no unsafe tarpaths/links; server/routing/index/runtime bytes identicaltopreservedactualNode-testedcandidate.",
+      "tests": "466fullsuite+4separatefinaltargetedregressions,types/lint/codegen; no470fullsuiteclaim",
+      "runtime": "8791newvalidatedstatic retained; actualpackagedNode26.5HTTPpage/runtime200 thenownedteststopped",
+      "remaining": "ActualmeasuredChipnetBlaze/BCHN/txindex/knownobjects/fullcoverage andliveissuerverifier/proof/relay.",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false
+    }
+  },
+  "focusFollowup": {
+    "model": "claude-opus-5-5",
+    "coordinatorRole": "follow_only",
+    "latestObserved": "NewAndroidAPK built with3D/framing/Plant/tabtitle/drag/name fixes; Androidruntime not tested for this artifact. Priorchecks iOSsimulator.",
+    "artifact": "projects/focus-garden/artifacts/testnet-delivery/binaries/android/FocusGarden-1.0.0-1-arm64.apk",
+    "sha256": "b6de8f027a3ad82131c7f1cd9ff831b83f3b6f9e61ab10a6ab5ae6f6f1664c80",
+    "bytes": 42820706,
+    "coordinatorHashVerified": true,
+    "iosOperatorGate": "AccountHolder acceptance of updatedAppleagreement; no root legal acceptance/upload.",
+    "implementationTakenOver": false,
+    "metroPreview": {
+      "status": "Opus_run31_completed_preview_restored",
+      "reason": "Previous8083backgroundtaskexpired2h, DebugQArequiresMetro",
+      "scope": "Opusonly; own8083/currentQAdevice, supportedpersistentMetro/T3session,cachedstartup<=1GiBheap/oneworker,nolocalroottakeover/nativebuild",
+      "coordination": "Settleinitialbundlepeak beforeOXfreshnativeV3preflight; no sharednodewindow",
+      "pid": 69457,
+      "port": 8083,
+      "heapMaximumMiB": 1024,
+      "workers": 1,
+      "ownerReportedIdleRSSMiB": 740,
+      "ownerVerifiedUI": "You grew a Tree! +25 sunlight and full 3D tree",
+      "lifecycle": "Detached from agent lifetime; owner documented scoped stop/recovery. No native build."
+    },
+    "compilerInventory": {
+      "status": "cleanup_complete_WITH_unrecovered_selection_anomaly",
+      "deletedFiles": 24116,
+      "listedRemaining": 0,
+      "logicalBytesDeleted": 7491426442,
+      "allocatedBytesDeleted": 7550590976,
+      "observedFreeAfterBytes": 25019547648,
+      "measuredGainBytes": 7605743616,
+      "hostConcurrentActivityNotExcluded": true,
+      "unrecoveredInterfaces": 50,
+      "unrecoveredLogicalBytes": 3468316,
+      "restored": 0,
+      "cause": "Exact-name products filter missed BuildProductsPath; root and Opus review error.",
+      "missedList": "projects/focus-garden/artifacts/build-inventory/correction-2026-11-16/missed-50.jsonl",
+      "missedListSha256": "074d690c838ede09d3f17a7c47601e46fa410018cd6f2cc00598c375955e7dc3",
+      "rootIndependentlyCountedAndConfirmedAbsent": 50,
+      "lookupCandidatesShaMatches": 0,
+      "rootAcceptsRecordedLimitation": true,
+      "finalArchiveApkSourcesUnchangedPerOwner": true,
+      "newSelectionGuardFixture": {
+        "allMissedRejected": 50,
+        "remainingCompilerPathsAccepted": 24066,
+        "allowedCounterexamples": 4,
+        "syntheticProductPathsRejected": 5,
+        "scope": "Path-string fixture only; no new filesystem deletion approval"
+      },
+      "furtherCleanupOrHiddenRebuildAuthorized": false,
+      "fullNode25GiBGateMet": false
+    },
+    "androidActualApkNext": {
+      "status": "file_only_preparation_done_conditional_execution_released_after_ox_peer_END",
+      "owner": "Opus",
+      "avd": "Blaze_FocusGarden_20261115",
+      "serial": "emulator-5560",
+      "session": "blaze-focus-garden-acceptance-20261115",
+      "apkSha256": "b6de8f027a3ad82131c7f1cd9ff831b83f3b6f9e61ab10a6ab5ae6f6f1664c80",
+      "certificateSha256": "35f894e84f2fb1a3f6e2310010ddf3ff9bba812edc1c32b6ef4f57dfbe282576",
+      "scope": "existing alreadyready assignedAVD; no newboot/build; supported SDK inplaceinstall-r if needed/certcompatible, allUIArgent. Normal5min localfocus grow/cancel/navigation/processrestart, onchain distinction.",
+      "unknownActualInstalledPackageCertificate": true,
+      "sourceWindowMustBeEnded": true,
+      "actualInstallLaunchExecuted": true,
+      "iosQaState": "background preserved with Metro8083 alive; no relaunch for same checkpoint",
+      "currentStatus": "original_release_APK_launch_crash_observed_R8_mapping_diagnosis_and_narrow_fix_authorized",
+      "originalArtifactRuntimePassed": false,
+      "correctedApkBuilt": false,
+      "noMinificationBlanketBypass": true,
+      "fixScope": "Opus only; one cached-native R8/package graph+conditional pipeline, unchanged16 delivery artifacts/oldAPK sourcehistory; no newboot/wipe/uninstall. OXbundlehelduntilFocusEND.",
+      "fixCause": "R8 removes/refactors reflected GLView(Context,AppContext) because TextureView is outside ExpoView-only keep rule",
+      "groundedFix": "Keep public Context,AppContext constructors on android.view.View descendants; minification retained; exact GLView mapping regression oldfail/newpass required.",
+      "nativeReuseProof": "Owner verified28retained strippedarm64 native.so match originalAPK, including5app libraries;77deletedobjects wouldotherwise recompile.",
+      "approvedChoice": "ONEcached-native R8/package with exactly2namedappCMakeexclusions; codegenJS only if nativeinterfacebytesunchanged, no broadernativecompile.",
+      "ordering": "OXexplicitCEDE/currentbuildallowanceUNUSED; Focusproceedsnow. OXhelduntilFINALFocuscorrectedQAEND/STOP."
+    },
+    "currentUserSourceSteering": {
+      "state": "Opus source-only after explicit END/cede",
+      "scope": [
+        "remove sunlight and unlocks",
+        "Focus style swipe",
+        "Forest redesign",
+        "wallet-first onboarding",
+        "automatic NFT release scoped to original Plant consent and saved-operation guards"
+      ],
+      "oldOption1Allowance": "Explicitly approved historically, never consumed; superseded by source-only/next fresh resource coordination after user product changes",
+      "noBackgroundUnconsentedSpend": true,
+      "nextActualBuildRequiresOwnerCoordination": true
+    }
+  },
+  "deviceRecoveryNext": "Data-preserving same5558 authenticated control and cold wallet health now proven. Preserve running65608/services/session/8097. Remaining strict Wizard observer/native compatible rc3 bundle/live plain token and private/iOS acceptance require bounded own-thread continuation; no new SDK start/stop authority.",
+  "jamiyahNext": "Deliver actual reusable RN Family feature inside existing OX with minimal onboarding/Add money/Use money/Requests and tracked native edit-inspect-fix loop through OX owner. Existing reference GUI preserved; valid contract/full recovery/governance/savings/minority work retained; no separate wallet destination.",
+  "supportingRegtestRc2": {
+    "status": "gate_failed_before_startup_no_endpoint_consumer_not_executed",
+    "sourceOwner": "cashtokens-indexer",
+    "consumerOwner": "bch-mcp",
+    "purpose": "ActualprocessBCHN->indexeractivity->immutableRC2ninthtool integration gap",
+    "network": "regtest",
+    "leaseMaximumMinutes": 20,
+    "sourceAdvertised": false,
+    "oldExpired53314Forbidden": true,
+    "nativeBuildDownloadOrSharedChipnetRetry": false,
+    "consumerArchiveSha256": "a55fd0e9d691fd1bae37390c33ef06cd55b0fa34bc49a85f7a5e8ee30ae24886",
+    "readinessBoundary": "Supportingregtest only; actualChipnetstillunavailable. No automaticretry, sourceownerretainslifecycleresourceguards.",
+    "sourceGateReport": "docs/mcp-activity-regtest-target.json",
+    "sourceGateSha256": "b352e7c4895e337307af697e541e760b22dfc05f99f1a03675b70e2c56bf4f81",
+    "pressure": "2bothsamples",
+    "compiledRuntimeMembersMatched": 47,
+    "automaticRetry": false,
+    "next": "Sourceonly boundedharness mode removes legacy30min/unboundedtempdir prerequisite. No actualnode/image/mount or newgate now. MCP existingarchivepreparer only; noHTTP.",
+    "consumerPreparation": {
+      "status": "exact_archive_harness_local_inspect_ready_actual_node_not_executed",
+      "source": "projects/bch-mcp/scripts/accept-existing-archive.mjs",
+      "contract": "projects/bch-mcp/docs/existing-archive-acceptance.md",
+      "installedConsumerReuse": false,
+      "futureOnly": "Freshpassednormalresourcegate + measuredREGTEST/objects/prevout/activity/finitelease; offlineproductiononlyno-script install anddeliveredbytecheck then9tools/2resources.",
+      "optional409": "Only realownermutation evidence, otherwiseNOTEXECUTED.",
+      "installOrHttpOrNodeExecuted": false
+    },
+    "boundedSourceWrapper": {
+      "status": "bounded_source_only_wrapper_implemented_real_execution_pending",
+      "artifact": "docs/bounded-regtest-runner.json",
+      "sha256": "b60f083709a54f8560a7876e92b98974e8de727f21c6b4a908f127aed07e9dfc",
+      "sourceHashEntriesVerified": 6,
+      "tests": {
+        "small_mocked_control_cases_passed": 10,
+        "pure_in_memory_contract_cases_passed": 4,
+        "affected_existing_owner_stop_cases_passed": 4,
+        "existing_process_cases": [
+          "owner cookie RPC stop/private receipt",
+          "concurrent stop claim",
+          "RPC unavailable exact-owner SIGTERM",
+          "PID/datadir mismatch refusal"
+        ],
+        "syntax_only_worker_check": true,
+        "fixture_allocated_bytes": 409600,
+        "no_host_resource_probe_or_image_operation": true,
+        "real_node_or_activity_worker_executed": false
+      },
+      "controls": {
+        "maximum_lease_seconds_including_setup_stop_margin": 1200,
+        "default_lease_seconds": 600,
+        "fixed_image_mebibytes": 96,
+        "free_entry_bytes": 12884901888,
+        "early_free_stop_bytes": 9663676416,
+        "system_reserve_bytes": 8589934592,
+        "native_rss_stop_bytes": 268435456,
+        "consumer_rss_stop_bytes": 268435456,
+        "log_retention_bytes_each": 4194304,
+        "outer_allocation_stop_bytes": 125829120,
+        "poll_seconds": 1,
+        "parent_heartbeat_stale_seconds": 2,
+        "external_p2p_receive_upload_bytes": 0,
+        "native_and_rest_stop_claims_separate": true,
+        "no_force_kill_restart_foreign_cleanup": true
+      },
+      "contractAlignment": "MCPexactarchiveactualfieldnames, issuance/inputonlyburn/prevoutsmustbenative-derivedandcomparedbeforeverifiedhandoff",
+      "actualNodeImageMountRestOrConsumer": "NOT_EXECUTED",
+      "actualGate": "Failednormalpressurebeforestartup; no retry",
+      "testnetFunctionalReady": false,
+      "publicReleaseReady": false,
+      "currentProfileAudit": {
+        "artifact": "docs/preview-regtest-maturity-audit.json",
+        "sha256": "2f63d063ef45fdb1a838b14fa258a0016e71b864fb14f7b0857100c75fc975ec",
+        "hashEntriesVerified": 12,
+        "sourceOnlyTestsPassed": 6,
+        "previous18CohortNotRerun": true,
+        "fact": "60000ticks=100legacy600intervals or1000new60intervals; defaultregtestactivation1810382400 differsChipnet1794744000.",
+        "admission": "Exactverifiedpre-upgradefreshregtest only; forbidunknown/post/leasecrossing beforewallet/mining;101fund/104hardcap andnative tickdepth+UTXOfacts, noactivation/expiry/maturitybypass.",
+        "workerSourceChangedFromEarlier18Snapshot": true,
+        "runtimeApi47BytesChanged": false,
+        "actualNativeImageNodeOrMcpAcceptance": false
+      }
+    }
+  },
+  "previousGoalTurnClassification": "progress: new issuer45tests andOX2wireacceptance, Explorer466/build, sourceharnessandV4integration code advance; finite supportingregtestgatefailed beforestartup, no repeat.",
+  "currentConsensusNftGap": {
+    "status": "newrc3offlinecandidateverified_oxhostintegrationinprogress",
+    "sourceEvidence": [
+      "projects/react-native-libauth/docs/candidate-apis.md:91",
+      "projects/xo-wallet/src/payments/tokens.js:10"
+    ],
+    "gap": "NFTinventorysupports128bytesbutrc2transferlimited40becauseBCH2025/2026intersection; currentselected2026rulespermit41-128.",
+    "scope": "Versionedexplicitreviewedconsensuspolicy/network/sourceagreement, authoritative2026VM/expected2025denial, 40/41/128/129boundaries, all3caps and existingconservation/journalconsent safeguards.",
+    "preserve": "Alloldartifacts/defaultcompat; newimmutablecandidateonlyifactualcodeandconsumerverification. No nativebuild/device/RPC/financialaction.",
+    "trust": "No inventedlivechainproof or callerbooleanvalidation; owner must groundactivation/sourcecontract and coordinate exactAPI.",
+    "dedicatedAssetAcceptance": "Existing1byteNFTplanfitsrc2; notblockedby128extension.",
+    "currentEpochDecision": "Do notshiphistorical2026-onlywindowascurrentcompletion; ground2027source/script-rule equivalence or exactunknown first. Onefinite128KiB30sreadonlyElectrumheader observation authorized, noautoretry/keys/address/RPCfinancialaction.",
+    "sourceCommit": "3e6827e95c7a17497e09ac15556debd116dea1d0",
+    "observedMtpOwnerReported": 1794772246,
+    "observationTrust": "Electrumheaders only, notvalidatingnode/SPV",
+    "policyId": "chipnet-preview2027-final-p2pkh-v1",
+    "subset": "v2/locktime0/allsequenceffffffff/noncoinbase inputs underONEselectedP2PKHaddress, multipleUTXOsallowed; currenttoken/script subsetrules source-reviewed, no generalVM2027 equivalence",
+    "host": "OXconditionaltypedcandidatecontractacceptedforreview; default40/exactrc2shapepreserved, optinonlystrictpolicy metadata, actualtypednewartifact+consumer/raceproof required beforeadoption",
+    "noNewObservationOrFinancialAction": true,
+    "headerObservation": {
+      "artifact": "projects/react-native-libauth/artifacts/bch2026-source-review/current-header-observation.json",
+      "sha256": "9302ebff8c8df161462c647a2c23ed9074a287c1a0580a56a30193692c9bf924",
+      "tipHeight": 332903,
+      "tipHash": "0000000000007804e23a2319732c50251f2e656484d18da343e53ee9b18eb08d",
+      "mtp": 1794772246,
+      "networkPayloadBytesOwnerReported": 3204,
+      "attempts": 1,
+      "coordinatorStoredByteVerification": "11headers/10links, tipdigest,2checkpointdigests,MTP independently recomputed. Post-upgrade284827pin found in retained chainparams source.",
+      "trust": "Electrumserver observation only; no freshquery/PoW/SPV/validatingnode claim."
+    },
+    "dependentContextualAudit": "Preview2027 blockticks/BIP68height/coinbasematurity differ evenif token/script subset matches. Jamiyah adapter and futureboundedregtestworker mustnotassume2026context; no newnode/probe authorized."
+  },
+  "nativeStartV3": {
+    "status": "AUTHENTICATED_HOME_AND_INSTALLED_WALLET_HEALTH_VERIFIED",
+    "historicalStateSnapshot": "docs/coordinator-history/native-start-v3-before-authenticated-health-20261116.json",
+    "sourceOwner": "xo-wallet",
+    "avd": "Blaze_OX_Libauth_20261115",
+    "serial": "emulator-5558",
+    "api": 36,
+    "session": "blaze-ox-wallet-acceptance-20261115",
+    "currentPid": 65608,
+    "supervisorPid": 65595,
+    "supervisorExecSession": 4363,
+    "actualGuestStarts": 3,
+    "maximumTotalGuestStarts": 3,
+    "remainingSdkStartStopAuthorization": false,
+    "controller": "Argent",
+    "grpc": {
+      "port": 8558,
+      "loopbackOnlyOwnerVerified": true,
+      "privateSdkDiscoveryAuthenticated": true,
+      "tokenValuesCaptured": false
+    },
+    "homeVerified": true,
+    "installedWalletHealth": {
+      "receipt": "projects/xo-wallet/artifacts/native-acceptance/post-recovery-authenticated-wallet-health-20261116/receipt.json",
+      "sha256": "6c6dd80a65422b3916e927ef16896f7c3f1a36f84057df4905a65035e1a2b4c8",
+      "rootHashVerified": true,
+      "address": "bchtest:qp4nwsnecr0kdpqtt3a7k74f6ynkff4n2549xmf3w4",
+      "tokenAddress": "bchtest:zp4nwsnecr0kdpqtt3a7k74f6ynkff4n25j0498h3x",
+      "selectedPath": "m/44'/1'/0'/0/0",
+      "displayedBalanceSats": 19764,
+      "balanceIsFreshIndependentChainAttestation": false,
+      "confirmed1042HistoryObserved": true,
+      "originalEncryptedJournalHashAndReceiptAfterColdBoot": true,
+      "keysOrRawPrinted": false
+    },
+    "currentInstalledRuntime": "Historical rc2 compatible APK; rc3 source unbuilt/uninstalled",
+    "currentAppAtHome": true,
+    "metro8097": "OFF/reserved",
+    "servicesLeftRunning": true,
+    "financialActionThisRecovery": false,
+    "custodyManifestSha256": "6a8a6528451d3458afb39b16e60c08fca7ce1939d564dfbd3d41288d91ea02f3",
+    "historicalForceExit": "Old pre-Android modal PID33807:1SIGTERM/1reviewedSIGKILL; unclean, no clean-data claim from signal. Later current-data/actualwallet proof independently earned.",
+    "bootstrap": {
+      "elapsedSeconds": 56.387,
+      "minimumOsAvailabilityPercent": 41,
+      "pressure": 1,
+      "swapGrowthBytes": 0,
+      "minimumFreeBytes": 17579573248,
+      "peakRssBytes": 4162600960,
+      "noResourceAbort": true
+    },
+    "activeNativeWindow": false
+  },
+  "memberVaultCapabilityAgreement": {
+    "status": "design_architecture_conditionally_agreed_no_implementation_authority",
+    "actualInnerFields": 19,
+    "rootReviewAddenda": "Frozencompiledprofile+encoding+lifecycleaddenda18hashentriesverified",
+    "libraryProposalR2": "projects/react-native-libauth/docs/proposals/member-vault-v4-host-contract-r2.md",
+    "libraryProposalSha256": "154dc49f1f600f95cfc8b684a3db7f7d91f76c6791584f8d67d4c197b08a222d",
+    "oxOwnerReviewR2": "projects/xo-wallet/docs/proposals/member-vault-v4-ox-owner-review-r2.md",
+    "oxReviewSha256": "c481238266bed92ec9e1dd9a58928461d9eb684b44e12d046cf70b87ddc9dddb",
+    "openDecisions": [
+      "Authenticatedchannel/origin/methodassociation",
+      "Hostconfiguredmeasuredvalidatingsource/profileassignment",
+      "Enrollment/setupconsentregistry",
+      "Never-dispatchedunsignedcancel/release liveness versus signing-marker ambiguity",
+      "Fullworstcaseencodedsize/storageadmission+reservedrecoverycapacity",
+      "Request-keyedversionedeventjournal,notfake txid/pending-v1 widening"
+    ],
+    "consent": "Normalwallet120s cap,minouterdeadline; stagebudgetsneverrenewconsent; everypostdurable/finalexportfsync recheck",
+    "permission": "No newwalletmethod/signing/export/genericcovenant/standardWCorWizardwidening authorized"
+  },
+  "memberVaultUnsignedParserSlice": {
+    "status": "finite_source_slice_complete74_tests",
+    "owner": "react-native-libauth",
+    "scope": "Independent bounded unsigned parser/template/hash/preimage reviewer; no signing/network/runtime exports or package version. Trusted source/consent/enrollment not established.",
+    "sourceManifestPending": false,
+    "checkpoint": "projects/react-native-libauth/experimental/member-vault-v4/checkpoint.json",
+    "sha256": "e419b3ca9a0f950a47561cfd7e7431ecdf8c052ebff774c6f21e0cd297ac7855",
+    "rootVerifiedFileHashes": 7,
+    "tests": {
+      "passed": 74,
+      "failed": 0,
+      "skipped": 0,
+      "suiteExecutions": 1
+    },
+    "runtimeWalletCapability": false,
+    "signingOrNetworkOrNative": false
+  },
+  "supportingRegtestNext": {
+    "owner": "Blaze Indexer execution thread",
+    "status": "second_distinct_invocation_resource_admission_refused_pressure2_no_native",
+    "atomicPublicationTests": {
+      "python": 4,
+      "javascript": 4,
+      "passed": 8,
+      "receipt": "docs/atomic-handoff-test-receipt-20261116.json"
+    },
+    "sourceWindow": "Root released actual supporting regtest after native/Focus windows END. Initial CLI exit2 created no run directory/node/image/lease/API.",
+    "nextAuthorized": "Narrow sanitized prestart stage/sample receipt + tiny mock tests, then ONE distinct new1200s actual attempt with unchanged normal1/12GiB guards. No automatic retry on failure.",
+    "consumer": "Existing BCH MCP thread conditionally authorized exact immutableRC2 consumer only on fresh valid actual measured handoff",
+    "chipnetFullSync25GiBUnchanged": true,
+    "diagnosticReceipt": ".build/diagnostics/bounded-prestart-fd5e405a/receipt.json",
+    "reason": "memory_pressure_not_normal",
+    "samplePressure": [
+      2,
+      2
+    ],
+    "freeBytes": [
+      24736260096,
+      24736092160
+    ],
+    "swapStableBytes": 7454913986,
+    "heavyBuildCounts": [
+      0,
+      0
+    ],
+    "nativeRunDirectoriesCreated": 0,
+    "endpointAdvertised": false,
+    "newGateOrRetryAuthorized": false,
+    "minimalNewFixTests": {
+      "sanitizedDiagnostics": 5,
+      "affectedProfileAndContract": 8,
+      "sourceFreeze": "docs/bounded-prestart-diagnostics-fix-20261116.json"
+    },
+    "windowEnded": true
+  },
+  "wizardReadonlyCheckpoint": {
+    "status": "NATIVE_UI_RESTORE_AND_ENCRYPTED_DISCONNECT_PASSED_EXTRA_OBSERVER_INCOMPLETE",
+    "receipt": "projects/xo-wallet/artifacts/native-acceptance/wizard-readonly-restore-20261116/receipt.json",
+    "sha256": "3b29000ac3149c0afcfa33342242bf6fe697f1217c49a89c31f420e7896487eb",
+    "rootHashVerified": true,
+    "tokenReceiveReceipt": "projects/xo-wallet/artifacts/native-acceptance/wizard-readonly-restore-20261116/token-receive-public.json",
+    "tokenReceiveSha256": "9831bcb1fb47b2c2252da5179651d0f56507fd965edc602c0a523b215d131b48",
+    "branchOnlyInitialIdentityVerified": true,
+    "savedRowAfterAppRestart": true,
+    "nativeRestoreConnected": true,
+    "samePeerEncryptedDisconnect": true,
+    "postRestoreSeparateHandshakeOrPongProven": false,
+    "observerGap": "NonTTY stdin closed; arm-restore not delivered. Original peer snapshot retained.",
+    "peerRetired": true,
+    "rawRecordedSteps": 53,
+    "unmetWaits": 2,
+    "replayAuthorized": false,
+    "twoPassClaim": false,
+    "signRequests": 0,
+    "signatures": 0,
+    "broadcasts": 0,
+    "nextStrictObserverScope": "ONEfreshpeer after successfulTTYcommandACK, <=20min ownprocesswindow; explicitbranchscope, armACK before apprestart, samepeer postrestore nonce/Pong then encrypteddisconnect. No signatures/build/SDKstart."
+  },
+  "nativeCompatibleRc3Next": {
+    "status": "plan_reviewed_conditional_execution_after_peer_and_focus_windows_end",
+    "plan": "projects/xo-wallet/docs/acceptance/rc3-js-only-update-plan.md",
+    "sha256": "df249f7222a5c4232df365976fefd761843f94557079b72f14da90bf0f932262",
+    "offlineCheckpointSha256": "7751d8db1f415e140f6ea8d8cd9c132c868bdd40e6aa35467672176b659da1a9",
+    "scope": "ONE Gradle taskgraph dryrun; conditional normal JS/Hermes/AGP asset package reusing verified cached unchanged native products; no native compiler/codegen/download/cache clear/Metro. No broadened task exclusions if graph invalid.",
+    "executionProfile": {
+      "scope": "offline_bundle_only_not_node",
+      "entryFreeGiB": 12,
+      "reserveGiB": 8,
+      "osAvailabilityEntryPercent": 40,
+      "kernelPressureAccepted": [
+        1,
+        2
+      ],
+      "swapEntryGrowthMiB": 64,
+      "workers": 1,
+      "jvmHeapMiB": 768,
+      "metaspaceMiB": 256,
+      "nodeHeapMiB": 512,
+      "ownedAggregateRssStopGiB": 3,
+      "availabilityStopPercent": 25,
+      "criticalPressureStop": 4,
+      "swapGrowthStopMiB": 256,
+      "incrementalAllocationStopGiB": 2,
+      "bundleSeconds": 300,
+      "packageSeconds": 120,
+      "retry": false
+    },
+    "decision": "Explicit root build-only warning2 review on48GiBhost with46percentOSavailability and stable swap; existing normal1 source/node/fullsync rules unchanged.",
+    "beforeInstall": "signer/package/version/manifest/native14/DEX2 retained proof; unexplaineddiff refuses. InplaceSDKinstall-r only as nondestructive setup exception, neverArgentreinstall/uninstall/clear. Sameowned5558+installedcert proof, no SDKrestart.",
+    "afterInstall": "actual unchanged wallet address/path/history1042/encrypted rawjournal health then isolated native offline QA; no livepreview activation/sign/fund/send",
+    "actualBuildInstallExecuted": false,
+    "currentComposition": "Include first actual integrated Family RN snapshot + existing rc3 source in one compatible package after source readiness; no stale rc3-only package first.",
+    "latestGraphReview": "OriginaldryrunSTOPatgenerateReactNativeEntryPoint writer; exactoneextraexclusionapprovedaftercachedsource/products checks. Revised401taskgraphpassed, actualpipeline Popen80773; missingtaskownedfilemapdirreported, terminaloutcomeawaited. No install/UI yet."
+  },
+  "cashrelayPlainAssetNext": {
+    "status": "38_targeted_tests_and_typecheck_passed_owner_receipt_finishing_production_unconfigured",
+    "activeTask": "guarded trusted CLI activation preparation only",
+    "rootReview": "Exact5000source/four1000outputs/FT140/NFT3/fee1000; signed approval/time/nativeArtifact checks,durable raw+attempt beforeRPC, originalambiguity noresend. Future real owner clients/canonical primarylease integration remainunbound.",
+    "actualNativeTokenReceiptHashVerified": true,
+    "realSourceQueryKeyAccessApprovalIssuance": false,
+    "freshNativeWitnessNotSyntheticTimestampRefreshRequired": true,
+    "newBchTopupAuthorized": false,
+    "nextAuthorized": "Fixed lazy local owner installation CODE/config with pinned public verifier and canonical treasuryroot; missing approvals/nativewitness must refuse before real source/key/state. No financial approval/intent created.",
+    "canonicalBridgeTargetedTests": 56,
+    "testsScope": "46activationlifecycle+10existingtreasury; not a fullsuite rerun",
+    "canonicalBridgeReceipt": "projects/stripe-cash/docs/proof/plain-asset-canonical-bridge-2026-11-16.json",
+    "canonicalBridgeReceiptSha256": "e62749c2378b21d6094e134f6862421ee3c661a7bac68e7713c0f85b1d0faa55",
+    "rootReceiptHashVerified": true,
+    "nonFixtureVerifierPublicFile": "/Users/salmshmakh/.local/share/blaze-coordinator/cashrelay-plain-assets-approval-20261116/verifier.json",
+    "nonFixtureVerifierRootKeyId": "c4d275629131af4a72cc2f7cfbd8c026e633da4e19bf268e1de78130daab96cf",
+    "localInstallationTestsPassed": 8,
+    "historical56And38And45NotRerun": true,
+    "installationCode": "projects/stripe-cash/apps/server/src/plain-asset-installation.ts",
+    "installationCodeSha256": "f129057f61b36749967b6f1da12c1d4658e2321b5c03c6f843c077f4b7f556b0",
+    "installationReceipt": "projects/stripe-cash/docs/proof/plain-asset-local-installation-2026-11-16.json",
+    "installationReceiptSha256": "2fcdfc0cf35faa92fc2b1a9a3e90876811d4c3f04d8c70e9c8e4d425897bccbf",
+    "actualMissingApprovalDryCheck": "exit1 root_approval_missing; no source/client/key/DB/reservation/signing/submission",
+    "financialApprovalCreated": false,
+    "next": "Any later plain token issuance remains separate from Family covenant/channel; requires exact root approval and actual fresh native-witness after updatedAPK. No retimestamping oldreceipt or generic Family signer reuse."
+  },
+  "wizardStrictSecondAttempt": {
+    "status": "FAILED_OBSERVER_INITIAL_PONG_NOT_PROVEN_PEER_RETIRED",
+    "newPeerCount": 1,
+    "publicPrestartTtyAckBeforeUri": true,
+    "initialBranchReceive0Matched": true,
+    "armCommandDeliveredButRefusedPrecondition": true,
+    "armAck": false,
+    "appRestartOrRestoreAttempt": false,
+    "peerExitCode": 1,
+    "peerElapsedSeconds": 274,
+    "signatures": 0,
+    "broadcasts": 0,
+    "missingVersusRejectedPong": "UNKNOWN: executed observer silently discards timestamps; walletReadywire11.667s beforehostreceipt maybedelay/skew, notproved.",
+    "priorNativeUiRestoreEncryptedDisconnectEvidenceUnchanged": true,
+    "newPeerAuthorized": false,
+    "next": "Narrow offline metadata-only observer diagnosis/publicfixtures, noSDKclock/TTL/replaycutoffpatch. Compatible rc3 bundle may proceed independently afterFocusEND.",
+    "offlineMetadataDiagnosticsTestsPassed": 10,
+    "offlineDiagnosticsCheckpoint": "projects/xo-wallet/artifacts/native-acceptance/wizard-observer-diagnostics-20261116/checkpoint.json",
+    "offlineDiagnosticsSha256": "cae472cb83579fb95398aaaaad24741e73b69af95c57ee064fa809b11a8aef2c",
+    "rootHashVerified": true,
+    "cutoffsSdkReplayClockTtlUnchanged": true,
+    "noNewPeer": true
+  },
+  "familyInsideOx": {
+    "updatedAt": "2026-11-16T03:03:58.607563+00:00",
+    "direction": "Direct user continuation: minimal usable native wallet + Family experience inside existing OX; not another wallet/webbank.",
+    "status": "FIRST_NATIVE_PACKAGE_RUNNING_NOT_INSTALLED",
+    "featureOwner": {
+      "project": "jamiyah",
+      "path": "projects/jamiyah/native/ox-family-v1",
+      "scope": "Reusable RN components/controller/presentation and family source/contracts only; no sibling edits/device/Metro"
+    },
+    "hostOwner": {
+      "project": "xo-wallet",
+      "scope": "Home Family entry, single native Sheet route wiring, own selected account/pending lifecycle and all native Argent QA",
+      "snapshotStrategy": "Checksum-verified selfcontained vendored snapshot, avoiding live cross-repo Metro dependencies"
+    },
+    "requiredJourneys": [
+      "minimal onboarding",
+      "family summary with own/available/committed/held distinction",
+      "Add money form/review",
+      "Use money form/review",
+      "Requests",
+      "family recovery",
+      "rotating savings",
+      "governance and minority rights"
+    ],
+    "proofLoop": "feature edit -> hash handoff -> OX host import/tests -> compatible bundled update -> owner Argent inspect -> sanitized evidence -> own-source fix/revendor",
+    "device": {
+      "avd": "Blaze_OX_Libauth_20261115",
+      "serial": "emulator-5558",
+      "session": "blaze-ox-wallet-acceptance-20261115",
+      "owner": "OX only",
+      "responsiveness": "Must verify fresh before native UI; previous cold wallet health is historical evidence",
+      "metro8097": "reserved OFF, historical foreign-client risk; no blind start"
+    },
+    "noNewWalletOrPhrase": true,
+    "financialBoundary": "Existing full source/current contract/enrollment/specific wallet/channel agreement still required; no generic covenant signer/NFT policy workaround, fake confirmed balances or live signing permission.",
+    "runtimeMoneyActionsAuthorized": false,
+    "testnetFunctionalReady": false,
+    "publicReleaseReady": false,
+    "firstHandoff": "projects/jamiyah/handoffs/ox-family-v1/r1/manifest.json",
+    "firstHandoffSha256": "d01405da74827755d9f22f09f62d3675a4ff5ad8a1b6b6691ea2be414e0ffca5",
+    "rootVerifiedHandoffAndVendorFiles": 5,
+    "sourceTests": {
+      "directNodeController": 13,
+      "ReactBabelRnPrimitiveStubs": 4,
+      "nativeAcceptance": false
+    },
+    "hostChecks": {
+      "actualModule": 5,
+      "hostGuards": 3,
+      "appNavigation": 13,
+      "scope": "Separate owner targeted runs; not combined with source17 or prior173."
+    },
+    "nativeUiInspected": false,
+    "financialApisPresent": false,
+    "internalNativeBoundary": "Does not require self-pairing/browserorigin; externaldapp proposal separate. Real measuredsource/enrollment/specificwalletsigning stillrequired."
+  }
+}

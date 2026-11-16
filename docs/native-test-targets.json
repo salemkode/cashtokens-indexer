@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-15",
+  "authorization": "User selected prepare separate new test targets in coordinator; fresh AVDs created by coordinator, no historical target taken over",
+  "controller": "Argent MCP only for mobile interaction; T3 agent-device integration remains disabled",
+  "storage": "24GiB free after first cold-boot attempt; installed image reused, no runtime downloaded",
+  "android": [
+    {
+      "name": "Blaze_FocusGarden_20261115",
+      "avdPath": "/Users/salmshmakh/.android/avd/Blaze_FocusGarden_20261115.avd",
+      "ownerThreadId": "mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e",
+      "session": "blaze-focus-garden-acceptance-20261115",
+      "workspace": "/Users/salmshmakh/.t3/projects/blaze/projects/focus-garden",
+      "metroPort": 8083,
+      "image": "android36.1/google_apis_playstore/arm64-v8a",
+      "memoryMiB": 2048,
+      "dataPartition": "6g runtime partition observed by Focus owner; preserved, not shrunk",
+      "status": "ready_exclusive_focus_native_launch_in_progress",
+      "serial": "emulator-5560",
+      "lastObservedCandidateSerial": "emulator-5560",
+      "lastBootResult": "User explicitly requested run app in Focus execution thread. Owner reports one Argent boot succeeded, exact assigned AVD ready on emulator-5560; app absent, standalone APK install/launch proceeding. No native product success or financial journey claimed.",
+      "diagnosticOwnership": "Focus Garden owner may diagnose/reconfigure only its fresh AVD, then use Argent to boot and verify exact AVD name/serial; original targets remain excluded.",
+      "initialConfiguredDataPartition": "2G was coordinator intent only",
+      "gpuDiagnostic": "Owner saved original config and set hw.gpu.enabled=yes/mode=host after observing lavapipe",
+      "coldBootWindow": "released_by_focus_owner",
+      "bootHistory": [
+        {
+          "status": "diagnostic_recovery_boot_failed_window_released",
+          "result": "One explicit diagnostic Argent boot with900000ms/guestVulkan=false failed after~18s: sys.boot_completed check returned adb device offline; tool terminated emulator. Early terminal-offline failure, not evidence of full guest boot timeout. No automatic retry/wipe/app install/launch."
+        }
+      ],
+      "readyVerification": {
+        "source": "Focus owner execution thread after explicit run-app request",
+        "controller": "Argent MCP",
+        "serial": "emulator-5560",
+        "appLaunchVerified": false,
+        "ownership": "Focus exclusive; OX emulator-5558 untouched"
+      }
+    },
+    {
+      "name": "Blaze_OX_Libauth_20261115",
+      "avdPath": "/Users/salmshmakh/.android/avd/Blaze_OX_Libauth_20261115.avd",
+      "ownerThreadId": "mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95",
+      "session": "blaze-ox-wallet-acceptance-20261115",
+      "workspace": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet",
+      "metroPortReservedForOX": 8097,
+      "libraryMetroPolicy": "Use self-contained native example/release bundle if available; do not start/stop another Metro or compete on8097. If a dev Metro is essential coordinate exclusive use first.",
+      "image": "android36.1/google_apis_playstore/arm64-v8a",
+      "memoryMiB": 2048,
+      "dataPartition": "configured2G; actual runtime partition size must be observed, not assumed",
+      "status": "exclusive_ox_native_guest_unavailable_bounded_transport_recovery_exhausted",
+      "serial": "emulator-5558",
+      "nextExclusiveOwnerThreadId": "mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95",
+      "nextSession": "blaze-ox-wallet-acceptance-20261115",
+      "handoffPolicy": "Coordinator explicitly transferred to OX after library release. Library/root do not interact during OX acceptance; retain current services and8097 ownership.",
+      "coldBootWindow": "released_by_library_owner; no OX device access granted",
+      "nativeApk": "Owner reports self-contained Release arm64+x86_64 with bundled Hermes, no Metro needed",
+      "lastBootResult": "Owner reports one Argent attempt failed in20192ms checking sys.boot_completed: adb device offline; emulator terminated, no snapshot. Fresh inventory contained no5558/ready owned AVD. No install/app action/retry/wipe/Metro use.",
+      "previousVerificationOwnerThreadId": "mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1",
+      "coordinatorRecoveryChange": {
+        "gpuEnabled": "yes",
+        "gpuMode": "host",
+        "configBackup": "/Users/salmshmakh/.android/avd/Blaze_OX_Libauth_20261115.avd/config.before-coordinator-host-gpu-20261115.ini",
+        "reason": "Fresh AVD had GPU explicitly disabled; enable host rendering using existing installed image. Preserve userdata and actual6GiB partition."
+      },
+      "readyVerification": {
+        "controller": "ArgentMCP",
+        "bootResult": "booted=true in5.6seconds after explicitGPUenabled/host correction",
+        "inventory": "ExactAVD name Blaze_OX_Libauth_20261115, serialemulator-5558, state=device, API36",
+        "baseline": "Argent describe verified Android launcher/home tree",
+        "source": "android-devtools",
+        "appInstalledByCoordinator": false,
+        "deviceRuntimeAcceptance": "Not yet; no product app launched by coordinator"
+      },
+      "ownershipHistory": [
+        {
+          "ownerThreadId": "mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1",
+          "session": "blaze-libauth-native-acceptance-20261115",
+          "release": "Owner explicitly released after two unchanged successful Android offline native passes; no further library actions"
+        }
+      ],
+      "metroPort": 8097,
+      "libraryNativeAcceptance": "Passed12crypto+7offline wallet, two unchanged flows; Androidarm64 emulator offline only",
+      "currentScreenAtHandoff": "Library wallet-success screen; emulator/services left running",
+      "latestResponsiveness": {
+        "observedAt": "2026-11-15T14:20:54.605329+00:00",
+        "ownerReported": "Argent touch acknowledgement timeout/unreadable UI and hanging guest pidof despite transport device. No reboot/wipe/financial retry.",
+        "coordinatorIntentionalPause": false,
+        "hostReadOnlyObservation": {
+          "pid": 44670,
+          "uid": 501,
+          "state": "Rs",
+          "ownedAvdArgumentMatched": true,
+          "executable": "qemu-system-aarch64",
+          "interpretation": "Process exists and was not job-control stopped at this sample; no guest/UI responsiveness proof."
+        },
+        "ownershipReleased": false,
+        "deviceMutatedByCoordinator": false,
+        "next": "OX retains5558/session/8097 and performs bounded skill-specific reconciliation; no foreign target/global cleanup/blind gesture or financial retry."
+      },
+      "latestReconciliation": {
+        "status": "native_partial_hd_wizard_passed_guest_unresponsive_after_one_scoped_transport_recovery",
+        "evidence": "projects/xo-wallet/artifacts/native-acceptance/hd-wizard-native-checkpoint.json",
+        "sha256": "be61bc4b67b1170e25d4740c9df93ae99066cb619ed43724c7967a68fc96da16",
+        "observedAt": "2026-11-15T14:24:49.517307+00:00",
+        "recovery": "One owned5558 Argent service reset after recording ended/no active gestures; transport=device but guest metadata null and bounded describe incomplete. No automatic retry/reboot/wipe/reinstall/global cleanup.",
+        "assignmentPreserved": true,
+        "encryptedWalletPreservedOwnerReported": true,
+        "nativeRestoreDisconnectProven": false,
+        "hostTestsPassed": 140,
+        "hostFix": "Both protocols recheck approval after durable persistence before response; background/disconnect/identity/expiry deny signature and retain pending.",
+        "compile": "Android and signed iOS compile pass; updated Android739231d4... not installed due guest boundary.",
+        "nativeProofForNewFix": false,
+        "coordinatorScope": "Read current owner thread and hash-verified sanitized partial report; no device or process mutation."
+      }
+    }
+  ],
+  "ios": {
+    "status": "creation_tool_unavailable",
+    "requestedNames": [
+      "Blaze Focus Garden Acceptance",
+      "Blaze OX Libauth Acceptance"
+    ],
+    "reason": "Installed Argent tool surface and CLI can boot existing simulator UDIDs but expose no simulator-creation operation. Session rules prohibit xcrun simctl or alternative device/desktop controllers. No foreign simulator reused.",
+    "nextAction": "Create fresh named simulators in Xcode using installed runtimes; then discover UDIDs with Argent and assign exclusive owners. Existing simulators and physical iPhone remain untouched."
+  },
+  "rules": [
+    "Before use list Argent devices and bind confirmed new AVD name to ready serial; do not infer ownership from a booted device",
+    "Do not retry ambiguous boot automatically",
+    "Only assigned owner interacts or cleans its named target; no machine-wide cleanup",
+    "Keep native runtime/financial journey evidence separate from target creation/boot",
+    "Avoid simultaneous fresh cold boots until resource/first-boot state is understood"
+  ],
+  "coldBootQueue": {
+    "currentOwnerThreadId": null,
+    "exclusiveDeviceOwnerThreadId": "mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95",
+    "readyDeviceSerial": "emulator-5558",
+    "session": "blaze-ox-wallet-acceptance-20261115",
+    "policy": "Cold-boot window released. Focus exclusively owns ready emulator-5560/session blaze-focus-garden-acceptance-20261115; OX exclusively owns ready emulator-5558/session blaze-ox-wallet-acceptance-20261115. Neither owner/root/library may act on the other target or perform unscoped cleanup."
+  },
+  "sharedBootDiagnosis": {
+    "status": "controller_early_offline_classifier_confirmed_emulator_cause_unresolved",
+    "installedVersion": "0.32.0",
+    "readOnlyComparedVersion": "0.33.0",
+    "source": "/Users/salmshmakh/.bun/install/global/node_modules/@swmansion/argent/dist/tool-server.cjs",
+    "finding": "waitForBootCompleted treats device offline as a terminal error immediately; configured deadline is not reached. Official0.33.0 source retains same classifier/handling. This explains termination but does not establish why ADB went offline.",
+    "changesApplied": "None to installed Argent/server/foreign devices;0.33.0 tarball inspected in memory only, no update/install/restart",
+    "possibleExternalUnblock": "Start the assigned fresh AVD manually in Android Studio Device Manager, wait for full boot, then let Argent discover/inspect its exact name and ready serial. Agent must not substitute raw emulator/adb/simctl/desktop controller.",
+    "recoveryOutcome": "Owned second AVD corrected fromGPUdisabled to enabled/host; one explicitArgent boot succeeded, exactname/readyserial and Android home observed. This does not prove the only underlying cause or native product behavior."
+  }
+}

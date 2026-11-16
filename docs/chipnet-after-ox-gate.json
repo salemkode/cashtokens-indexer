@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-11-15T19:18:57.514560+00:00",
+  "status": "single_post_ox_quiet_gate_failed_sustained_pressure",
+  "raw_report": ".build/runtime/chipnet-after-ox-quiet-5b6c1e45.json",
+  "raw_sha256": "f2d9034d6cbe7986d46aa844e2c71df43cd40a3b7ec1a5a0768926395739e8a2",
+  "elapsed_seconds": 60.16357854206581,
+  "sample_count": 31,
+  "reasons": [
+    "memory_pressure_not_normal"
+  ],
+  "required_free_bytes": 14562623488,
+  "required_free_gib": 13.5625,
+  "min_free_bytes": 14939672576,
+  "min_free_gib": 13.913654327392578,
+  "last_free_bytes": 15076081664,
+  "last_free_gib": 14.040695190429688,
+  "pressure_levels": [
+    1,
+    2
+  ],
+  "pressure_sample_counts": {
+    "1": 20,
+    "2": 11
+  },
+  "swap_values_bytes": [
+    7992246272
+  ],
+  "heavy_build_samples": 0,
+  "all_storage_samples_passed": true,
+  "actual_restore_attempted": false,
+  "actual_stage_image_recreated": false,
+  "stage2_process_claim_consumed": false,
+  "mount_or_node_started": false,
+  "no_repeat_probe_after_failure": true,
+  "coordinator_start_end_notified": true,
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "next_action": "No active quiet/node window. A separately authorized new sustained normal-pressure window is required; do not repeat this failed probe automatically. Keep verified archive and historical records; no full sync (>=25GiB AND root review still required)."
+}

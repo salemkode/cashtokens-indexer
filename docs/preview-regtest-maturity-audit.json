@@ -1,0 +1,61 @@
+{
+  "recorded_at": "2026-11-15T20:14:47.793865+00:00",
+  "status": "source_profile_gap_fixed_no_native_execution",
+  "preview_commit": "3e6827e95c7a17497e09ac15556debd116dea1d0",
+  "source_input_sha256": {
+    "projects/react-native-libauth/artifacts/bch2026-source-review/preview-src_consensus_consensus.h": "66fd78ab0425ad8393be245b488ef8313363345c63567adfb9082fb4822a1449",
+    "projects/react-native-libauth/artifacts/bch2026-source-review/preview-src_consensus_tx_verify.cpp": "549536ed40748ab400a6405e27d8e12945970ee562fa49ffe2bdad334752f736",
+    "projects/react-native-libauth/artifacts/bch2026-source-review/preview-src_validation.cpp": "030732108ca6cdb805d3f506728a8b68f5946e81069708d6f860bb5503c0d9f2",
+    "projects/react-native-libauth/artifacts/bch2026-source-review/activation.cpp": "9a9782045256daface4c942fbf3a06c264baf80f56258869a9c3a795fdfc010c",
+    "projects/react-native-libauth/artifacts/bch2026-source-review/preview-v29.2.0-compare.json": "f3dfc3af437a707ad3b0acbc2cf6b7d3d08b331ff7edef6c1685f7f300fafdac",
+    ".build/diagnostics/chipnet-preview-20261115T122412Z-9736ab6b/preview-activation-gitlab.cpp": "3736a5b3cb16228d834d345e7ae646d9f3f36d31e594f18a51f7a5a83f5126ab",
+    ".build/diagnostics/chipnet-preview-20261115T122412Z-9736ab6b/preview-expiry-gitlab.h": "dc76bdb2cf95b1cb78754a8906196e22b7986e4e4064ea3b1cda4db8277d9390",
+    "projects/react-native-libauth/artifacts/bch2026-source-review/current-header-observation.json": "9302ebff8c8df161462c647a2c23ed9074a287c1a0580a56a30193692c9bf924"
+  },
+  "implementation_sha256": {
+    "scripts/preview-regtest-profile.mjs": "bc31de7ad9cd95721c3b09aa32dad68839a94e0804c97964e8e1ed88fe3d06af",
+    "scripts/bounded-regtest-worker.mjs": "a78c8017a57cca8f68d211aad11b2321ec8ed96fd4d8595e7f802c7d58d14603",
+    "scripts/bounded_regtest.py": "522b93028db50ecc5b247bcdaeb3dc48772b84d635e8ca5dd03e7773b5ae8040",
+    "test/preview-regtest-profile.test.mjs": "18862a96acf8c080aea39b7a982e0b5a4e23d0def063d7944cd10ff0baabd1ba"
+  },
+  "exact_rules": {
+    "coinbase_required_ticks": 60000,
+    "legacy_tick_interval": 600,
+    "post2027_tick_interval": 60,
+    "legacy_intervals_required": 100,
+    "post2027_intervals_required": 1000,
+    "regtest_default_activation_mtp_previous": 1810382400,
+    "regtest_default_expiry_epoch": 1842004800,
+    "chipnet_default_activation_mtp_previous": 1794744000,
+    "bip68_height_value_scale_ticks": 600,
+    "bip68_time_scale_seconds": 512,
+    "regtest_csv_height": 576,
+    "regtest_cashtokens_upgrade9_height": 0
+  },
+  "finding": "101-block funding is compatible with verified pre2027 fresh regtest defaults, not universally valid for the preview. The observed post2027 Chipnet MTP does not select regtest activation. Unknown/post/crossing regimes now refuse before mining rather than expand scope.",
+  "bounded_policy": {
+    "funding_blocks": 101,
+    "maximum_total_generated_blocks": 104,
+    "post_rule_generation_supported": false,
+    "native_maturity_checks_before_funding": true,
+    "sequence_disable_and_zero_locktime_checked": true,
+    "force_activation_mocktime_expiry_or_coinbase_bypass": false
+  },
+  "evidence": {
+    "new_pure_mock_tests_passed": 6,
+    "command": "node --test test/preview-regtest-profile.test.mjs",
+    "worker_syntax_check_only": true,
+    "old_18_test_cohort_rerun": false,
+    "native_wallet_mining_spend_executed": false,
+    "resource_probe_rpc_image_build_download": false,
+    "source_or_sibling_edits": false,
+    "runtime_47_api_bytes_edited": false
+  },
+  "trust_limits": [
+    "Retained code/body SHA/source commit consistency is not reproducible build proof. Publisher attestation and preview limitations remain in original provenance.",
+    "WSS1794772246 is Electrum/header context only, not owned BCHN validation or native regtest state.",
+    "Future runtime profile/maturity generation and installed MCP RC2 acceptance remain unexecuted."
+  ],
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false
+}

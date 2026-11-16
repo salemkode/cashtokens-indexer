@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+if [ "$(uname -s)" != Linux ]; then
+  echo 'Run the complete server test recipe on Linux; it includes mock-backed API lifecycle tests.' >&2
+  exit 1
+fi
+blaze_root=$(CDPATH= cd -- "$(dirname -- "$0")/../.." && pwd)
+cd "$blaze_root"
+# The real-node integration test must remain skipped in this offline stage.
+unset BCHN_TEST_BINARY
+npm ci --ignore-scripts --no-audit --no-fund
+npm run build
+node --import tsx --test --test-concurrency=1 test/*.test.ts
+PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_server_*.py' -v
+echo 'Offline checks passed. Real-node integration, live acceptance, load and recovery checks are separate stages.'

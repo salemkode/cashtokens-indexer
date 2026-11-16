@@ -1,0 +1,638 @@
+{
+  "schema_version": 1,
+  "project": "Blaze Indexer",
+  "assessment": "read_only_hosting_feasibility",
+  "observed_at": "2026-11-15T12:12:08.136384+00:00",
+  "status": "blocked_before_resume_mount_or_node",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "conclusion": "Accepted preview ran in isolation with default expiry enforced. ONE bounded prefix measurement passed initial gates but stopped cleanly on host memory-pressure warning at height0. Preserved image is not a synchronized source or size forecast. No automatic retry/resume; full sync still requires >=25GiB or assigned suitable storage and review.",
+  "owner": {
+    "thread": "t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8",
+    "host": "MacBook-Pro-salm.local",
+    "branch": "feature/cashtokens-indexer"
+  },
+  "assessment_actions": {
+    "node_started": false,
+    "installed_binary_executed": false,
+    "peer_connection": false,
+    "chain_download": false,
+    "binary_download_or_install": false,
+    "runtime_install_or_update": false,
+    "expiry_override": false,
+    "deletion": false,
+    "purchase": false,
+    "relocation": false,
+    "environment_changed": false,
+    "credential_card": false,
+    "test_or_build_rerun": false,
+    "sibling_edits": false,
+    "network_activity": "Public HTTPS text/metadata/source inspection only; no P2P, Electrum, RPC or block-body fetch.",
+    "files_written": "Requested assessment and root status/handoff pointers only."
+  },
+  "host_snapshot": {
+    "observed_at": "2026-11-15T12:12:08.136384+00:00",
+    "filesystem": {
+      "path": "/Users/salmshmakh/.t3/projects/blaze",
+      "device": "/dev/disk3s5",
+      "type": "APFS shared system Data volume",
+      "available_bytes": 14634881024,
+      "available_gib": 13.62979507446289,
+      "total_bytes": 994631127040,
+      "notes": "Use f_bavail/df available bytes, not Finder purgeable space. Recovery is in the same disk3 APFS container and adds no capacity. Orca is a mounted image, not an owned data target. No additional assigned writable volume identified."
+    },
+    "memory": {
+      "physical_bytes": 51539607552,
+      "physical_gib": 48,
+      "free_page_bytes": 522895360,
+      "compressor_occupied_bytes": 20688519168,
+      "swap": "total = 13312.00M  used = 11921.38M  free = 1390.62M  (encrypted)",
+      "initial_memory_pressure_free_percentage": 47,
+      "interpretation": "The memory_pressure percentage is not an unallocated-RAM measurement. Heavy compression/swap and concurrent builds/emulators make spare IBD capacity unsafe to assume. No foreign process was stopped."
+    },
+    "logical_cpu_count": 14,
+    "load_averages": [
+      8.51513671875,
+      13.59326171875,
+      19.31982421875
+    ],
+    "foreign_workloads_observed": [
+      "Xcode/SWBBuildService",
+      "two Android emulators",
+      "iOS simulator services",
+      "T3/Chromium renderers",
+      "Java/Gradle-related process"
+    ],
+    "earlier_samples": [
+      {
+        "observed_at": "2026-11-15T12:02:19Z",
+        "available_bytes": 16902877184,
+        "load_averages": [
+          6.63,
+          20.03,
+          25.53
+        ]
+      },
+      {
+        "observed_at": "2026-11-15T12:08:01.849568+00:00",
+        "available_bytes": 14530318336,
+        "load_averages": [
+          29.1943359375,
+          19.5625,
+          22.74169921875
+        ]
+      }
+    ],
+    "scope": "Read-only point samples on a shared host, not BCHN performance measurements or resources reserved to this task.",
+    "commands": [
+      "df -k . /tmp",
+      "vm_stat",
+      "sysctl hw.memsize hw.ncpu vm.swapusage",
+      "memory_pressure -Q",
+      "uptime",
+      "ps -axo pid,ppid,%cpu,%mem,rss,comm -r",
+      "iostat -c 2 -w 1",
+      "lsof -nP -iTCP:<candidate-port> -sTCP:LISTEN",
+      "statvfs(workspace)"
+    ],
+    "local_workspace_allocated_kib": 57795400,
+    "existing_build_directory_allocated_kib": 562980,
+    "no_existing_bitcoind_process_observed": true
+  },
+  "installed_binary": {
+    "path": "/Users/salmshmakh/.t3/projects/blaze/.build/tooling/bchn-29.2.0/bitcoin-cash-node-29.2.0/bin/bitcoind",
+    "version": "29.2.0-07576013c",
+    "platform": "aarch64-apple-darwin",
+    "bytes": 14610368,
+    "sha256_of_existing_executable": "84aee425e62a580c17cc9defc370b499ee1cba04942d6cca7e036680ea88e77d",
+    "previously_verified_publisher_archive_sha256": "e27aaee42256de8df384ecd1a141701c06f0abe7acf3c7351c3ba31da0ddcd96",
+    "prior_regtest_result": "Historical supporting evidence only; regtest does not establish current Chipnet compatibility.",
+    "chipnet_expiry_epoch_seconds": 1794744000,
+    "chipnet_expiry_utc": "2026-11-15T12:00:00Z",
+    "deadline_passed_at_assessment": true,
+    "default_expire": true,
+    "default_expirerpc": true,
+    "expected_behavior": "Official tagged code derives the deadline from the Chipnet network parameter and disables RPC except stop after wall-clock expiry. This is source/clock evidence, not a newly launched daemon observation. The guard does not wait for a syncing node to reach the activation block.",
+    "usable_for_current_chipnet_target": false,
+    "prohibited_workarounds": [
+      "expire=0",
+      "expirerpc=0",
+      "moving activation time",
+      "clock rollback",
+      "presenting an old fork as current Chipnet"
+    ]
+  },
+  "required_compatible_software": {
+    "latest_general_stable_observed": "v29.2.0",
+    "latest_stable_metadata_observed_at": "2026-11-15T12:05:38Z",
+    "latest_stable_is_sufficient_for_current_chipnet": false,
+    "official_chipnet_path": "Upgrade2027-compatible preview linked by the14 November maintainer notice, or a later proper compatible official release.",
+    "preview_version_family_listed": "29.2.1",
+    "arm64_macos_archive_listed": true,
+    "listed_archive_is_unsigned": true,
+    "exact_preview_commit_verified": false,
+    "preview_archive_or_attestations_downloaded": false,
+    "requirement": "Before execution, obtain and verify the maintainer-recommended compatible build/source, exact commit/digest and attestations under separate authorization. A29.2.1 version label alone does not prove current consensus compatibility. No update is performed by this assessment.",
+    "references": [
+      "maintainer_upgrade_notice",
+      "preview_directory",
+      "preview_source",
+      "stable_release"
+    ]
+  },
+  "physical_limit_and_decision": {
+    "required_planning_free_bytes": 26843545600,
+    "required_planning_free_gib": 25,
+    "owned_allocation_stop_threshold_gib": 16,
+    "system_free_reserve_gib": 8,
+    "extra_shutdown_flush_margin_gib": 1,
+    "current_available_bytes": 14634881024,
+    "additional_free_bytes_to_meet_planning_gate": 12208664576,
+    "additional_free_gib_to_meet_planning_gate": 11.37020492553711,
+    "justification": "16 GiB covers the upper working allocation below with limited margin, leaving8 GiB for the shared system plus1 GiB stopping/flush headroom. This is a conservative owner policy, not a physical lower bound on Chipnet. Concurrent foreign writers can consume available bytes.",
+    "complete_sync_justified_on_current_resources": false,
+    "hardware_nominally_capable": true,
+    "current_unattended_ibd_load_justified": false,
+    "alternative": "An explicitly assigned separate volume with at least20 GiB available for this owned16 GiB allocation and its reserve, while system Data retains at least8 GiB; no suitable volume assigned or changed. User-directed storage recovery could instead meet the25 GiB shared-volume gate.",
+    "no_deletion_purchase_or_relocation_taken": true,
+    "measurement_only_storage_option": "A2 GiB first measurement stage could fit the current byte snapshot with a12 GiB start gate (2 owned +8 system +1 stopping +1 margin), but is blocked by expired binary, contention, absent watchdog and read-only scope. It cannot promise a synced full-history target."
+  },
+  "owner_connection_contract": {
+    "path": "docs/chipnet-connection.json",
+    "status": "unavailable",
+    "no_public_webpage_promoted_to_assigned_rpc": true
+  },
+  "public_peer_status": {
+    "chipnet.bch.ninja": {
+      "source": "User/CashRelay reports current raw-lookup failure",
+      "reported_error": "BCHN RPC_DISABLED(-100), old software/maybe out of consensus",
+      "independently_reprobed_here": false,
+      "old_success_evidence": "Historical only at recorded times; no fresh independent proof now.",
+      "expiry_bypass_allowed": false
+    },
+    "chipnet.imaginary.cash": {
+      "source": "User reports working primary Electrum",
+      "used_here": false,
+      "is_bchn_rpc_replacement": false
+    }
+  },
+  "public_footprint_evidence": {
+    "retained_block_undo_bytes_observed": 4367750091,
+    "retained_block_undo_gib": 4.067784260027111,
+    "operator_height": 332444,
+    "operator_webpage_observed_at": "2026-11-15T12:06:53Z",
+    "is_assigned_rpc_source": false,
+    "txindex_status_known": false,
+    "chainstate_size_known": false,
+    "total_datadir_size_known": false,
+    "source": "public_operator_size",
+    "uncertainty": "Fresh third-party webpage, not independently validated chain identity or a complete datadir census. Cached search values differ and are historical only. No authoritative current total-datadir/txindex measurement was found.",
+    "components": [
+      {
+        "component": "retained_blocks_and_undo",
+        "planning_gib": [
+          4.1,
+          6
+        ],
+        "basis": "Fresh public operator reports4,367,750,091 bytes (about4.068 GiB); allowance adds growth/retained-file variation. Earlier cached3.12..6.22 decimal GB reports are historical, not current bounds.",
+        "measured_locally": false
+      },
+      {
+        "component": "chainstate",
+        "planning_gib": [
+          0.25,
+          2
+        ],
+        "basis": "No current Chipnet UTXO census obtained. Tagged29.2.0 source has a stale1 GB assumed-size hint, not measured usage or an upper bound. Allocation is deliberately uncertain.",
+        "measured_locally": false
+      },
+      {
+        "component": "txindex",
+        "planning_gib": [
+          0.25,
+          1
+        ],
+        "basis": "Compact txid->disk-position layout; cached public explorer reports about3.4 million transactions. Serialized records cost tens of bytes/tx plus LevelDB tables/overhead. Real size must be measured.",
+        "measured_locally": false
+      },
+      {
+        "component": "block_index_and_node_metadata",
+        "planning_gib": [
+          0.125,
+          0.5
+        ],
+        "basis": "Headers/block-index LevelDB, peer metadata and ancillary state; working allowance without a local Chipnet measurement.",
+        "measured_locally": false
+      },
+      {
+        "component": "blaze_database",
+        "planning_gib": [
+          0.25,
+          1
+        ],
+        "basis": "Bounded initial scan allocation only. Actual full token/identity history density is unmeasured. Exceeding allocation pauses with incomplete coverage; requested data is never silently dropped.",
+        "measured_locally": false
+      },
+      {
+        "component": "one_blaze_backup",
+        "planning_gib": [
+          0.25,
+          1
+        ],
+        "basis": "One WAL-consistent database copy counted separately. A second full-node datadir snapshot is not included.",
+        "measured_locally": false
+      },
+      {
+        "component": "sqlite_wal_and_temporary_files",
+        "planning_gib": [
+          0.25,
+          1
+        ],
+        "basis": "Working allowance, not extrapolated from the synthetic2,000-block benchmark.",
+        "measured_locally": false
+      },
+      {
+        "component": "leveldb_compaction_and_preallocation",
+        "planning_gib": [
+          0.5,
+          2
+        ],
+        "basis": "Temporary table rewrites/block-file allocation may coexist with old files. Watch whole owned allocation, not just size_on_disk.",
+        "measured_locally": false
+      },
+      {
+        "component": "bounded_logs_and_configuration",
+        "planning_gib": [
+          0.0625,
+          0.25
+        ],
+        "basis": "Owner-controlled bounded capture required; supervisor is proposed, not implemented here.",
+        "measured_locally": false
+      }
+    ],
+    "planning_total_gib": [
+      6.0375,
+      14.75
+    ],
+    "interpretation": "Planning allowances only, not empirical bounds, a confidence interval or a guarantee of fit. Adversarial activity/growth/compaction may exceed them."
+  },
+  "future_bounded_option": {
+    "status": "conditional_not_authorized_not_started",
+    "entry_conditions": [
+      "Verified current Chipnet-consensus-compatible binary/source; no expiry/activation override.",
+      "For the first2 GiB measurement stage, at least12 GiB current shared-volume free space; full retained-sync extension requires25 GiB or explicitly assigned suitable storage. Remeasure immediately before action.",
+      "Normal memory pressure, no concurrent heavy build, and adequate reclaimable/free memory for proposed budget without growing swap.",
+      "Recheck owned datadir/locks and candidate ports; implement and review owner watchdog before any start.",
+      "Explicit next-step authorization for compatible binary change and bounded Chipnet synchronization; this assessment itself authorizes neither."
+    ],
+    "candidate_paths": {
+      "parent": "/Users/salmshmakh/.t3/projects/blaze/.build/chipnet-host-20261115",
+      "exists_at_assessment": false,
+      "node_datadir": "/Users/salmshmakh/.t3/projects/blaze/.build/chipnet-host-20261115/bchn",
+      "network_subdirectory": "/Users/salmshmakh/.t3/projects/blaze/.build/chipnet-host-20261115/bchn/chipnet",
+      "blaze_database": "/Users/salmshmakh/.t3/projects/blaze/.build/chipnet-host-20261115/blaze/index.sqlite",
+      "blaze_backup_directory": "/Users/salmshmakh/.t3/projects/blaze/.build/chipnet-host-20261115/backups",
+      "lifecycle_ledger": "/Users/salmshmakh/.t3/projects/blaze/.build/chipnet-host-20261115/owner-lifecycle.json",
+      "created": false
+    },
+    "ports": {
+      "native_rpc": {
+        "host": "127.0.0.1",
+        "port": 53315
+      },
+      "p2p": {
+        "configured_port": 53316,
+        "listen": false,
+        "inbound_listener": false
+      },
+      "rest": {
+        "host": "127.0.0.1",
+        "port": 53317
+      },
+      "read_proxy": {
+        "host": "127.0.0.1",
+        "port": 53318
+      },
+      "test_submit": {
+        "host": "127.0.0.1",
+        "port": 53319,
+        "enabled": false
+      },
+      "observations": {
+        "53315": {
+          "listener_observed": false,
+          "lsof_exit": 1,
+          "reserved": false
+        },
+        "53316": {
+          "listener_observed": false,
+          "lsof_exit": 1,
+          "reserved": false
+        },
+        "53317": {
+          "listener_observed": false,
+          "lsof_exit": 1,
+          "reserved": false
+        },
+        "53318": {
+          "listener_observed": false,
+          "lsof_exit": 1,
+          "reserved": false
+        },
+        "53319": {
+          "listener_observed": false,
+          "lsof_exit": 1,
+          "reserved": false
+        }
+      },
+      "note": "Candidate numbers only; no socket was bound/reserved. Recheck before action and preserve sibling ports/claims."
+    },
+    "proposed_node_parameters": {
+      "chipnet": 1,
+      "server": 1,
+      "daemon": 0,
+      "listen": 0,
+      "discover": 0,
+      "upnp": 0,
+      "natpmp": 0,
+      "prune": 0,
+      "txindex": 1,
+      "disablewallet": 1,
+      "maxconnections": 2,
+      "dbcache_mib": 128,
+      "par": 1,
+      "maxmempool_mb": 20,
+      "persistmempool": 0,
+      "rpcthreads": 2,
+      "rpcworkqueue": 16,
+      "rpcbind": "127.0.0.1",
+      "rpcallowip": "127.0.0.1",
+      "rpcport": 53315,
+      "port": 53316,
+      "rest": 0,
+      "maxuploadtarget_mib_per_24h": 64,
+      "log_capture_limit_mib": 32,
+      "expire_or_upgrade_override": null
+    },
+    "parameter_limits": "Revalidate parameters against the future approved build. dbcache/par/maxconnections are tuning knobs, not hard memory/CPU quotas. maxuploadtarget is an upload allowance, not a download cap. No config file was created. Leave transaction relay/mempool behavior available for functional acceptance rather than silently substituting block-only functionality.",
+    "stages": [
+      {
+        "stage": "bounded_measurement_first",
+        "max_wall_seconds": 1800,
+        "max_new_allocated_gib": 2,
+        "max_cumulative_received_gib": 2,
+        "stopatheight": 115252,
+        "purpose": "Stop at the official split checkpoint or first resource/time threshold; measure block/undo, chainstate, indexes and network identity before extension. This is not a synced target.",
+        "automatic_resume": false,
+        "minimum_start_free_gib": 12,
+        "current_storage_gate_met": true,
+        "current_launch_allowed": false,
+        "remaining_blockers": [
+          "Expired installed29.2.0; compatible build verification not authorized/performed.",
+          "Shared host contention and unimplemented owner watchdog.",
+          "No sync/start authorization in this assessment."
+        ]
+      },
+      {
+        "stage": "complete_retained_source_if_reapproved",
+        "max_total_attempt_wall_seconds": 21600,
+        "max_owned_allocated_gib": 16,
+        "max_cumulative_received_gib": 8,
+        "max_blaze_database_gib": 1,
+        "max_blaze_backup_gib": 1,
+        "purpose": "Historical validation/index construction only within budget. Hitting a ceiling stops incomplete, without switching to pruning or dropping history to hide a requested query.",
+        "automatic_resume": false,
+        "minimum_start_free_gib": 25
+      }
+    ],
+    "download_and_time_uncertainty": {
+      "history_required": "Genesis through canonical current tip with retained blocks/undo and txindex enabled from first start. Checkpoints/headers alone do not replace history.",
+      "reindex_need": "A fresh datadir avoids existing-node reindex. A pruned source cannot satisfy txindex; later enabling txindex requires a retained-history index build. Never point at or reindex an existing node.",
+      "raw_wire_time_example": "4,367,750,091 bytes at1 MiB/s is about69.4 minutes before validation/index/disk/peer overhead; arithmetic only, not measured bandwidth or a completion forecast.",
+      "estimated_completion": "Unmeasured: hours are plausible; the6-hour attempt ceiling may be reached without completion. No ETA guarantee.",
+      "network_cap_enforcement": "No native cumulative receive-byte hard cap demonstrated. An owner watchdog must persist getnettotals across restarts and stop before8 GiB received. maxuploadtarget does not provide that cap."
+    },
+    "watchdog_and_clean_stop": {
+      "implemented_here": false,
+      "poll_seconds": 2,
+      "disk_stop_if_free_below_gib": 9,
+      "retain_system_free_floor_gib": 8,
+      "owned_allocated_stop_threshold_gib": 16,
+      "node_rss_stop_threshold_gib": 2,
+      "combined_node_blaze_rss_stop_threshold_gib": 3,
+      "swap_growth_stop_mib_from_launch_baseline": 512,
+      "stop_if_memory_pressure": "warning/critical or sustained foreign-load contention",
+      "stop_if_no_progress_seconds": 600,
+      "deadline_handling": "Stop on the first disk/download/time/memory/identity/expiry limit. Polling permits transient overshoot/compaction; these are supervisor stop thresholds, not atomic filesystem quotas. Foreign writers are unbounded. Retain stopping margin; if strict allocation guarantees are required, an assigned quota/volume is a separate prerequisite.",
+      "method": "Record exact owned PID, executable, datadir, ports and cookie path in private ledger. Prefer owner-cookie stop; after exact ownership verification SIGTERM is fallback. Wait up to120 seconds for exit/flush. Do not automatically SIGKILL, restart or retry if shutdown is ambiguous.",
+      "preserve": "Retain partial datadir, counters, logs and checkpoints. No deletion, wallet reuse, pruning, expiry bypass or automatic resumption. Report the stop reason before another decision.",
+      "ownership": "Do not stop/change any foreign node, process, datadir, device or Metro port."
+    },
+    "read_write_composition": {
+      "owner_cookie": "Private owner-only loopback credential file; never share in browser/chat.",
+      "consumer_reads": "Existing method-restricted read proxy, including getindexinfo; no elevation to native owner credentials.",
+      "test_submit": "Separate scoped upstream/capability, exact-byte/outpoint/fee/expiry approval and durable journal. Disabled until verified source and dedicated test identities/coins/approvals exist."
+    },
+    "acceptance_gates": [
+      "Official genesis and split checkpoint115252 match; verify current upgrade2027 consensus rules/fork, not just chain label/version.",
+      "Peers present, headers/blocks canonical, IBD=false, fresh tip and no expiry/consensus warnings.",
+      "pruned=false and getindexinfo txindex.synced=true with best_block_height equal to canonical tip; representative historical BCH prevouts resolve.",
+      "Blaze consumes representative CashTokens activity and advertised state/history/activity/supply/identity coverage matches the node.",
+      "Measure owned REST/read-proxy lifecycle/resource limits before sharing; siblings own their actual acceptance."
+    ]
+  },
+  "sources": [
+    {
+      "id": "stable_release",
+      "url": "https://api.github.com/repos/bitcoin-cash-node/bitcoin-cash-node/releases/latest",
+      "observed_at": "2026-11-15T12:05:38Z",
+      "kind": "official_release_metadata",
+      "facts": {
+        "tag": "v29.2.0",
+        "published_at": "2026-10-02T00:38:45Z",
+        "prerelease": false
+      },
+      "limitation": "Latest general stable is not evidence of present Chipnet compatibility."
+    },
+    {
+      "id": "maintainer_upgrade_notice",
+      "url": "https://bitcoincashnode.org/en/newsroom/2026-11-14_opinion_on_faster_blocktime",
+      "published_at": "2026-11-14",
+      "kind": "official_maintainer_notice",
+      "finding": "Maintainers direct Chipnet operators to upgrade2027 preview binaries/source while a proper release is pending. Other networks are instructed to wait. No preview was downloaded/executed here."
+    },
+    {
+      "id": "chipnet_parameters_29_2_0",
+      "url": "https://github.com/bitcoin-cash-node/bitcoin-cash-node/blob/v29.2.0/src/chainparams.cpp#L996",
+      "kind": "official_tagged_source",
+      "finding": "Chipnet activation/expiry parameter1794744000. Lines1033-1034 have stale1 GB block/chainstate assumptions; not current footprint measurements or upper bounds."
+    },
+    {
+      "id": "expiry_initialization_29_2_0",
+      "url": "https://github.com/bitcoin-cash-node/bitcoin-cash-node/blob/v29.2.0/src/init.cpp#L2249",
+      "observed_at": "2026-11-15T12:05:01Z",
+      "sha256": "e5a5fc34e467583e54302e7dca1b15ac42859459404552ac3522787a39379f2f",
+      "finding": "Default expiry uses selected network upgrade time, with an earlier Chipnet date. Overrides are not compatibility fixes. The same source rejects pruning with txindex."
+    },
+    {
+      "id": "expiry_defaults_29_2_0",
+      "url": "https://github.com/bitcoin-cash-node/bitcoin-cash-node/blob/v29.2.0/src/software_outdated.h#L15",
+      "kind": "official_tagged_source",
+      "finding": "Default expiry and RPC expiry are both enabled."
+    },
+    {
+      "id": "expiry_clock_29_2_0",
+      "url": "https://github.com/bitcoin-cash-node/bitcoin-cash-node/blob/v29.2.0/src/software_outdated.cpp#L27",
+      "kind": "official_tagged_source",
+      "finding": "Expiry compares wall clock to deadline; the scheduler then sets the RPC-disabled flag. Reaching that network block/MTP during this sync is not required to expire."
+    },
+    {
+      "id": "expiry_rpc_29_2_0",
+      "url": "https://github.com/bitcoin-cash-node/bitcoin-cash-node/blob/v29.2.0/src/rpc/server.cpp#L83",
+      "observed_at": "2026-11-15T12:05:41Z",
+      "sha256": "70607750ac93d030c2200d242be9255c2872c755c5430447b64d2cf48e777f39",
+      "finding": "Expired RPC dispatch rejects commands except stop with RPC_DISABLED."
+    },
+    {
+      "id": "preview_directory",
+      "url": "https://download.bitcoincashnode.org/misc/builds/upgrade2027_temp/osx/",
+      "observed_at": "2026-11-15T12:06:53Z",
+      "sha256": "0c10fb68b84b3b03fce1e2ff4f66619fd231c862999338f59d35c01e1a648c9a",
+      "kind": "official_directory_metadata_only",
+      "facts": {
+        "arm64_archive_listed": "bitcoin-cash-node-29.2.1-aarch64-apple-darwin-unsigned.tar.gz",
+        "archive_downloaded": false,
+        "preview_signature_or_digest_verified": false
+      },
+      "limitation": "Unsigned macOS archive listed; exact build/commit and maintainer attestations must be verified separately. A version string is insufficient."
+    },
+    {
+      "id": "preview_source",
+      "url": "https://gitlab.com/cculianu/bitcoin-cash-node/-/commits/blocktime/wip_preview",
+      "kind": "official_notice_link_target",
+      "finding": "Source branch identified by maintainers. No local checkout/build/update or exact preview commit verification performed."
+    },
+    {
+      "id": "public_operator_size",
+      "url": "https://chipnet.chaingraph.cash/node-status",
+      "observed_at": "2026-11-15T12:06:53Z",
+      "sha256": "3305d3b53712ebbd3674daf79d3dd3d7e674d7b85062dc6fd4727f7c4807c5c6",
+      "kind": "fresh_operator_webpage_not_assigned_rpc",
+      "facts": {
+        "chain": "chip",
+        "blocks": 332444,
+        "headers": 332444,
+        "bestblockhash": "0000000000001ad668c590310e9787e3aa7b784367788e6455fa66a46c6e9d5b",
+        "size_on_disk_bytes": 4367750091,
+        "pruned": false,
+        "initialblockdownload": false,
+        "node_version": 29020100,
+        "subversion": "/Bitcoin Cash Node:29.2.1/",
+        "connections": 44,
+        "mediantime": 1794740864,
+        "reported_upgrade_mtp": 1794744000,
+        "reported_software_expiration_time": null,
+        "pre_release_warning": true
+      },
+      "limitation": "Operator self-report, no genesis/fork/SPV/ownership validation; no assigned BCHN endpoint. Does not reveal chainstate/txindex/Blaze size or txindex readiness. Current wall-clock expiry and consensus MTP activation are distinct."
+    },
+    {
+      "id": "size_semantics",
+      "url": "https://docs.bitcoincashnode.org/doc/json-rpc/getblockchaininfo/",
+      "kind": "official_rpc_documentation",
+      "finding": "size_on_disk estimates blocks and undo, excluding chainstate and separate indexes; not total datadir."
+    },
+    {
+      "id": "index_readiness",
+      "url": "https://docs.bitcoincashnode.org/doc/json-rpc/getindexinfo/",
+      "kind": "official_rpc_documentation",
+      "finding": "Per-index synced and best_block_height must be measured. Height/IBD=false do not prove txindex readiness."
+    },
+    {
+      "id": "txindex_layout",
+      "url": "https://github.com/bitcoin-cash-node/bitcoin-cash-node/blob/v29.2.0/src/index/txindex.cpp#L71",
+      "sha256": "838951b760bac2f4a56d084d42e3154f0e4cef5602798f0f879699c9763dd119",
+      "kind": "official_tagged_source",
+      "finding": "Txid keys map to disk file/position/transaction offsets in LevelDB rather than duplicated transaction bodies; tables/compaction add overhead."
+    },
+    {
+      "id": "public_transaction_count_cached",
+      "url": "https://chipnet.chaingraph.cash/",
+      "retrieval": "Search-engine cached result during this assessment; direct homepage403",
+      "kind": "historical_public_operator_search_snapshot",
+      "facts": {
+        "transactions": 3410386,
+        "reported_data_size_decimal_gb": 4.35,
+        "reported_height": 332321
+      },
+      "limitation": "Historical approximate count for order-of-magnitude index-layout planning only, not a fresh current count or independent chain proof."
+    },
+    {
+      "id": "network_and_pruning",
+      "url": "https://docs.bitcoincashnode.org/doc/test-networks/",
+      "kind": "official_network_documentation",
+      "finding": "Chipnet uses its own selector and upgrades early. Shared address prefixes do not establish network identity. ABLA floor is not a fixed upper block limit. Historical45 GB on this page refers to testnet3, not Chipnet."
+    }
+  ],
+  "exact_next_decision": "No mount/node/peer while the measured resource gates fail. Preserve conditional further-stage authorization and original data/counters. A changed host resource window must pass a fresh sustained>=60s12GiB/normal-pressure/stable-swap/no-build gate before one checked resume; no automatic repeated probes/launches. Full sync still requires >=25GiB or assigned suitable storage AND concrete root review.",
+  "later_preview_artifact_step": {
+    "recorded_at": "2026-11-15T12:32:47.063198+00:00",
+    "path": "docs/chipnet-preview-provenance.json",
+    "scope": "Later user authorization permitted a bounded official ARM64 archive download/static verification only; original assessment observations/actions remain historical at their recorded time.",
+    "status": "archive_integrity_and_identity_consistent_signature_authentication_blocked",
+    "archive_staged": true,
+    "archive_installed_or_executed": false,
+    "source_commit": "3e6827e95c7a17497e09ac15556debd116dea1d0",
+    "future_guard_in_pinned_source": "Chipnet source uses upgrade2028 default expiry2027-11-15T12:00:00Z with guard retained; actual runtime behavior unverified.",
+    "resource_and_sync_decision_unchanged": true
+  },
+  "later_openpgp_audit": {
+    "recorded_at": "2026-11-15T12:47:30.743482+00:00",
+    "path": "docs/chipnet-openpgp-audit.json",
+    "status": "one_authenticated_checksum_signature_second_rejected_by_default_policy",
+    "verified_checksum_signatures": 1,
+    "second_signature_policy_rejected": true,
+    "identity_binding": "Two immutable official historical developer records and current official full-key bundle; historical stable-release signature also verified.",
+    "verifier_installation_scope": "New exclusively owned diagnostics subdirectory only; explicit later user authorization. No global/system install or persistent trust/default changes.",
+    "preview_or_old_bchn_executed": false,
+    "resource_watchdog_and_execution_gates_unchanged": true
+  },
+  "updated_at": "2026-11-15T19:18:57.514560+00:00",
+  "original_read_only_conclusion": "Do not start installed BCHN29.2.0 on current Chipnet. Its default network-specific RPC expiry has passed. Available shared storage/load also do not justify unattended complete retained-node sync. A future bounded option below is conditional and has not been authorized or executed.",
+  "assessment_actions_scope": "Historical read-only assessment at observed_at; later authorized runtime/stage actions are recorded separately below.",
+  "later_bounded_runtime_and_stage": {
+    "path": "docs/chipnet-stage1-control.json",
+    "status": "single_stage_stopped_on_memory_pressure_no_resume",
+    "single_attestation_scope_accepted_by_root": true,
+    "stage1_authorization_consumed": true,
+    "node_started_then_stopped": true,
+    "no_expiry_or_activation_override": true,
+    "root_review_before_resume": true
+  },
+  "current_resume_evaluation": {
+    "record": "docs/chipnet-resume-control.json",
+    "root_review_received": true,
+    "resource_gates_failed_before_mount": true
+  },
+  "cold_custody_followup": {
+    "record": "docs/cold-image-custody.json",
+    "last_free_bytes": 9975762944,
+    "still_below_12GiB": true,
+    "no_node_window": true
+  },
+  "restore_support": {
+    "record": "docs/cold-restore-support.json",
+    "implemented": true,
+    "small_fixture_tests_passed": 14,
+    "actual_restore_executed": false,
+    "native_resume_verified": false,
+    "historical_records_edited": false
+  },
+  "post_ox_quiet_gate": {
+    "record": "docs/chipnet-after-ox-gate.json",
+    "status": "single_post_ox_quiet_gate_failed_sustained_pressure",
+    "storage_passed": true,
+    "sustained_pressure_passed": false,
+    "no_followup_restore_mount_node": true
+  }
+}

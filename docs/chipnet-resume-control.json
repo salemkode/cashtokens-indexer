@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-15T18:55:37.602459+00:00",
+  "status": "blocked_before_resume_mount_or_node",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "authorization": {
+    "root_review_of_stage1_received": true,
+    "one_further_bounded_stage_conditionally_authorized": true,
+    "stage2_process_attempt_consumed": false,
+    "no_automatic_gate_retry": true,
+    "full_sync_authorized": false
+  },
+  "quiet_preflight": {
+    "artifact": ".build/runtime/chipnet-quiet-preflight-b3c8ec37.json",
+    "elapsed_seconds": 60.17900024994742,
+    "sample_count": 30,
+    "min_free_bytes": 4635590656,
+    "last_free_bytes": 4750098432,
+    "last_free_gib": 4.4238739013671875,
+    "entry_floor_bytes": 12884901888,
+    "additional_free_bytes_needed_at_last_sample": 8134803456,
+    "pressure_levels": [
+      2
+    ],
+    "swap_stable": true,
+    "reasons": [
+      "free_space_below_12GiB",
+      "memory_pressure_not_normal"
+    ],
+    "no_peer_or_mount_or_native_start": true
+  },
+  "implementation": {
+    "source_sha256": {
+      "scripts/chipnet_resume.py": "d35eec60d4232d70ede1aa6ba044e748fd8c86012497ef2b64390278d10c9b13",
+      "scripts/owned_node_measure.py": "86b542c91604ebdef5b8811fe3f70599ff6142c36e2b09c795af2c533e514d4e",
+      "scripts/owned_node.py": "fb333c7d206548c6fe5e377d916d6ab3b237b0af7ee540521ef8fb43b642d675",
+      "scripts/bounded_store.py": "38852dedc076bfe62d0280f25193698e7ee6fa5e2306402d83a37f4420ebb948",
+      "test/test_chipnet_resume.py": "6c66d9e7bbcf41e30ee1b9027adbc21b37302cc11e259469f9408f5034c7de93"
+    },
+    "reviewed_origin": ".build/runtime/chipnet-stage1-1649e90f",
+    "same_preserved_image_reused": true,
+    "new_image_creation_for_resume": false,
+    "prior_received_bytes": 1570,
+    "prior_uploaded_bytes": 783,
+    "prior_elapsed_seconds": 4.195791665930301,
+    "receive_gate_remaining_bytes": 1879046622,
+    "upload_gate_remaining_bytes": 67108081,
+    "time_budget": "Prior elapsed time deducted from1740-second soft deadline; stop margin stays inside cumulative30minutes",
+    "allocation_budget": "Original image and original outer evidence plus new control records counted once, including all first-stage retained allocation",
+    "receipt_preservation": "New private control run; original claims/receipts/counters untouched; separate exclusive stage2 authorization claim only after successful quiet gates",
+    "read_only_resume_plan_verified_against_actual_retained_image": true,
+    "reattach_and_native_resume_verified": false,
+    "allocation_headroom_checked_before_mount": true,
+    "peer_activation_free_floor_bytes": 12884901888
+  },
+  "tests": {
+    "new_focused_tests_passed": 8,
+    "new_test_command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_chipnet_resume.py' -v",
+    "affected_process_control_regressions_passed": 4,
+    "affected_checks": [
+      "actual owner RPC stop/private receipt",
+      "concurrent stop claim",
+      "RPC-unavailable exact-owner SIGTERM",
+      "supervisor deadline/no-progress"
+    ],
+    "scope": "Tiny synthetic metadata files, read-only actual retained-image identity/receipt plan, owned self-expiring Python process fixtures. No HFS image allocated/mounted; no native build, external peer or product suite rerun."
+  },
+  "operator_blockers": [
+    "At least12GiB current free for every sample over a fresh >=60s quiet window; current observed4.42GiB is also below8GiB reserve",
+    "Memory pressure must stay normal and swap stable; no heavy builds",
+    "No assumption that proposed library-owner cleanup succeeded or frees sufficient space; never clean foreign data",
+    "Actual reattachment and native resume verification remains blocked by resources. Connection/txindex/prevouts/Blaze coverage remain unavailable."
+  ],
+  "cold_custody_followup": {
+    "record": "docs/cold-image-custody.json",
+    "original_image_archived": true,
+    "old_inode_ledger_unchanged": true,
+    "resume_currently_refused": true,
+    "future_restore_reconciliation_required": true
+  },
+  "restore_support": {
+    "record": "docs/cold-restore-support.json",
+    "implemented": true,
+    "small_fixture_tests_passed": 14,
+    "actual_restore_executed": false,
+    "native_resume_verified": false,
+    "historical_records_edited": false
+  },
+  "updated_at": "2026-11-15T19:18:57.514560+00:00",
+  "post_ox_quiet_gate": {
+    "record": "docs/chipnet-after-ox-gate.json",
+    "status": "single_post_ox_quiet_gate_failed_sustained_pressure",
+    "storage_passed": true,
+    "sustained_pressure_passed": false,
+    "no_followup_restore_mount_node": true
+  }
+}

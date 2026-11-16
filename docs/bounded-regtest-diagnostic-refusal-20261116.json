@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-11-16T02:05:41.708749+00:00",
+  "status": "distinct_reviewed_regtest_attempt_refused_at_resource_admission",
+  "actual_cli_session_id": 86726,
+  "exit_code": 2,
+  "source_fix_record": "docs/bounded-prestart-diagnostics-fix-20261116.json",
+  "diagnostic_path": "/Users/salmshmakh/.t3/projects/blaze/.build/diagnostics/bounded-prestart-fd5e405a/receipt.json",
+  "diagnostic_sha256": "25a1d6a38001491d832a62a537181717fe5f6e69b7e0614c968ebbafc9b6c452",
+  "diagnostic": {
+    "at": "2026-11-16T02:04:49.144602+00:00",
+    "status": "prestart_refused",
+    "stage": "resource_admission",
+    "reason_codes": [
+      "memory_pressure_not_normal"
+    ],
+    "samples": [
+      {
+        "free_bytes": 24736260096,
+        "swap_bytes": 7454913986,
+        "pressure": 2,
+        "reclaimable_page_estimate_bytes": 12182732800,
+        "heavy_build_count": 0
+      },
+      {
+        "free_bytes": 24736092160,
+        "swap_bytes": 7454913986,
+        "pressure": 2,
+        "reclaimable_page_estimate_bytes": 12052004864,
+        "heavy_build_count": 0
+      }
+    ],
+    "parent": {
+      "present": true,
+      "uid_matches_owner": true,
+      "pid_present": true,
+      "birth_present": true,
+      "argv_present": true,
+      "executable_present": true
+    },
+    "native_datadir_created": false,
+    "new_samples_collected_by_diagnostics": false
+  },
+  "old_attempt_stays_unknown": "docs/bounded-regtest-actual-refusal-20261116.json",
+  "bounded_run_directories_created": 0,
+  "native_image_mount_node_rest_guardian_lease_mining": false,
+  "endpoint": null,
+  "mcp_measured_path_handoff_sent": false,
+  "consumer_acceptance": "NOT_EXECUTED",
+  "owned_process_stop_receipts": "NOT_APPLICABLE; zero target processes started",
+  "reserved_source_window": "ENDED; root explicitly notified",
+  "automatic_repeat": false,
+  "actual_cold_chipnet_stage_untouched": true,
+  "stage2_process_claim_consumed": false,
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false
+}

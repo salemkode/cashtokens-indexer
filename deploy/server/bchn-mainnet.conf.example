@@ -1,0 +1,23 @@
+# Install as /srv/bchn/mainnet/bitcoin.conf, readable only by the bchn user.
+# Use a verified mainnet release at /opt/blaze/bchn/mainnet/bin/bitcoind.
+server=1
+disablewallet=1
+prune=0
+txindex=1
+dbcache=4096
+par=4
+maxmempool=128
+maxconnections=24
+debuglogfile=0
+printtoconsole=1
+upnp=0
+natpmp=0
+[main]
+rpcbind=127.0.0.1
+rpcallowip=127.0.0.1
+rpcport=8332
+port=8333
+rpcuser=blaze-mainnet
+rpcpassword=REPLACE_WITH_DISTINCT_RANDOM_MAINNET_PASSWORD
+rpcwhitelistdefault=0
+rpcwhitelist=blaze-mainnet:getblockchaininfo,getblockhash,getblock,getblockheader,getblockstats,gettxout,getrawtransaction,getrawmempool,getmempoolinfo,getnetworkinfo,getindexinfo

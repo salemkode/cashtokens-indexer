@@ -1,0 +1,17 @@
+# Run through the existing hooks without replacing shared protection hooks.
+no_auto_install: true
+
+pre-commit:
+  parallel: false
+  commands:
+    protected-branch:
+      run: |
+        blaze_branch=$(git symbolic-ref --quiet --short HEAD) || exit 1
+        case "$blaze_branch" in
+          main|master)
+            echo 'Commit on a task branch; main and master are protected.' >&2
+            exit 1
+            ;;
+        esac
+    whitespace:
+      run: git diff --cached --check

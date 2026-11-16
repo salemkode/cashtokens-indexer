@@ -1,0 +1,2 @@
+# Preserve the historical unified diff verbatim, including its context markers.
+integration/explorer.patch -whitespace

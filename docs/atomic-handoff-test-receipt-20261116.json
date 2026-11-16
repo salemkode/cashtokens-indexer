@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-11-16T00:15:54.716015+00:00",
+  "status": "atomic_publication_8_focused_tests_passed_source_frozen",
+  "scope": "Only consumer-owner.json and connection.json publication",
+  "test_release": "Explicit root END OX bootstrap/test-only release; actual REGTEST not released",
+  "frozen_current_sha256": {
+    "scripts/atomic_handoff.py": "530439f7a72c4a5b009353f16621d52048f727426b4cd929b0ace330e6111e90",
+    "scripts/atomic-handoff.mjs": "a7bf7615d35a4030ace8eb318e9d74552576f02bc566df2299bbedf78ed65e5d",
+    "scripts/bounded_regtest.py": "a182fd015d55ad6b6b0e1dd121c6111655006a1efce52e39e50aa3937f69d14c",
+    "scripts/bounded-regtest-worker.mjs": "7da36f06b04d97ce7f6ed781b6a5ec2f3e742efc7657c47710c8a2b4aeeb0e3a",
+    "test/test_atomic_handoff.py": "55d7f5619bde4e5cdd8a25e92ffa9d57348c5e8f356f80f3457f1b95474deb63",
+    "test/atomic-handoff.test.mjs": "6ba52d70bba1c9a1943855ee38abb96bd77df5c39f08d513d38d5f0544d6ba43",
+    "test/helpers/atomic_handoff_fixture.py": "7e058b78dd56106d8e3ff977c44367e320f8dff5eaf6faa683685df0f78203bd",
+    "test/helpers/atomic-handoff-fixture.mjs": "0161e537da7fbf6490ae89df09f95c4f96f9909b9cb7f24e979763c15f35b3bf"
+  },
+  "matches_pretest_candidate": true,
+  "python": {
+    "passed": 4,
+    "failed": 0,
+    "command": "/usr/bin/time -l env PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_atomic_handoff.py' -v",
+    "test_seconds": 0.092,
+    "reported_real_seconds": 0.15,
+    "reported_max_rss_bytes": 30572544
+  },
+  "javascript": {
+    "passed": 4,
+    "failed": 0,
+    "command": "/usr/bin/time -l /Users/salmshmakh/.npm/_npx/2c6eebc6231f3284/node_modules/node/bin/node --max-old-space-size=96 --test --test-concurrency=1 test/atomic-handoff.test.mjs",
+    "test_duration_ms": 310.31275,
+    "reported_real_seconds": 0.47,
+    "reported_max_rss_bytes": 56557568,
+    "parent_and_fixture_heap_mib_each": 96
+  },
+  "resource_limits": {
+    "executed_serially": true,
+    "memory_budget_bytes": 536870912,
+    "reported_rss_scope": "per-command time-l rusage; not a whole-host aggregate/idle measurement",
+    "retained_fixture_allocated_bytes": 98304,
+    "temporary_cap_bytes": 134217728,
+    "fixture_directory_count": 8
+  },
+  "evidence": [
+    "Final name absent during intentionally partial temp write and after file fsync before publication",
+    "Concurrent readers observed only complete JSON",
+    "Crashed producer before publication left no incomplete final",
+    "Existing final file/symlink refused without replacement/referent change"
+  ],
+  "actual_native_hfs_image_mount_api_lease_mining_p2p": false,
+  "new_resource_probe_or_idle_claim": false,
+  "unaffected_suites_build_pack_install": false,
+  "old_native_receipts_guard_api_profile_evidence_edited": false,
+  "actual_regtest_status": "NOT_RELEASED / NOT_EXECUTED",
+  "stage2_claim_consumed": false,
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "next_action": "Await separate root native-window release and successful fresh own-source normal-pressure12GiB gate before one actual bounded REGTEST attempt. Full Chipnet/fullsync25GiB+root-review gates unchanged."
+}

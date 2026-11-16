@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-15",
+  "projectCount": 10,
+  "checks": [
+    {
+      "key": "cashtokens-indexer",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "feature/cashtokens-indexer",
+      "summaryThreadId": "mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8"
+    },
+    {
+      "key": "xo-wallet",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "feat/ox-wallet-design",
+      "summaryThreadId": "mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95"
+    },
+    {
+      "key": "stripe-cash",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "feature/complete-payment-dashboard",
+      "summaryThreadId": "mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9"
+    },
+    {
+      "key": "cashcart",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "task/project-setup",
+      "summaryThreadId": "mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd"
+    },
+    {
+      "key": "explorer",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "verify/all-issue-fixes",
+      "summaryThreadId": "mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6"
+    },
+    {
+      "key": "token-issuer-identity",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "feature/project-setup",
+      "summaryThreadId": "mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441"
+    },
+    {
+      "key": "focus-garden",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "feature/garden-session-history",
+      "summaryThreadId": "mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e"
+    },
+    {
+      "key": "focus-garden-native",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "feature/crypto-focus-garden-expo",
+      "summaryThreadId": "mcp:launch:2479b10e1e866576bc90d410ca627037bcde992a10fc8c3077603442a61ad2b2"
+    },
+    {
+      "key": "bch-mcp",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "feature/project-setup",
+      "summaryThreadId": "mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe"
+    },
+    {
+      "key": "react-native-libauth",
+      "physicalDirectory": true,
+      "sameDirectoryInode": true,
+      "headPreserved": true,
+      "existingChangedFilesPreserved": true,
+      "branch": "feat/focus-garden-contract-api",
+      "summaryThreadId": "mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1"
+    }
+  ],
+  "existingExternalMissingWorktreeRegistrations": [
+    {
+      "project": "explorer",
+      "path": "/Users/salmshmakh/.t3/worktrees/explorer/t3code-2e457b31"
+    }
+  ],
+  "externalWorktreeCleanupPerformed": false
+}

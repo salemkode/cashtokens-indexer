@@ -1,0 +1,568 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "network": {
+      "type": "string",
+      "enum": [
+        "mainnet",
+        "chipnet",
+        "regtest"
+      ]
+    },
+    "confirmed_only": {
+      "type": "boolean",
+      "const": true
+    },
+    "indexed_height": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{64}$"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "tracked",
+                "burned",
+                "incomplete"
+              ]
+            },
+            "head_state": {
+              "type": "string",
+              "enum": [
+                "burned",
+                "unspent_at_indexed_tip"
+              ]
+            },
+            "discovery_only": {
+              "type": "boolean",
+              "const": true
+            },
+            "coverage": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "complete",
+                    "incomplete"
+                  ]
+                },
+                "method": {
+                  "type": "string",
+                  "const": "targeted_native_scan"
+                },
+                "scan_start": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "indexed_height": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "indexed_tip": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "height": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "hash": {
+                          "type": "string",
+                          "pattern": "^[0-9a-fA-F]{64}$"
+                        },
+                        "previousHash": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "pattern": "^[0-9a-fA-F]{64}$"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "height",
+                        "hash",
+                        "previousHash"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "reason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "root_publication_available": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "status",
+                "scan_start",
+                "indexed_height",
+                "indexed_tip",
+                "reason",
+                "root_publication_available"
+              ]
+            },
+            "authbase": {
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{64}$"
+            },
+            "authhead": {
+              "type": "object",
+              "properties": {
+                "txid": {
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{64}$"
+                },
+                "output_index": {
+                  "type": "number",
+                  "const": 0
+                },
+                "height": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "timestamp": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "locking_bytecode": {
+                  "type": "string",
+                  "pattern": "^(?:[0-9a-fA-F]{2})*$"
+                },
+                "value_satoshis": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "token_category": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[0-9a-fA-F]{64}$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "fungible_token_amount": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]*)$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "nonfungible_token_capability": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "none",
+                        "mutable",
+                        "minting"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "nonfungible_token_commitment": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(?:[0-9a-fA-F]{2})*$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "txid",
+                "output_index",
+                "height",
+                "timestamp",
+                "locking_bytecode",
+                "value_satoshis",
+                "token_category",
+                "fungible_token_amount",
+                "nonfungible_token_capability",
+                "nonfungible_token_commitment"
+              ]
+            },
+            "authchain_length": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "latest_publication": {
+              "anyOf": [
+                {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string",
+                          "const": "invalid"
+                        },
+                        "locking_bytecode": {
+                          "type": "string",
+                          "pattern": "^(?:[0-9a-fA-F]{2})*$"
+                        },
+                        "txid": {
+                          "type": "string",
+                          "pattern": "^[0-9a-fA-F]{64}$"
+                        }
+                      },
+                      "required": [
+                        "status",
+                        "locking_bytecode",
+                        "txid"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string",
+                          "const": "published"
+                        },
+                        "locking_bytecode": {
+                          "type": "string",
+                          "pattern": "^(?:[0-9a-fA-F]{2})*$"
+                        },
+                        "content_hash": {
+                          "type": "string",
+                          "pattern": "^[0-9a-fA-F]{64}$"
+                        },
+                        "uris": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "content_verified": {
+                          "type": "boolean",
+                          "const": false
+                        },
+                        "txid": {
+                          "type": "string",
+                          "pattern": "^[0-9a-fA-F]{64}$"
+                        }
+                      },
+                      "required": [
+                        "status",
+                        "locking_bytecode",
+                        "content_hash",
+                        "uris",
+                        "content_verified",
+                        "txid"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "publication_history_complete": {
+              "type": "boolean"
+            },
+            "revisions": {
+              "maxItems": 500,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "txid": {
+                    "type": "string",
+                    "pattern": "^[0-9a-fA-F]{64}$"
+                  },
+                  "previous_txid": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^[0-9a-fA-F]{64}$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "height": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "migration_index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "publication": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "string",
+                            "const": "none"
+                          }
+                        },
+                        "required": [
+                          "status"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "string",
+                            "const": "invalid"
+                          },
+                          "locking_bytecode": {
+                            "type": "string",
+                            "pattern": "^(?:[0-9a-fA-F]{2})*$"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "locking_bytecode"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "string",
+                            "const": "published"
+                          },
+                          "locking_bytecode": {
+                            "type": "string",
+                            "pattern": "^(?:[0-9a-fA-F]{2})*$"
+                          },
+                          "content_hash": {
+                            "type": "string",
+                            "pattern": "^[0-9a-fA-F]{64}$"
+                          },
+                          "uris": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "content_verified": {
+                            "type": "boolean",
+                            "const": false
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "locking_bytecode",
+                          "content_hash",
+                          "uris",
+                          "content_verified"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "txid",
+                  "previous_txid",
+                  "height",
+                  "timestamp",
+                  "migration_index",
+                  "publication"
+                ]
+              }
+            },
+            "metadata_content_verified": {
+              "type": "boolean",
+              "const": false
+            }
+          },
+          "required": [
+            "category",
+            "status",
+            "head_state",
+            "discovery_only",
+            "coverage",
+            "authbase",
+            "authhead",
+            "authchain_length",
+            "latest_publication",
+            "publication_history_complete",
+            "revisions",
+            "metadata_content_verified"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{64}$"
+            },
+            "status": {
+              "type": "string",
+              "const": "incomplete"
+            },
+            "coverage": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "const": "incomplete"
+                },
+                "method": {
+                  "type": "string",
+                  "const": "targeted_native_scan"
+                },
+                "scan_start": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "indexed_height": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "indexed_tip": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "height": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "hash": {
+                          "type": "string",
+                          "pattern": "^[0-9a-fA-F]{64}$"
+                        },
+                        "previousHash": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "pattern": "^[0-9a-fA-F]{64}$"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "height",
+                        "hash",
+                        "previousHash"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "reason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "root_publication_available": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "status",
+                "scan_start",
+                "indexed_height",
+                "indexed_tip",
+                "reason",
+                "root_publication_available"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "category",
+            "status",
+            "coverage",
+            "reason"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "network",
+    "confirmed_only",
+    "indexed_height",
+    "data"
+  ]
+}

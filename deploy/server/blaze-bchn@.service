@@ -1,0 +1,29 @@
+[Unit]
+Description=BLAZE dedicated BCHN (%i)
+Wants=network-online.target
+After=network-online.target
+RequiresMountsFor=/srv/bchn/%i
+ConditionPathExists=/srv/bchn/%i/bitcoin.conf
+
+[Service]
+Type=simple
+User=bchn
+Group=bchn
+ExecStart=/opt/blaze/bchn/%i/bin/bitcoind -datadir=/srv/bchn/%i -conf=/srv/bchn/%i/bitcoin.conf -daemon=0
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=300
+KillSignal=SIGTERM
+SendSIGKILL=no
+UMask=0077
+LimitNOFILE=65536
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/srv/bchn/%i
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

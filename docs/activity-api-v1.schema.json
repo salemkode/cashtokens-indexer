@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "network": {
+      "type": "string",
+      "enum": [
+        "mainnet",
+        "chipnet",
+        "regtest"
+      ]
+    },
+    "confirmed_only": {
+      "type": "boolean",
+      "const": true
+    },
+    "indexed_height": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "snapshot": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "height": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "hash": {
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{64}$"
+            },
+            "previousHash": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "height",
+            "hash",
+            "previousHash"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "start_height": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "token_state": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "not_indexed",
+                "complete_at_indexed_tip",
+                "incomplete"
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ]
+        },
+        "gross_fungible_details_start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "start_height",
+        "token_state",
+        "gross_fungible_details_start"
+      ]
+    },
+    "order": {
+      "type": "string",
+      "const": "block_height_desc,transaction_position_desc,txid_asc"
+    },
+    "metadata_only_authchain_events": {
+      "type": "string",
+      "const": "excluded"
+    },
+    "data": {
+      "maxItems": 100,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "txid": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{64}$"
+          },
+          "transaction_position": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "block": {
+            "type": "object",
+            "properties": {
+              "height": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "hash": {
+                "type": "string",
+                "pattern": "^[0-9a-fA-F]{64}$"
+              },
+              "timestamp": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "height",
+              "hash",
+              "timestamp"
+            ]
+          },
+          "categories": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{64}$"
+                },
+                "fungible_delta": {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)$"
+                },
+                "nft_delta": {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                },
+                "fungible_issued": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]*)$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "fungible_burned": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]*)$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "category_history_complete": {
+                  "type": "boolean"
+                },
+                "gross_fungible_details_complete": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "category",
+                "fungible_delta",
+                "nft_delta",
+                "fungible_issued",
+                "fungible_burned",
+                "category_history_complete",
+                "gross_fungible_details_complete"
+              ]
+            }
+          }
+        },
+        "required": [
+          "txid",
+          "transaction_position",
+          "block",
+          "categories"
+        ]
+      }
+    }
+  },
+  "required": [
+    "network",
+    "confirmed_only",
+    "indexed_height",
+    "snapshot",
+    "coverage",
+    "order",
+    "metadata_only_authchain_events",
+    "data"
+  ]
+}

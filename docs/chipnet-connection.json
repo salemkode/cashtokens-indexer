@@ -1,0 +1,199 @@
+{
+  "status": "unavailable",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "owner": {
+    "project": "Blaze Indexer",
+    "thread": "t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8",
+    "host": "MacBook-Pro-salm.local"
+  },
+  "network": "chipnet",
+  "measured_at": "2026-11-15T10:16:39.478708+00:00",
+  "rest_url": null,
+  "rpc": {
+    "url": null,
+    "credential_mechanism": "User-only RPC URL/token via T3 request_secret delivery=file; persist only to an owned mode-0600 ignored environment/config file. Share paths/approved local proxy routes, never credential values or browser RPC credentials.",
+    "supported_read_methods": [],
+    "test_only_write_route": null,
+    "archive_readiness": {
+      "status": "unavailable",
+      "pruned": null,
+      "initial_block_download": null,
+      "txindex": null,
+      "measured_tip": null,
+      "verified_at": null,
+      "requirement": "getindexinfo(\"txindex\") must report synced=true and best_block_height equal to the independently pinned canonical source/REST tip; IBD=false and pruned=false are separate required checks. A synced blockchain alone does not prove index readiness."
+    }
+  },
+  "identity": {
+    "genesis_hash": null,
+    "checkpoint": {
+      "height": 115252,
+      "hash": "00000000040ba9641ba98a37b2e5ceead38e4e2930ac8f145c8094f94c708727",
+      "provenance": "https://github.com/bitcoin-cash-node/bitcoin-cash-node/blob/v29.2.0/src/chainparams.cpp#L1075",
+      "independently_established": true,
+      "verified_against_endpoint": false,
+      "verification_time": null,
+      "note": "Official BCHN Chipnet post-split checkpoint. Testnet4 has a DIFFERENT block at this same height. No endpoint has yet been measured; chain labels/address prefixes are insufficient."
+    }
+  },
+  "tip": {
+    "height": null,
+    "hash": null,
+    "synchronized": false,
+    "freshness": null
+  },
+  "coverage": {
+    "indexed_start": null,
+    "indexed_height": null,
+    "authchain": "unavailable",
+    "token_state": "unavailable"
+  },
+  "known_objects": {
+    "category": null,
+    "nft": null,
+    "txid": null,
+    "address": null,
+    "prevout": null
+  },
+  "resource_limits": {
+    "chain_sync_started": true,
+    "full_chain_download_permitted": false,
+    "relocation_started": false,
+    "storage_requirement": "Verified archive retained; actual stage image absent. Last read-only gate minimum13.914GiB met bounded restore space but sustained pressure failed. Full sync still>=25GiB AND root review.",
+    "lifecycle": "Prior native/watchdog stopped, image remains detached. Current60-second resume preflight failed before any mount/node/peer. No new consumer lease or endpoint.",
+    "chain_sync_started_scope": "Only one bounded native Chipnet prefix attempt; 1570 remote application bytes, no post-genesis block or full-chain download evidenced."
+  },
+  "blockers": [
+    {
+      "kind": "operator_prerequisite",
+      "needed": "Reachable retained, unpruned, synchronized Chipnet BCHN JSON-RPC URL and read credentials including getblockchaininfo/getblockhash/getblock/getblockheader/getrawtransaction/gettxout/getindexinfo. txindex must exist, synced=true and best_block_height match the measured canonical tip; representative historical prevouts must resolve. Provide credentials securely, never in thread messages.",
+      "reason": "No configured endpoint, cookie, or .env exists. Public search found no usable unauthenticated BCHN Chipnet RPC; SolidPeer requires a paid callable token. No purchase is authorized or performed."
+    },
+    {
+      "kind": "test_acceptance_prerequisite",
+      "needed": "Dedicated test identities/test coins and explicitly scoped testmempoolaccept/sendrawtransaction access for bounded test journeys, after network verification.",
+      "reason": "Read-only indexer must not acquire broad wallet/write RPC privileges. A separate controlled test route will be provided only after a verified upstream exists."
+    },
+    {
+      "kind": "local_hosting_resource_prerequisite",
+      "needed": "Sustained normal pressure/stable swap/no-heavy-build window; only a separately authorized new gate, not automatic repetition. Disk now passed the bounded decoded-image+postrestore reserve requirement.",
+      "reason": "Single60.164s post-OX gate failed pressure with levels1/2; disk minimum13.914GiB passed13.5625GiB. Final pressure1 is insufficient. No restore/mount/node attempt."
+    }
+  ],
+  "next_action": "No active quiet/node window. A separately authorized new sustained normal-pressure window is required; do not repeat this failed probe automatically. Keep verified archive and historical records; no full sync (>=25GiB AND root review still required).",
+  "updated_at": "2026-11-15T19:18:57.514560+00:00",
+  "secure_input_status": "Sole RPC URL card timed out without an answer; no duplicate prompt reopened per coordinator instruction.",
+  "implementation_capabilities": {
+    "read_proxy": "Optional loopback server-to-server read-only allowlist, including getblock/getblockhash/getrawtransaction/gettxout/getindexinfo; network pinned. No live route is available until source and proxy are measured.",
+    "test_submit": "Optional separate upstream/capability/expiring exact-byte and outpoint/fee approvals, durable no-resubmit journal; mainnet forbidden, currently disabled.",
+    "composition": "Verification reads use the read proxy; only approved testmempoolaccept/sendrawtransaction use the test-submit proxy. No read credential elevation. See docs/testnet-operations.md.",
+    "activity": "Implemented compact global movements with exact issued/burned/net fields, fork pin and explicit partial/legacy detail; no live Chipnet evidence.",
+    "read_method_allowlist": [
+      "getblockchaininfo",
+      "getblockhash",
+      "getblock",
+      "getblockheader",
+      "getblockstats",
+      "getrawtransaction",
+      "gettxout",
+      "getrawmempool",
+      "getmempoolinfo",
+      "getnetworkinfo",
+      "getindexinfo"
+    ],
+    "archive_readiness": "Acceptance verifies unpruned/IBD=false and getindexinfo txindex synced at the canonical tip, separately from extraction /readyz. Separate BCH_HISTORY_RPC_* source is verified independently; no write privileges are inferred."
+  },
+  "supporting_electrum_observation": {
+    "source_artifact": "projects/explorer/artifacts/testnet/chipnet-electrum.json",
+    "observed_at": "2026-11-15T10:19:28.302Z",
+    "endpoint": "wss://chipnet.imaginary.cash:50004",
+    "genesis_hash": "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
+    "height": 332433,
+    "hash": "0000000000001a8307a004159b642c5c3332613559aaf999f4fa16353ffb86a8",
+    "bchn_rpc_access": false,
+    "full_spv": false,
+    "owned_validating_node": false,
+    "live_transactions": false
+  },
+  "supporting_backend_evidence": {
+    "document": "docs/indexer-functional-evidence.json",
+    "runtime_source_sha256": "9ce3f2cd606187b5649532010b491e67fdd2e814a38f76b01cf80b3a3f5a5f8d",
+    "source_tests_passed": 99,
+    "installed_tarball_tests_passed": 19,
+    "actual_node_network": "regtest",
+    "live_chipnet_verified": false
+  },
+  "hosting_feasibility": {
+    "path": "docs/chipnet-hosting-feasibility.json",
+    "status": "single_stage_stopped_on_memory_pressure_no_resume",
+    "observed_at": "2026-11-15T13:57:45.653701+00:00",
+    "installed_version": "29.2.0",
+    "chipnet_expiry_utc": "2026-11-15T12:00:00Z",
+    "guard_bypass_allowed": false,
+    "no_node_or_sync_started": false,
+    "no_node_or_sync_started_scope": "Historical false-now field superseded by the one stopped diagnostic stage; no process remains."
+  },
+  "preview_artifact_verification": {
+    "path": "docs/chipnet-preview-provenance.json",
+    "status": "one_authenticated_checksum_signature_second_rejected_by_default_policy",
+    "archive_sha256": "e7f224e27b79f35887fda2900e2aae81c030f290f0fad82338e6061726ba7f15",
+    "source_commit": "3e6827e95c7a17497e09ac15556debd116dea1d0",
+    "executed_or_installed": true,
+    "signature_authentication_verified": true,
+    "live_node_available": false,
+    "verified_checksum_signatures": 1,
+    "all_two_signatures_verified": false,
+    "second_signature_rejected_by_default_policy": true,
+    "historical_key_binding_crosschecked": true,
+    "detailed_audit": "docs/chipnet-openpgp-audit.json",
+    "extracted_and_executed_isolated": true,
+    "global_or_existing_install_changed": false
+  },
+  "isolated_measurement": {
+    "path": "docs/chipnet-stage1-control.json",
+    "status": "single_stage_stopped_on_memory_pressure_no_resume",
+    "native_genesis_observed": "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
+    "expiry_guard_utc": "2027-11-15T12:00:00Z",
+    "height": 0,
+    "fork_checkpoint_verified": false,
+    "txindex_readiness_verified": false,
+    "coverage": "No Blaze scan or database started; authchain/token coverage unavailable, not complete.",
+    "processes_stopped": true,
+    "rest_url": null
+  },
+  "conditional_resume": {
+    "record": "docs/chipnet-resume-control.json",
+    "status": "blocked_before_resume_mount_or_node",
+    "one_further_stage_authorized_after_gates": true,
+    "started": false,
+    "quiet_seconds": 60.17900024994742,
+    "resource_reasons": [
+      "free_space_below_12GiB",
+      "memory_pressure_not_normal"
+    ]
+  },
+  "cold_image_custody": {
+    "record": "docs/cold-image-custody.json",
+    "native_stage_image": "verified private gzip archive; original encoded image absent",
+    "ready_to_resume": false,
+    "restoration_inode_reconciliation_required": true,
+    "last_free_gib": 9.290653228759766,
+    "no_quiet_probe_repeated": true
+  },
+  "restore_support": {
+    "record": "docs/cold-restore-support.json",
+    "implemented": true,
+    "small_fixture_tests_passed": 14,
+    "actual_restore_executed": false,
+    "native_resume_verified": false,
+    "historical_records_edited": false
+  },
+  "post_ox_quiet_gate": {
+    "record": "docs/chipnet-after-ox-gate.json",
+    "status": "single_post_ox_quiet_gate_failed_sustained_pressure",
+    "storage_passed": true,
+    "sustained_pressure_passed": false,
+    "no_followup_restore_mount_node": true
+  }
+}

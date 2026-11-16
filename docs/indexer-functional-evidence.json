@@ -1,0 +1,123 @@
+{
+  "project": "Blaze Indexer",
+  "updated_at": "2026-11-15T11:56:40.859779+00:00",
+  "branch": "feature/cashtokens-indexer",
+  "revision": "uncommitted working tree; runtime source SHA256 identifies tested src/*.ts and src/*.json",
+  "runtime_source_sha256": "9ce3f2cd606187b5649532010b491e67fdd2e814a38f76b01cf80b3a3f5a5f8d",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "full_source_tests": {
+    "runtime": "Node24.18.0",
+    "passed": 99,
+    "failed": 0,
+    "skipped": 0,
+    "command": "BCHN_TEST_BINARY=\"$PWD/.build/tooling/bchn-29.2.0/bitcoin-cash-node-29.2.0/bin/bitcoind\" /opt/homebrew/opt/node@24/bin/node --import tsx --test --test-concurrency=1 test/*.test.ts",
+    "typecheck": "passed",
+    "build": "passed"
+  },
+  "installed_artifact": {
+    "status": "passed",
+    "runtime_source_sha256": "9ce3f2cd606187b5649532010b491e67fdd2e814a38f76b01cf80b3a3f5a5f8d",
+    "started_at": "2026-11-15T11:55:41.320Z",
+    "finished_at": "2026-11-15T11:55:52.632Z",
+    "node": "v24.18.0",
+    "commands": [
+      "npm ci --ignore-scripts",
+      "npm run build",
+      "npm prune --omit=dev --ignore-scripts",
+      "tar: create local artifact, extract into a second new directory",
+      "npm ci --omit=dev --ignore-scripts (extracted artifact)",
+      "BLAZE_TEST_BUILT=true node --test dist/test/main.test.js dist/test/test-broadcast.test.js dist/test/rpc-proxy.test.js dist/test/archive-readiness.test.js dist/test/identities.test.js dist/test/activity.test.js dist/test/authchain-resolution.test.js"
+    ],
+    "artifact_extracted_and_installed": true,
+    "artifact_rebuilt_after_extraction": false,
+    "external_compiled_test_support_injected": true,
+    "dependency_install_scripts_executed": false,
+    "production_dependencies_only": true,
+    "compiled_lifecycle_profiles": 7,
+    "compiled_contract_gateway_tests": 12,
+    "artifact": "/Users/salmshmakh/.t3/projects/blaze/.build/artifacts/blaze-indexer-0.1.0-1794743746086.tgz",
+    "sha256": "edb1421d41d8d593155b79b86b23e76c7d7a277b80295fb6a09ad2ba1f9b51e3",
+    "lock_sha256": "6b172a096782d88ae4cf8cdbc174b927645811493712b1993affa31d07cfaab8",
+    "docker_runtime_verified": false,
+    "chipnet_verified": false,
+    "testnetFunctionalReady": false,
+    "publicReleaseReady": false
+  },
+  "actual_node_supporting_evidence": {
+    "runtime_source_sha256": "9ce3f2cd606187b5649532010b491e67fdd2e814a38f76b01cf80b3a3f5a5f8d",
+    "test_runtime": "v24.18.0",
+    "observed_at": "2026-11-15T11:54:02.496Z",
+    "network": "regtest",
+    "isolated": true,
+    "peers": 0,
+    "node": {
+      "subversion": "/Bitcoin Cash Node:29.2.0/",
+      "version": 29020000
+    },
+    "archive_readiness_at_initial_snapshot": {
+      "pruned": false,
+      "initial_block_download": false,
+      "txindex": {
+        "synced": true,
+        "best_block_height": 103
+      },
+      "measured_tip": {
+        "height": 103,
+        "hash": "2e8683a5e566e3b650923df2b0af1ffd479bbf9f27579400e981540883045358"
+      },
+      "verified_at": "2026-11-15T11:54:01.876Z"
+    },
+    "category": "2ca335b28227c24a698d9307820081446dc17e5b0ecf7595dbe840001a603e5b",
+    "genesis_txid": "07c1118762ef335e0fb4bbab65ccea7f065e7af2c0996a55f154695b66d67a31",
+    "metadata_txid": "4fc7b72be1d9c32d9038fb0ef9b20aff709f59f3086a157bd8c91b0bab416af1",
+    "address": "bchreg:qrce8vx4hazzuycq0qa5k3sdygyj0mgsdgfply3375",
+    "tip": {
+      "height": 105,
+      "hash": "22ea4cc205ae9aa2cd5c70895e093bbbb772b3db707e0e1f644fb227347ec9f3",
+      "previousHash": "39ad1e472d0308b2ec07d5d2f3d80a4cba13c7ead3725e8ac9ab694237323430"
+    },
+    "elapsed_ms": 2177.9893330000004,
+    "sqlite_bytes": 4096,
+    "wal_bytes": 2369032,
+    "rss_bytes": 213893120,
+    "assertions": [
+      "BCHN consensus accepted tokens",
+      "unpruned txindex synced at measured height via getindexinfo",
+      "native prevouts",
+      "confirmed supply/reserve/genesis and NFTs",
+      "committed metadata integrity/schema",
+      "mempool",
+      "metadata-only update",
+      "approved exact-byte test gateway",
+      "non-category authbase",
+      "bounded historical authbase resolution and watch/reorg invalidation",
+      "global activity including input-only burn",
+      "invalidate/reconsider reorg",
+      "online backup/restore catch-up"
+    ]
+  },
+  "actual_chipnet": {
+    "status": "unavailable",
+    "bchn_endpoint_verified": false,
+    "live_token_ingestion_verified": false,
+    "contract": "docs/chipnet-connection.json",
+    "required_operator_input": "Retained unpruned synchronized Chipnet BCHN read source with getindexinfo, synced txindex at canonical tip and historical resolvable prevouts; separate scoped test-submit role and private exact-byte approvals. No duplicate secret card/node/sync requested."
+  },
+  "docker": {
+    "compose_configuration": "validated previously in isolated placeholder config",
+    "image_build": "unverified",
+    "runtime": "unverified",
+    "reason": "Configured Docker engine socket unavailable; no daemon was started."
+  },
+  "lifecycle": {
+    "supporting_regtest_consumer_lease": "stopped after MCP final reads; no retained leased process",
+    "chipnet_sync_started": false,
+    "foreign_services_modified": false
+  },
+  "limits": [
+    "Source suite/native regtest and artifact checks do not establish live Chipnet or sibling browser/native acceptance.",
+    "Artifact verification injected compiled test support only; production runtime was extracted from the tarball, installed without dev dependencies and never rebuilt.",
+    "Runtime source SHA identifies src modules, not all repository/coordinator/sibling files. Historical immutable reports and tarballs are retained under .build/."
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-15",
+  "verificationScope": "Reported project-thread checkpoints; no production or live-chain readiness is implied. Translation-only continuations did not rerun test suites.",
+  "completedLocalCheckpoints": [
+    {
+      "key": "focus-garden",
+      "implementation": "local_mvp_complete",
+      "checks": {
+        "tests": 46,
+        "mobileTypecheck": "passed",
+        "mobileLint": "passed",
+        "webBuild": "passed",
+        "androidBuild": "passed",
+        "iosAndroidHermesExport": "passed"
+      },
+      "limits": [
+        "No live funded Chipnet cycle.",
+        "No owned-device visual/runtime verification.",
+        "Deployment, treasury and published contract configuration still required."
+      ],
+      "evidence": "projects/focus-garden/PROJECT-HANDOFF.md",
+      "project": "Focus Garden",
+      "threadLink": "[Focus Garden — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e)"
+    },
+    {
+      "key": "stripe-cash",
+      "implementation": "local_mvp_complete",
+      "checks": {
+        "tests": 160,
+        "typecheck": "passed",
+        "sdkBuild": "passed",
+        "integrationDemo": "passed",
+        "browserSmoke": "passed"
+      },
+      "limits": [
+        "OX artifact adoption and real-wallet acceptance still in progress in OX.",
+        "Docker validation unavailable.",
+        "No production audit, deployment or live-chain financial proof."
+      ],
+      "evidence": "projects/stripe-cash/WORK-STATUS.md",
+      "project": "CashRelay",
+      "threadLink": "[CashRelay — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9)"
+    },
+    {
+      "key": "bch-mcp",
+      "implementation": "local_mvp_complete",
+      "checks": {
+        "tests": 27,
+        "typecheck": "passed",
+        "build": "passed",
+        "stdioSmoke": "passed",
+        "actualIndexerSourceCompatibility": "all seven tools passed with deterministic data"
+      },
+      "limits": [
+        "A configured synchronized live endpoint is still required.",
+        "Read-only: no signing, spending or wallet-key access."
+      ],
+      "evidence": "projects/bch-mcp/WORK-STATUS.md",
+      "project": "BCH MCP",
+      "threadLink": "[BCH MCP — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe)"
+    },
+    {
+      "key": "react-native-libauth",
+      "implementation": "local_artifact_delivered",
+      "checks": {
+        "tests": 81,
+        "typecheck": "passed",
+        "lint": "passed",
+        "nativeGeneration": "five modules passed",
+        "isolatedConsumers": "3.0.0 and 3.1.0-next.8 passed",
+        "iosReleaseJsAndHermes": "passed",
+        "utxosAndXpubScenarios": 9,
+        "independentSourceOutputHashing": "passed",
+        "bothBchVms": "passed"
+      },
+      "artifact": {
+        "path": "projects/react-native-libauth/artifacts/xo-0.2.1-20261115/react-native-xo-0.2.1.tgz",
+        "version": "0.2.1",
+        "published": false,
+        "sha256": "0737bc107c4d18ae516c0b09aa32d21ddf5002244a9ed1cd29b50a2a8c666eaa",
+        "coordinatorChecksumVerified": true,
+        "original020DeliveryFilesUnchanged": 6
+      },
+      "limits": [
+        "No new native C/JSI runtime or live protocol-peer proof.",
+        "BCH-only, one selected session address; no token/covenant/foreign/partial signing.",
+        "Protocol sessions, adequate HD tracking/recovery and approval remain OX responsibilities."
+      ],
+      "evidence": "projects/react-native-libauth/docs/wallet-contract-api.md",
+      "project": "React Native Libauth",
+      "threadLink": "[React Native Libauth — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1)",
+      "previousArtifact": {
+        "path": "projects/react-native-libauth/artifacts/sol-high-20261115/react-native-xo-0.2.0.tgz",
+        "version": "0.2.0",
+        "published": false,
+        "sha256": "e71b1889ef4517977c72f126cfd82fce23ef87a1f799bab3648df4167ae65a79",
+        "coordinatorChecksumVerified": true
+      },
+      "previousTests": 72,
+      "addedCapabilities": [
+        "Explicit public account/receive/change/DeFi xpub exports with privacy acknowledgment.",
+        "Explicit0x61 UTXOS signing; default0x41 unchanged."
+      ]
+    },
+    {
+      "key": "cashtokens-indexer",
+      "project": "Blaze Indexer",
+      "implementation": "local_mvp_complete",
+      "checks": {
+        "tests": 74,
+        "compiledServiceLifecycleProfiles": 3,
+        "node": "24.18.0",
+        "typecheck": "passed",
+        "build": "passed"
+      },
+      "features": [
+        "Enriched BCH reads and bounded block caching.",
+        "Binary storage schema migration and bounded reorg recovery.",
+        "Confirmed authchain discovery with explicit coverage."
+      ],
+      "limits": [
+        "Live BCHN/RPC/data configuration missing.",
+        "Lifecycle deadline diagnostics do not establish production startup performance.",
+        "Discovery hints do not certify issuer authority."
+      ],
+      "evidence": "WORK-STATUS.md",
+      "threadLink": "[Blaze Indexer — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8)"
+    },
+    {
+      "key": "explorer",
+      "implementation": "local_mvp_complete",
+      "checks": {
+        "tests": 438,
+        "lint": "passed",
+        "typecheck": "passed",
+        "defaultStaticBuild": "passed",
+        "blazeStaticBuild": "passed",
+        "siblingApiSdkContractChecks": "passed with explicitly synthetic state"
+      },
+      "limits": [
+        "Live-chain and browser QA remain unverified.",
+        "Verifier transport and complete historical coverage need configuration.",
+        "Netlify build-stage exit code2 confirmed; detailed cause unavailable."
+      ],
+      "evidence": "projects/explorer/WORK-STATUS.md",
+      "project": "BCH Explorer",
+      "threadLink": "[BCH Explorer — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6)"
+    },
+    {
+      "key": "token-issuer-identity",
+      "implementation": "local_mvp_complete",
+      "checks": {
+        "tests": 45,
+        "typecheck": "passed",
+        "build": "passed",
+        "httpSmoke": "passed",
+        "syntheticSignatureCancellationDemo": "passed"
+      },
+      "limits": [
+        "Live authority proof requires BCHN configuration.",
+        "Wallet signing adapters and browser visual QA remain outstanding."
+      ],
+      "evidence": "projects/token-issuer-identity/WORK-STATUS.md",
+      "project": "Issuer Identity",
+      "threadLink": "[Issuer Identity — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441)"
+    },
+    {
+      "key": "cashcart",
+      "project": "CashCart",
+      "implementation": "local_mvp_complete_live_goal_blocked",
+      "checks": {
+        "tests": 52,
+        "cashscriptCompile": "passed",
+        "typecheck": "passed",
+        "clientBuild": "passed"
+      },
+      "features": [
+        "Storefront and three covenant order paths.",
+        "Encrypted digital delivery and merchant-only shipping data.",
+        "Persistence, recovery and lost-response receipt reconciliation.",
+        "Guarded two-party purchase, merchant progress and buyer completion signing without broadcast."
+      ],
+      "limits": [
+        "Built-in browser inventory empty.",
+        "Two authorized Cashonize chipnet sessions and source-output evidence unavailable.",
+        "Actual Cashonize/browser behavior unverified; live acceptance goal is blocked."
+      ],
+      "evidence": "projects/cashcart/WORK-STATUS.md",
+      "threadLink": "[CashCart — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd)"
+    }
+  ],
+  "remainingProjects": [
+    {
+      "key": "xo-wallet",
+      "project": "OX Wallet",
+      "threadLink": "[OX Wallet — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95)",
+      "status": "implementation_or_validation_in_progress"
+    }
+  ]
+}

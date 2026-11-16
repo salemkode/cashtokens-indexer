@@ -1,0 +1,288 @@
+{
+  "recorded_at": "2026-11-15T19:03:14.794195+00:00",
+  "status": "five_cold_images_verified_archived_original_encoded_files_removed",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "private_summary": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/cold-images-88bf6fca/summary.json",
+  "custody_directory": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/cold-images-88bf6fca",
+  "free_before_bytes": 8356028416,
+  "free_after_bytes": 9975762944,
+  "free_before_gib": 7.782157897949219,
+  "free_after_gib": 9.290653228759766,
+  "observed_system_free_delta_bytes": 1619734528,
+  "original_allocated_bytes_removed": 1811939328,
+  "archive_encoded_body_bytes": 7994675,
+  "new_custody_directory_allocated_bytes": 8052736,
+  "owned_net_reclaimed_bytes": 1803886592,
+  "accounting_limit": "Shared-host free-space change includes unrelated activity; owned net reclaimed is separate. Directory metadata and later reports can add minor allocation.",
+  "aggregate_cap_bytes": 134217728,
+  "all_encoded_and_custody_allocation_below_cap": true,
+  "archived_count": 5,
+  "skips": [
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-62f764ee/bounded.dmg",
+      "reason": "[Errno 2] No such file or directory: '/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-62f764ee/integration-receipt.json'"
+    }
+  ],
+  "images": [
+    {
+      "at": "2026-11-15T19:01:08.000735+00:00",
+      "original": {
+        "path": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/chipnet-stage1-1649e90f/bounded.dmg",
+        "identity": {
+          "st_dev": 16777232,
+          "st_ino": 252484363,
+          "st_uid": 501,
+          "st_mode": 33152,
+          "st_size": 1610612736,
+          "st_mtime_ns": 1794750919438297026,
+          "st_ctime_ns": 1794750919438297026,
+          "st_nlink": 1
+        },
+        "allocated_bytes": 1610612736,
+        "store": {
+          "image": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/chipnet-stage1-1649e90f/bounded.dmg",
+          "mountpoint": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/chipnet-stage1-1649e90f/mount",
+          "device": "/dev/disk19s1",
+          "image_inode": 252484363,
+          "image_bytes": 1610612736,
+          "mount_device": 16777268,
+          "capacity_bytes": 1476354048,
+          "created_at": "2026-11-15T13:55:17.393590+00:00"
+        },
+        "receipt_sha256": {
+          "post-stop-reconciliation.json": "db6b74cda8852a03f0bb46b654f75a440d82943ffb2f0611c11afb9ebdb3759b",
+          "armed.json": "dd31175e2866faef1cca061e8d0c5de8561fbd1997decd72e6ea87861b2bb02d",
+          "peer-gate.json": "84b090315b1c1f1203829cd71b9cb1a12be3216386ff353f02555f08e9d527be",
+          "supervisor.json": "0bce01b08fb27b3551f7af5a226e69dcf9f5785d1558d817af20da88ebb5280b",
+          "stop-request.json": "5bbfbacf1671caf63daa960407d7d3c672e136424a54f7e58651fb606d2b0179",
+          "owner.json": "cb9ade667fa8377638aab5a2aac5619a1405420cfe48aa9441874795591b8293",
+          "activation-53181.json": "28738df85305834cbc520cb7df04e8fd2b4dfb31c07a448b925034def910c4f0",
+          "limits.json": "38a8295b8bfa86a29238a02c5096a5c6a7a3d8f96ccd1cc13dd8fba4c7143f46",
+          "activation-53180.json": "145279ec9acdfdf7aa2717a9d33fe59cb7c8267ea4960e96ecf3478de3917d52",
+          "detach-receipt.json": "88028c173836f87e7dd733c40b280c549c94d141813d934b8fa11ee77c9bc744",
+          "guard-report.json": "f66d4442d4c1ad1f1cb8ccf074500f596698beccdbe06760ac2e100a918c8f25",
+          "measurement-receipt.json": "9a65251fb5583159099db40b14cc03eccc6b22741725c78283277336a436181a",
+          "stop-receipt.json": "a56ede120ceae47cedcf0d8804145fe876208b9eb1098b4a8e9af155bc427f6a",
+          "operator-source-provenance.json": "bc10e65d17f7a5fe62b813de3fed1718fd583c33d76489bb13363ebf48e4cee4",
+          "fixed-store.json": "0ed790174fe81b3270a8135a9d2d8aa808f57d47605b791d145c95365c1eddc3",
+          "spawn.json": "290ec33ef130a41ab0f7074a4651f7ac6ca6aeab62925c5e8cb5e25a850a969f",
+          "stop-claim.json": "ff5098bb8c2489cae602a88b010ca2de153cd9a11053a8db170e813da77d775d",
+          "peer-gate-receipt.json": "a76c9174adab069d310b32d598fe6ef14dae8108e108f90dc71ca467917e0bfd",
+          "watchdog-owner.json": "4231b8373c14231c90377c724c2630fe28e330e8cf8e6ca8235073a59226a864"
+        }
+      },
+      "archive": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/cold-images-88bf6fca/chipnet-stage1-1649e90f-355ba40f.dmg.gz",
+      "archive_bytes": 7072613,
+      "archive_sha256": "da9d9f085721b869b21faa77382fbc8416499cf4616aee9c591ec4b0fc369b59",
+      "original_sha256": "9e945a8e0510733fa6154df6c82dfc12a5bde280c041c9f9c294c6abf08de714",
+      "original_length": 1610612736,
+      "decoded_sha256": "9e945a8e0510733fa6154df6c82dfc12a5bde280c041c9f9c294c6abf08de714",
+      "decoded_length": 1610612736,
+      "complete_decompression_verified": true,
+      "archive_fsynced": true,
+      "original_removed_at_this_record": false,
+      "restore_requires_explicit_inode_reconciliation": true
+    },
+    {
+      "at": "2026-11-15T19:01:09.479604+00:00",
+      "original": {
+        "path": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-bddce916/bounded.dmg",
+        "identity": {
+          "st_dev": 16777232,
+          "st_ino": 252472053,
+          "st_uid": 501,
+          "st_mode": 33152,
+          "st_size": 100663296,
+          "st_mtime_ns": 1794750701842446961,
+          "st_ctime_ns": 1794750701842446961,
+          "st_nlink": 1
+        },
+        "allocated_bytes": 100663296,
+        "store": {
+          "image": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-bddce916/bounded.dmg",
+          "mountpoint": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-bddce916/mount",
+          "device": "/dev/disk19s1",
+          "image_inode": 252472053,
+          "image_bytes": 100663296,
+          "mount_device": 16777268,
+          "capacity_bytes": 100622336,
+          "created_at": "2026-11-15T13:51:40.663017+00:00"
+        },
+        "receipt_sha256": {
+          "armed.json": "f269b820696637d6d1d4628d63e597d54eea8883ac81d7f4a2acbe96e143161c",
+          "supervisor.json": "d3f1d77510459d3c17bc577a6968bf6aa66c6eaa6f8955e4126f290ee293e241",
+          "stop-request.json": "269925dda5748a74999e074360185a494fddd7a1d3b221e5b237094e39f51c15",
+          "owner.json": "2634a4a2dc88344ab5fb6df9e8f85c178b18ef0c8c59cb8aabfdc6dec4423e6f",
+          "limits.json": "45db047546e610ea9257a1a51a103406fa5f68d5755a91009ef3f2515e151f56",
+          "detach-receipt.json": "6c279dc3d75ec6abefc863786471ecafc0a757a913f783fb7740f41a4ec22b95",
+          "guard-report.json": "80231076833f90cedbf8d6f0fd39dc4b81bd9f1e66f20e7cccdc1ed67e4bec85",
+          "stop-receipt.json": "71e7d58801471236ef2acc9504a2f611499f9b2e388a047d1771c21dbcb183ff",
+          "fixed-store.json": "f2ac495148dd1890b4482475cfed5932e4dde2f6b3f5cdb33e901239b35ec6fd",
+          "spawn.json": "027c91831a8b360b6240bc1eee8e3111b562f194e2a5b570a7d081b2f49961ad",
+          "integration-receipt.json": "6015474a4aa71f01cf311468ef94ad18ebb8ea90ed4ac37caa7e7b82e1e88170",
+          "stop-claim.json": "c74089dfb038d14602355268f963fdff0881ec42abd1d40a08499735a2f0efb8",
+          "watchdog-owner.json": "892d9903c57361c51bf024df872fb8249aedb2d7a57945c85c707e4e2b7cdd5b"
+        }
+      },
+      "archive": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/cold-images-88bf6fca/supervised-regtest-bddce916-04aac923.dmg.gz",
+      "archive_bytes": 470926,
+      "archive_sha256": "b69205247afb4c446e572d89b5d78aeb7fff9181e1a153af076eeb3d0784e1c9",
+      "original_sha256": "b853aa91fc55cdd54c52377bf3679cc715769066d8adf6559baf5922dd335a6c",
+      "original_length": 100663296,
+      "decoded_sha256": "b853aa91fc55cdd54c52377bf3679cc715769066d8adf6559baf5922dd335a6c",
+      "decoded_length": 100663296,
+      "complete_decompression_verified": true,
+      "archive_fsynced": true,
+      "original_removed_at_this_record": false,
+      "restore_requires_explicit_inode_reconciliation": true
+    },
+    {
+      "at": "2026-11-15T19:01:10.758618+00:00",
+      "original": {
+        "path": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-35ae3900/filesystem-e9db0ce4/bounded.dmg",
+        "identity": {
+          "st_dev": 16777232,
+          "st_ino": 252458575,
+          "st_uid": 501,
+          "st_mode": 33152,
+          "st_size": 33554432,
+          "st_mtime_ns": 1794749907236335789,
+          "st_ctime_ns": 1794749907236335789,
+          "st_nlink": 1
+        },
+        "allocated_bytes": 33554432,
+        "store": {
+          "image": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-35ae3900/filesystem-e9db0ce4/bounded.dmg",
+          "mountpoint": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-35ae3900/filesystem-e9db0ce4/mount",
+          "device": "/dev/disk19s1",
+          "image_inode": 252458575,
+          "image_bytes": 33554432,
+          "mount_device": 16777268,
+          "capacity_bytes": 33513472,
+          "created_at": "2026-11-15T13:38:27.034954+00:00"
+        },
+        "receipt_sha256": {
+          "detach-receipt.json": "5b209fc10b745b91866f6795e05aa87b1444f67269dd6d076c876376f2178479",
+          "fixed-store.json": "c743e867b2f7c264cf5b3bbc91d34936b5e40a72f583dd55dd197f5a85215ba1"
+        }
+      },
+      "archive": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/cold-images-88bf6fca/filesystem-e9db0ce4-d3c55f6d.dmg.gz",
+      "archive_bytes": 150363,
+      "archive_sha256": "f1a211461019ddcf6985723889b1a2f3a4f83b7c2df896a34dfa4174d29f28b3",
+      "original_sha256": "9494253364670ffe5b5d31dc6339b10f49b25e597f48040a1b41d0907259b799",
+      "original_length": 33554432,
+      "decoded_sha256": "9494253364670ffe5b5d31dc6339b10f49b25e597f48040a1b41d0907259b799",
+      "decoded_length": 33554432,
+      "complete_decompression_verified": true,
+      "archive_fsynced": true,
+      "original_removed_at_this_record": false,
+      "restore_requires_explicit_inode_reconciliation": true
+    },
+    {
+      "at": "2026-11-15T19:01:11.978167+00:00",
+      "original": {
+        "path": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-3aec18de/filesystem-75a570f3/bounded.dmg",
+        "identity": {
+          "st_dev": 16777232,
+          "st_ino": 252480150,
+          "st_uid": 501,
+          "st_mode": 33152,
+          "st_size": 33554432,
+          "st_mtime_ns": 1794750876112611974,
+          "st_ctime_ns": 1794750876112611974,
+          "st_nlink": 1
+        },
+        "allocated_bytes": 33554432,
+        "store": {
+          "image": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-3aec18de/filesystem-75a570f3/bounded.dmg",
+          "mountpoint": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-3aec18de/filesystem-75a570f3/mount",
+          "device": "/dev/disk19s1",
+          "image_inode": 252480150,
+          "image_bytes": 33554432,
+          "mount_device": 16777268,
+          "capacity_bytes": 33513472,
+          "created_at": "2026-11-15T13:54:35.857790+00:00"
+        },
+        "receipt_sha256": {
+          "detach-receipt.json": "67ba44f4d1be6b834ce5966d8f2f2385679e8688bd9a819ad8cb8483e8f7bbdb",
+          "fixed-store.json": "f53c9817cbaf30eb456b90139d532e9bee2b7161e71aad09d2082c621fd8fc76"
+        }
+      },
+      "archive": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/cold-images-88bf6fca/filesystem-75a570f3-90de6911.dmg.gz",
+      "archive_bytes": 150415,
+      "archive_sha256": "33fb366e58756ac68b25919c41fa842ef1a719981409d7ac9a619e5e8c1094e0",
+      "original_sha256": "72a69eca26dd315b178d415cd3e61993eeda0c55af8940606529760971849a2a",
+      "original_length": 33554432,
+      "decoded_sha256": "72a69eca26dd315b178d415cd3e61993eeda0c55af8940606529760971849a2a",
+      "decoded_length": 33554432,
+      "complete_decompression_verified": true,
+      "archive_fsynced": true,
+      "original_removed_at_this_record": false,
+      "restore_requires_explicit_inode_reconciliation": true
+    },
+    {
+      "at": "2026-11-15T19:01:13.259397+00:00",
+      "original": {
+        "path": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-d78ac390/filesystem-15137de5/bounded.dmg",
+        "identity": {
+          "st_dev": 16777232,
+          "st_ino": 252472780,
+          "st_uid": 501,
+          "st_mode": 33152,
+          "st_size": 33554432,
+          "st_mtime_ns": 1794750782926334441,
+          "st_ctime_ns": 1794750782926334441,
+          "st_nlink": 1
+        },
+        "allocated_bytes": 33554432,
+        "store": {
+          "image": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-d78ac390/filesystem-15137de5/bounded.dmg",
+          "mountpoint": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervisor-tests-d78ac390/filesystem-15137de5/mount",
+          "device": "/dev/disk19s1",
+          "image_inode": 252472780,
+          "image_bytes": 33554432,
+          "mount_device": 16777268,
+          "capacity_bytes": 33513472,
+          "created_at": "2026-11-15T13:53:02.586229+00:00"
+        },
+        "receipt_sha256": {
+          "detach-receipt.json": "22570aa4f1c76052921f51b91add51437967930a32a02a253bf30066c7787a6a",
+          "fixed-store.json": "ca031e00e07c71eb8df9875e91fc2ece85aad06fb220f14722f948287b2f1800"
+        }
+      },
+      "archive": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/cold-images-88bf6fca/filesystem-15137de5-20aa3767.dmg.gz",
+      "archive_bytes": 150358,
+      "archive_sha256": "1882df68c7a3e12bc664ef6875f5bb072f38cbf6a7b8a700a7f2e6f82d745bce",
+      "original_sha256": "01df56281df886c1bd466ff58fac053c24dd1c6f44620cde36522f437b839285",
+      "original_length": 33554432,
+      "decoded_sha256": "01df56281df886c1bd466ff58fac053c24dd1c6f44620cde36522f437b839285",
+      "decoded_length": 33554432,
+      "complete_decompression_verified": true,
+      "archive_fsynced": true,
+      "original_removed_at_this_record": false,
+      "restore_requires_explicit_inode_reconciliation": true
+    }
+  ],
+  "source_sha256": {
+    "scripts/cold_archive.py": "3bd1922db7eff47c5e9af62aa64049a68067f6a7ac022ad469f9f96093f8ccf8",
+    "scripts/chipnet_resume.py": "ca6e7a1b06b4cf424a8a3ede246213eb016929aadc24b5ea0770b3aaa7086dee",
+    "test/test_cold_archive.py": "583dfa469c22811a328e3327cb58f42b3337793cc567636b318c73e7d4915350",
+    "test/test_chipnet_resume.py": "ef3524f61e42855d82ff17ae5bd155c212d41736413971e6bf7f9bb5265b178a"
+  },
+  "tests": {
+    "cold_custody_passed": 5,
+    "resume_refusal_and_budget_passed": 8,
+    "commands": [
+      "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_cold_archive.py' -v",
+      "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_chipnet_resume.py' -v"
+    ],
+    "scope": "Tiny synthetic custody success/refusal plus actual cold-image absence refusal; no native/product suite rerun."
+  },
+  "original_receipts_config_logs_sources_unchanged": true,
+  "no_mount_restore_node_peer_or_quiet_probe": true,
+  "conditional_stage2_process_attempt_consumed": false,
+  "restore_procedure": "docs/cold-image-custody.md",
+  "restoration_and_inode_reconciliation_implemented_or_executed": false,
+  "next_action": "Retain verified archives. No further quiet probe/node at current sub12GiB space. Original encoded image now absent; future restoration/reconciliation requires full-byte proof and explicit new-inode reconciliation support, not a ledger bypass. Full live Chipnet/txindex/coverage acceptance remains unavailable."
+}

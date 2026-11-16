@@ -1,0 +1,24 @@
+# Install as /srv/bchn/chipnet/bitcoin.conf, readable only by the bchn user.
+# Use a separately verified compatible Chipnet binary, never an expiry override.
+chipnet=1
+server=1
+disablewallet=1
+prune=0
+txindex=1
+dbcache=256
+par=1
+maxmempool=32
+maxconnections=12
+debuglogfile=0
+printtoconsole=1
+upnp=0
+natpmp=0
+[chip]
+rpcbind=127.0.0.1
+rpcallowip=127.0.0.1
+rpcport=48332
+port=48333
+rpcuser=blaze-chipnet
+rpcpassword=REPLACE_WITH_DISTINCT_RANDOM_CHIPNET_PASSWORD
+rpcwhitelistdefault=0
+rpcwhitelist=blaze-chipnet:getblockchaininfo,getblockhash,getblock,getblockheader,getblockstats,gettxout,getrawtransaction,getrawmempool,getmempoolinfo,getnetworkinfo,getindexinfo

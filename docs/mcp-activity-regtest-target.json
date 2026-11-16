@@ -1,0 +1,72 @@
+{
+  "recorded_at": "2026-11-15T19:38:42.645183+00:00",
+  "status": "blocked_before_regtest_start",
+  "scope": "New MCP RC2 ninth token_activity real-process consumer acceptance; supporting REGTEST only, never Chipnet",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "gate": {
+    "path": ".build/runtime/mcp-activity-regtest-gate-f8c1808f.json",
+    "sha256": "f18fdbf5d31190596acb4e9d28fdb703beda3ed6aa105d93d15b391d81463222",
+    "reasons": [
+      "memory_pressure_not_normal"
+    ],
+    "free_bytes": [
+      14499004416,
+      14499065856
+    ],
+    "pressure_levels": [
+      2,
+      2
+    ],
+    "swap_bytes": [
+      7992246272,
+      7992246272
+    ],
+    "heavy_build_samples": 0,
+    "no_existing_native_node_reason": true
+  },
+  "compiled_provenance": {
+    "runtime_source_sha256": "9ce3f2cd606187b5649532010b491e67fdd2e814a38f76b01cf80b3a3f5a5f8d",
+    "source_matches_recorded_installed_artifact": true,
+    "artifact_sha256": "edb1421d41d8d593155b79b86b23e76c7d7a277b80295fb6a09ad2ba1f9b51e3",
+    "artifact_matches_recorded": true,
+    "real_runtime_dist_src_members_compared": 47,
+    "runtime_differences": [],
+    "appledouble_metadata_members_not_treated_as_runtime": 47,
+    "raw_inventory_preserved": ".build/runtime/mcp-activity-regtest-artifact-check.json",
+    "activity_route_present": true,
+    "build_needed_for_existing_API_bytes": false
+  },
+  "endpoint": null,
+  "new_activity_category_or_txids": null,
+  "source_genesis_height_schema_prevout_activity_acceptance_performed": false,
+  "datadir_mount_node_api_or_lease_created": false,
+  "actual_chipnet_image_unarchived": false,
+  "existing_evidence_or_tarball_changed": false,
+  "stage2_claim_consumed": false,
+  "build_install_download_or_product_suite_rerun": false,
+  "no_automatic_retry": true,
+  "lease_max_if_later_authorized_seconds": 1200,
+  "next_action": "Reserved source window ENDED after single distinct diagnostic-enabled actual attempt failed pressure2. No repeat/endpoint. Future normal-pressure window requires new steering; current source handoff includes measured isolation profile support but no real consumer evidence.",
+  "bounded_source_followup": {
+    "record": "docs/bounded-regtest-runner.json",
+    "source_gap_closed": true,
+    "actual_target_started": false
+  },
+  "preview_profile_audit": {
+    "record": "docs/preview-regtest-maturity-audit.json",
+    "pre2027_profile_only": true,
+    "new_pure_tests_passed": 6,
+    "actual_execution": false,
+    "earlier_test_cohort_is_historical": true
+  },
+  "latest_actual_attempt": {
+    "record": "docs/bounded-regtest-diagnostic-refusal-20261116.json",
+    "status": "distinct_reviewed_regtest_attempt_refused_at_resource_admission",
+    "endpoint": null,
+    "exact_reason_unavailable": false,
+    "reason_codes": [
+      "memory_pressure_not_normal"
+    ]
+  }
+}

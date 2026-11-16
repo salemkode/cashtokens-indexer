@@ -1,0 +1,45 @@
+{
+  "status": "merged",
+  "canonicalProjectId": "mcp:91ebb39f-4de2-41cd-82f8-6f324fe0a73c",
+  "canonicalRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/focus-garden",
+  "branch": "feat/unify-focus-garden-expo",
+  "sourceProjectId": "4e36dd42-06e7-4519-aec6-1c2cc08ce034",
+  "sourceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/focus-garden-native",
+  "sourcePolicy": "Read-only archive, do not delete or overwrite.",
+  "worker": "/root/merge_focus_garden_expo_resume",
+  "workerOwnership": "Canonical focus-garden code/tests/docs only. Parent owns outer hub docs and T3 project configuration.",
+  "restartRecovery": "Before restarting mutations, check live agents, process list and current files. Do not replay copy/install/build if still active.",
+  "completed": [
+    "Inspected SDK54 minimal app and richer SDK58 source.",
+    "Created task branch without discarding dirty user work.",
+    "Copied native crypto/wallet/storage foundation into canonical packages/mobile.",
+    "Extracted original island models into packages/garden; wired web consumer."
+  ],
+  "remaining": [
+    "Owned-device render/wallet smoke verification.",
+    "Credit service and v3 native signer being implemented independently in canonical reference thread; its new code requires fresh validation."
+  ],
+  "device": {
+    "documentedSerial": "emulator-5554",
+    "historicalForeignClaim": true,
+    "metroPort": 8083,
+    "rule": "Verify current ownership; never override a foreign claim."
+  },
+  "verification": {
+    "mobileTests": 19,
+    "v3Tests": 17,
+    "nativeCryptoComparisons": 39130,
+    "mobileTypecheck": "passed",
+    "mobileLint": "passed",
+    "androidHermesExport": "passed",
+    "iosHermesExport": "passed",
+    "webBuild": "passed",
+    "androidNativeBuild": "passed",
+    "deviceVisualQA": "blocked: current ownership could not be established"
+  },
+  "workerStatus": "completed",
+  "duplicateT3ProjectArchived": true,
+  "sourceFilesUnchanged": 609,
+  "continuationThreadId": "mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e",
+  "checkpointCaveat": "Another user-authorized thread added packages/protocol, packages/service and v3 transaction adapters after the verified merge build checkpoint. Their behavioral tests are not covered by the merge results."
+}

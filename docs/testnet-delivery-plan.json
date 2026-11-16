@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-15",
+  "phase": "testnet_functional_delivery",
+  "network": "chipnet",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "high",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "polish": "Deferred to user after functional testnet delivery",
+  "common": "User priority clarification: FIRST deliver a fully working, tested project on the test network; the user will polish afterward. This supersedes prioritizing public-launch readiness or cosmetic polish as the current completion gate, and does not reduce the required functional scope to an MVP. Work directly in this existing visible T3 thread on Sol High, no subagents/new threads. Preserve active work, repository ownership, artifacts, device/session/worktree/Metro assignments and functional security/recovery safeguards.\n\nUse the already-selected BCH Chipnet for shared CashTokens/CashScript integration. Verify actual chain/checkpoint and cross-project network agreement; bchtest prefixes or protocol chain labels alone cannot distinguish Chipnet from other BCH test networks. Do not silently switch testnet3/testnet4/regtest or relabel regtest evidence as live Chipnet. Local unit/VM/regtest tests support, but do not replace, actual network and browser/native journeys.\n\nPrioritize code and end-to-end user journeys, usable functional UI, recovery and interoperable integrations. Defer cosmetic polish, marketing, store publication, unrelated competitor features and public-launch-only infrastructure that does not block this testnet delivery. Keep essential auth/privacy/approval/chain checks. Earlier no-broadcast/testnet-provisioning restrictions from coordinator briefs are superseded narrowly by this explicit testnet testing request: necessary isolated testnet setup and bounded test transactions with dedicated project-owned test identities/test coins may proceed through the normal approval flow. Never use mainnet or pre-existing user wallets/funds, bypass required human approvals (including physical iPhone confirmation), publish a product/package, push protected refs or merge. Secret inputs go through request_secret; no seeds/passwords in chat/logs/repos. Testnet faucet CAPTCHA remains user-controlled.\n\nInspect existing state before mutation; never retry ambiguous submissions automatically. Keep exact bytes/txid and reconcile independently. Do not bypass device claims or enable T3 agent-device integration. Browser work uses each thread's own T3 preview tabs. Shared endpoint provisioning belongs to indexer; avoid duplicate nodes/full-chain downloads. If live endpoint, test wallet/session, verified checkpoint or owned device is unavailable, pursue safe available setup and independent implementation; report the exact essential missing input instead of claiming completion.\n\nUpdate RELEASE-STATUS/WORK-STATUS with testnetFunctionalReady=false until all required journeys are actually evidenced. Record exact network, revision/artifact, commands, test identities/public txids/confirmation state, recovery/error evidence and reproduction steps without secrets. publicReleaseReady remains separate/false. At a meaningful verified milestone or real prerequisite blocker, notify the existing coordinator as before. Do not restart/discard current work merely to rewrite documentation.",
+  "projects": [
+    {
+      "key": "cashtokens-indexer",
+      "title": "Blaze Indexer",
+      "threadId": "mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8",
+      "threadLink": "[Blaze Indexer \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Read actual Chipnet node data, ingest representative CashTokens activity and validate advertised queries/prevouts/status against the node. Keep deterministic regtest mempool/reorg/migration/recovery evidence separate. Provide an owned measured REST target for sibling acceptance.",
+      "globalActivityAcceptance": "Close original global CashTokens activity gap with compact bounded exact-delta endpoint, complete/input-only burns and consistent fork/coverage/paging; coordinate Explorer contract."
+    },
+    {
+      "key": "xo-wallet",
+      "title": "OX Wallet",
+      "threadId": "mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95",
+      "threadLink": "[OX Wallet \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Create/restore dedicated test wallet; receive/send BCH and required CashTokens; recover pending/HD state; use invoices and both requested connection protocols with explicit approvals on Chipnet. Verify actual native journeys on owned targets and preserve keys/secure sessions."
+    },
+    {
+      "key": "stripe-cash",
+      "title": "CashRelay",
+      "threadId": "mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9",
+      "threadLink": "[CashRelay \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Complete merchant authentication, invoice creation/import/payment/independent confirmations/webhook fulfillment, restart/replay recovery, and pinned limited-transfer course-pass issuance/current-owner access/transfer-exhaustion journeys with dedicated Chipnet identities."
+    },
+    {
+      "key": "cashcart",
+      "title": "CashCart",
+      "threadId": "mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd",
+      "threadLink": "[CashCart \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Complete independent merchant/buyer authentication, persistent stores/catalog, encrypted inventory allocation and expiry, two-party user-approved Chipnet purchase, digital/service/shipping fulfillment and completion with independent chain verification and ambiguous-result recovery."
+    },
+    {
+      "key": "explorer",
+      "title": "BCH Explorer",
+      "threadId": "mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6",
+      "threadLink": "[BCH Explorer \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Render actual Chipnet data through the configured Blaze backend; verify transaction/token/NFT/authchain views and current issuer-evidence flow in the browser, including stale/error/network behavior and exact amounts.",
+      "globalActivityAcceptance": "Integrate actual negotiated backend activity, not a genesis category list; test issuance/burn including input-only cases and unavailable/coverage recovery."
+    },
+    {
+      "key": "token-issuer-identity",
+      "title": "Issuer Identity",
+      "threadId": "mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441",
+      "threadLink": "[Issuer Identity \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Use dedicated test issuer identities to exercise authority-bound proof creation, wallet/Nostr approval, test publication/discovery, independent current-chain verification, rotation and revocation through a usable browser journey."
+    },
+    {
+      "key": "focus-garden",
+      "title": "Focus Garden",
+      "threadId": "mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e",
+      "threadLink": "[Focus Garden \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Complete native onboarding/recovery, dedicated Chipnet wallet and limited-credit service, v3 planting, background/restart restore, actual CSV maturity and explicit claim to fixed external recipient, confirmed tree and reorg/pending recovery. Verify both configured native platforms on owned targets."
+    },
+    {
+      "key": "bch-mcp",
+      "title": "BCH MCP",
+      "threadId": "mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe",
+      "threadLink": "[BCH MCP \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Install the clean consumer on supported minimum runtime and exercise all eight read-only tools/resources/cancellation against the verified actual Chipnet Blaze endpoint with known objects and resolvable prevouts. Process-backed regtest is supporting evidence, not public-chain acceptance."
+    },
+    {
+      "key": "react-native-libauth",
+      "title": "React Native Libauth",
+      "threadId": "mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1",
+      "threadLink": "[React Native Libauth \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Deliver versioned local consumer artifacts supporting the required wallet/apps; verify native crypto/runtime on owned supported platforms, API approval/recovery boundaries and consumers exercised by actual Chipnet journeys. Preserve previous artifact bytes; no package publication required."
+    },
+    {
+      "key": "jamiyah",
+      "title": "Jamiyah",
+      "threadId": "mcp:launch:ffb8affafdfe3583f1ed4c78bda79f0a54f4ad064d99bf8ef7d4459fee59c13a",
+      "threadLink": "[Jamiyah \u2014 Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:ffb8affafdfe3583f1ed4c78bda79f0a54f4ad064d99bf8ef7d4459fee59c13a)",
+      "testnetFunctionalReady": false,
+      "acceptance": "Implement and prove family group creation/deposits/individual balances, bounded daily and exceptional owner spending, quorum governance/recovery, emergency own-balance exit, rotating savings and entitlement-preserving migration. Separate executable model, actual BCH covenant evidence, wallet integration and complete dedicated Chipnet journeys; resolve fiat pricing/quorum-loss/minority rights explicitly."
+    }
+  ],
+  "sharedEnvironmentFile": "docs/testnet-shared-environment.json",
+  "sharedPrerequisitesStatus": "unresolved; see shared environment record, not example URLs",
+  "modelExceptions": {
+    "focus-garden": {
+      "provider": "claudeAgent",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "coordinatorRole": "follow_only"
+    }
+  }
+}

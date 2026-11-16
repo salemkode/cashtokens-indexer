@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+if [ "$(uname -s)" != Linux ]; then
+  echo 'This deployment wrapper is for the assigned Linux server only.' >&2
+  exit 1
+fi
+blaze_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ ! -f "$blaze_dir/tuning.env" ]; then
+  echo 'Create deploy/server/tuning.env from its example and set the disk paths first.' >&2
+  exit 1
+fi
+exec docker compose --env-file "$blaze_dir/tuning.env" -f "$blaze_dir/compose.yaml" "$@"

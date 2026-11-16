@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-16",
+  "scope": "Prepared Linux mainnet/Chipnet server candidate; offline evidence only",
+  "reported_hardware": {
+    "cpu": "AMD, 6 cores reported; exact model/logical CPU affinity unverified",
+    "ram_gb": 16,
+    "disk_capacity_gb_approximately": 900,
+    "free_space": "unmeasured on server; capacity is not free space",
+    "disk_type": "not yet identified",
+    "linux_distribution": "not yet identified",
+    "gpu": "not used by BCHN or BLAZE",
+    "daily_session_hours": 12
+  },
+  "prepared": {
+    "mainnet_bchn_dbcache_mb": 4096,
+    "mainnet_bchn_verification_threads": 4,
+    "chipnet_bchn_dbcache_mb": 256,
+    "indexer_cpu_limit_each": 2,
+    "indexer_memory_limit_each_gib": 2,
+    "indexer_heap_mib": 1024,
+    "ingestion_free_space_floor_bytes": 90000000000,
+    "daily_graceful_stop_timer_hours": 11.5,
+    "explicit_data_and_backup_paths": true,
+    "separate_network_databases_and_credentials": true,
+    "rpc_and_api_interfaces": "loopback only",
+    "runtime_artifact": "compiled JavaScript plus source, lockfile, tests and server runbook",
+    "live_acceptance": "bounded read-only native/API checkpoint, freshness, archive/txindex, exact sample UTXO/supply/NFT and route-contract checks",
+    "load_probe": "read-only, 1–8 workers, at most two requests per worker per second, 5–600 seconds, explicit p95 target",
+    "shutdown": "ownership-checked containers/systemd units; restart policy disabled before one SIGTERM; no forced kill or host poweroff; late processes reported"
+  },
+  "verified_offline": {
+    "runtime": "Node.js v24.18.0 on macOS; no BLAZE API or BCHN startup",
+    "typescript_build": "passed",
+    "source_regression": { "files": 17, "passed": 96, "failed": 0, "excluded": ["main.test.ts", "regtest.test.ts"] },
+    "operations_and_packaging": { "passed": 20, "failed": 0, "service_commands": "mock executables only" },
+    "fresh_production_only_install": { "passed": true, "install_scripts_disabled": true, "dev_dependencies_absent": true, "compiled_cases_passed": 20, "note": "These compiled cases overlap the source cohort; not an additional unique-test total." },
+    "compose": "v5.5.0 parser; both network envs, private interfaces, explicit bind paths, missing-path refusal, CPU/memory/heap/reserve and bounded restart policy checked",
+    "shell_syntax": "passed",
+    "whitespace": "passed"
+  },
+  "not_yet_executed": [
+    "Linux Docker image build and actual systemd/runtime acceptance",
+    "BCHN binary installation, signature verification or node synchronization on the new server",
+    "native/API lifecycle tests deferred to the Linux offline recipe",
+    "authenticated mainnet/Chipnet sample acceptance",
+    "actual latency/throughput/energy measurements",
+    "real 12-hour timer/shutdown/next-day resume test",
+    "server backup/restore and explorer user-journey acceptance"
+  ],
+  "macOS_node_hosting": "excluded",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "runbook": "deploy/server/RUNBOOK.md"
+}

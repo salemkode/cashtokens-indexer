@@ -1,0 +1,545 @@
+{
+  "schema_version": 1,
+  "project": "Blaze Indexer",
+  "recorded_at": "2026-11-15T13:57:45.653701+00:00",
+  "status": "single_stage_stopped_on_memory_pressure_no_resume",
+  "branch": "feature/cashtokens-indexer",
+  "root_authorization": {
+    "single_im_uname_attestation_accepted_for_diagnostics_and_conditional_stage1": true,
+    "fingerprint": "BA578BC691D53253036D02C8A93E50646A20ED95",
+    "archive_sha256": "e7f224e27b79f35887fda2900e2aae81c030f290f0fad82338e6061726ba7f15",
+    "full_sync_or_extension_authorized": false,
+    "execution_outside_isolated_diagnostics_authorized_only_if_all_gates_pass": true
+  },
+  "runtime": {
+    "created_at": "2026-11-15T12:54:15.964764+00:00",
+    "runtime_directory": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/bchn-preview-3e6827e95-20261115T125415Z-91ba97",
+    "binary": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/bchn-preview-3e6827e95-20261115T125415Z-91ba97/bin/bitcoind",
+    "archive_sha256": "e7f224e27b79f35887fda2900e2aae81c030f290f0fad82338e6061726ba7f15",
+    "binary_sha256": "b5b4cccd53e9a2a964b5f3f15907994856a13e25789356f075cc9e39c825e237",
+    "allowlisted_members": [
+      "bitcoin-cash-node-29.2.1/bin/bitcoind"
+    ],
+    "external_symlinks_created": false,
+    "old_software_replaced": false,
+    "os_trust_or_quarantine_changed": false
+  },
+  "os_security": {
+    "strict_codesign_validation": "passed",
+    "signature_kind": "adhoc, linker-signed",
+    "developer_team_or_notarization_verified": false,
+    "system_dependencies": [
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ],
+    "quarantine_or_trust_bypass": false,
+    "global_install_or_old_binary_replacement": false
+  },
+  "initial_offline_smoke": {
+    "scope": "Owned no-peer regtest preview runtime smoke only, not Chipnet or public source acceptance",
+    "directory": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/bchn-preview-3e6827e95-20261115T125415Z-91ba97/offline-smoke-b54f3eb9",
+    "binary": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/bchn-preview-3e6827e95-20261115T125415Z-91ba97/bin/bitcoind",
+    "version_help": {
+      "version": {
+        "exit": 0,
+        "first_line": "Bitcoin Cash Node Daemon version v29.2.1-3e6827e95"
+      },
+      "help": {
+        "exit": 0,
+        "first_line": "Bitcoin Cash Node Daemon version v29.2.1-3e6827e95"
+      }
+    },
+    "pid": 19427,
+    "rpc_port": 64779,
+    "samples": {
+      "chain": {
+        "chain": "regtest",
+        "blocks": 0,
+        "blocks_ticks": 0,
+        "headers": 0,
+        "headers_ticks": 0,
+        "bestblockhash": "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206",
+        "difficulty": 4.656542373906925e-10,
+        "target_time": 600,
+        "next_target_time": 600,
+        "mediantime": 1296688602,
+        "verificationprogress": 1,
+        "initialblockdownload": true,
+        "chainwork": "0000000000000000000000000000000000000000000000000000000000000002",
+        "size_on_disk": 293,
+        "pruned": false,
+        "upgrade_status": {
+          "name": "May 2027 Upgrade (regtestnet)",
+          "mempool_activated": false,
+          "mempool_activation_mtp": 1810382400,
+          "block_preactivation_height": null,
+          "block_preactivation_hash": null,
+          "block_postactivation_height": null,
+          "block_postactivation_hash": null,
+          "software_expiration_time": 1842004800
+        },
+        "warnings": ""
+      },
+      "network": {
+        "version": 29020100,
+        "subversion": "/Bitcoin Cash Node:29.2.1/",
+        "protocolversion": 70016,
+        "localservices": "0000000000000425",
+        "localservicesnames": [
+          "NETWORK",
+          "BLOOM",
+          "BITCOIN_CASH",
+          "NETWORK_LIMITED"
+        ],
+        "localrelay": true,
+        "timeoffset": 0,
+        "networkactive": true,
+        "connections": 0,
+        "connections_in": 0,
+        "connections_out": 0,
+        "networks": [
+          {
+            "name": "ipv4",
+            "limited": false,
+            "reachable": true,
+            "proxy": "",
+            "proxy_randomize_credentials": false
+          },
+          {
+            "name": "ipv6",
+            "limited": false,
+            "reachable": true,
+            "proxy": "",
+            "proxy_randomize_credentials": false
+          },
+          {
+            "name": "onion",
+            "limited": true,
+            "reachable": false,
+            "proxy": "",
+            "proxy_randomize_credentials": false
+          },
+          {
+            "name": "",
+            "limited": false,
+            "reachable": true,
+            "proxy": "",
+            "proxy_randomize_credentials": false
+          },
+          {
+            "name": "",
+            "limited": false,
+            "reachable": true,
+            "proxy": "",
+            "proxy_randomize_credentials": false
+          }
+        ],
+        "relayfee": 1e-05,
+        "excessutxocharge": 0.0,
+        "localaddresses": [],
+        "warnings": ""
+      },
+      "genesis": "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206",
+      "indexes": {
+        "txindex": {
+          "synced": true,
+          "best_block_height": 0
+        }
+      },
+      "traffic": {
+        "totalbytesrecv": 0,
+        "totalbytessent": 0,
+        "timemillis": 1794747340476,
+        "uploadtarget": {
+          "timeframe": 86400,
+          "target": 0,
+          "target_reached": false,
+          "serve_historical_blocks": true,
+          "bytes_left_in_cycle": 0,
+          "time_left_in_cycle": 0
+        }
+      },
+      "stop_result": "Bitcoin server stopping"
+    },
+    "reason": null,
+    "exit_code": 0,
+    "clean_exit_verified": true,
+    "elapsed_seconds": 2.4354367919731885,
+    "peak_allocated_bytes": 14794752,
+    "peak_rss_bytes": 9322496,
+    "final_allocated_bytes": 23760896,
+    "max_seconds": 300,
+    "max_bytes": 268435456,
+    "datadir_preserved": true,
+    "wallet_disabled": true,
+    "expiry_or_activation_overrides": false,
+    "p2p_bytes": 0,
+    "captured_at": "2026-11-15T12:55:40.812005+00:00"
+  },
+  "independent_guard_native_integration": {
+    "directory": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-d93b605a",
+    "receipt": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-d93b605a/integration-receipt.json",
+    "receipt_sha256": "b932d793808943e8a2fb5375b9c975c3b4d29e8995a9ad6c62ed153f7be808db",
+    "processes": {
+      "node_pid": 6413,
+      "watchdog_pid": 6436,
+      "both_exited_code0": true
+    },
+    "reason": "owned_offline_smoke_complete",
+    "stop_outcome": "rpc_stop_exited",
+    "signal_fallback_used": false,
+    "no_peer_identity": {
+      "at": "2026-11-15T13:23:53.544022+00:00",
+      "watchdog_pid": 6436,
+      "native_genesis": "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206",
+      "network": "regtest",
+      "expiry": 1842004800
+    },
+    "last_observations": [
+      {
+        "at": "2026-11-15T13:23:53.496293+00:00",
+        "free_bytes": 12205342720,
+        "swap_bytes": 14739371458,
+        "pressure": 1,
+        "reclaimable_page_estimate_bytes": 14423867392,
+        "heavy_builds": [],
+        "load_averages": [
+          18.22509765625,
+          13.06005859375,
+          11.4423828125
+        ],
+        "allocated_bytes": 1318912,
+        "rss_bytes": 82001920,
+        "log_limit": false
+      },
+      {
+        "at": "2026-11-15T13:23:53.496293+00:00",
+        "free_bytes": 12205342720,
+        "swap_bytes": 14739371458,
+        "pressure": 1,
+        "reclaimable_page_estimate_bytes": 14423867392,
+        "heavy_builds": [],
+        "load_averages": [
+          18.22509765625,
+          13.06005859375,
+          11.4423828125
+        ],
+        "allocated_bytes": 1318912,
+        "rss_bytes": 82001920,
+        "log_limit": false,
+        "blocks": 0,
+        "hash": "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206",
+        "received_bytes": 0,
+        "connections": 0,
+        "warnings": "",
+        "software_expiration_time": 1842004800
+      },
+      {
+        "at": "2026-11-15T13:23:54.008824+00:00",
+        "free_bytes": 12205350912,
+        "swap_bytes": 14739371458,
+        "pressure": 1,
+        "reclaimable_page_estimate_bytes": 14451671040,
+        "heavy_builds": [],
+        "load_averages": [
+          18.22509765625,
+          13.06005859375,
+          11.4423828125
+        ],
+        "allocated_bytes": 1331200,
+        "rss_bytes": 82362368,
+        "log_limit": false
+      }
+    ],
+    "peak_observed": {
+      "allocated_bytes": 1331200,
+      "rss_bytes": 82362368,
+      "received_bytes": 0
+    },
+    "counter_journal": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-d93b605a/counters.jsonl",
+    "guard_report": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-d93b605a/guard-report.json",
+    "duration_seconds": 0.8056821250356734,
+    "scope": "Actual preview process and separate watchdog, no-peer regtest only, not Chipnet data/endpoint proof"
+  },
+  "preserved": {
+    "old29.2.0": true,
+    "archive_and_audit": true,
+    "partial_datadirs_and_logs": true,
+    "foreign_services_devices_metro": true,
+    "protected_branch_safeguards": true
+  },
+  "owner_connection_status": "unavailable",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "product_suite_rerun": false,
+  "supersession": "Later sections below replace the earlier polling-only strict-control gap and stage-not-started status. Earlier observations and retained diagnostic snapshots remain historical.",
+  "supervisor_current": {
+    "source_files": {
+      "scripts/owned_node.py": "817de0377311920e72eaec27cb969c2c07095d09941a020654a353602b0a1278",
+      "scripts/owned_node_smoke.py": "866dac4269466a6270255809630a596b306e0047dd2e9df03c8af9b483d48359",
+      "scripts/owned_node_measure.py": "e8a07bc8d75beb49f82bcc589af5fede765791d2d3d60c41187a689cb9449552",
+      "scripts/bounded_store.py": "bab802fd830fc1e22d2fe2746476ae482a61ec740e4989f17faf7671839fd051",
+      "scripts/peer_byte_gate.py": "686884464c3e8f01dcf7b3e8f53952c78569bc373ac6e4884facdb9de2595362",
+      "test/test_owned_node.py": "ee384e1ae09095fa0731ccae10edfe5e25bf33c9f90debe70b3eb23ec9232e1f",
+      "test/helpers/owned_process_fixture.py": "416f314da262ff728c5dc0cbc9609275f46f0b15980ad649aca282f055de9510"
+    },
+    "tests": {
+      "passed": 20,
+      "failed": 0,
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_owned_node.py' -v",
+      "log": ".build/runtime/supervisor-final-tests-20261115.txt",
+      "scope": "Owner process fixtures, actual fixed-filesystem ENOSPC/detach, two real loopback relay streams and upload budget; not synchronized Chipnet product acceptance"
+    },
+    "fixed_store_native_smoke": {
+      "run": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/supervised-regtest-bddce916",
+      "pid": 11065,
+      "watchdog_pid": 11078,
+      "child_exit_code": 0,
+      "watchdog_exit_code": 0,
+      "elapsed_seconds": 2.283332624938339,
+      "allocated_bytes": 100720640,
+      "clean_exit_verified": true,
+      "armed": {
+        "at": "2026-11-15T13:51:41.004753+00:00",
+        "watchdog_pid": 11078,
+        "native_genesis": "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206",
+        "network": "regtest",
+        "expiry": 1842004800
+      },
+      "detach_receipt": {
+        "at": "2026-11-15T13:51:41.907962+00:00",
+        "device": "/dev/disk19s1",
+        "exit_code": 0,
+        "force": false,
+        "image_preserved": true,
+        "unmounted": true
+      }
+    },
+    "early_32MiB_startup_failure": {
+      "run": ".build/runtime/supervised-regtest-62f764ee",
+      "cause": "BCHN native low-disk guard refused genesis, logged Shutdown: done; initial launcher missed early-exit capture",
+      "exit_code": "not captured",
+      "reconciled": ".build/runtime/supervised-regtest-62f764ee/early-exit-reconciliation.json",
+      "owned_mount_detached": true,
+      "guard_policy_not_disabled": true,
+      "corrective_change": "Bounded startup identity observation + finally receipts; 96MiB fixed smoke image"
+    },
+    "ownership": "UID/PID/birth/full argv/kernel executable/datadir/private cookie/listener checked; mismatches refuse RPC/signal; private exclusive stop claim; no force kill/restart",
+    "boundaries": {
+      "image_bytes": 1610612736,
+      "outer_log_bytes_max": 8388608,
+      "counter_journal_bytes_max": 1048576,
+      "receive_application_bytes_max": 1879048192,
+      "upload_application_bytes_max": 67108864,
+      "peer_routes_max": 2,
+      "peer_reconnect": false,
+      "watchdog_poll_seconds": 1,
+      "parent_heartbeat_seconds": 2,
+      "soft_stop_headroom": {
+        "allocation_bytes": 1879048192,
+        "free_bytes": 9663676416,
+        "rss_bytes": 2147483648,
+        "swap_growth_bytes": 536870912,
+        "no_progress_seconds": 600,
+        "stop_at_height": 115252
+      },
+      "deadline": "1740 seconds from stage setup start, leaving stop margin inside 30-minute authorization",
+      "network_control": "Native automatic peers/DNS/inbound/discovery disabled; owner addnode onetry activates only live exact-owned loopback relay listeners after native genesis/version/expiry checks",
+      "hard_bound_scope": "Fixed image bounds native retained allocation; relay bounds remote application bytes read/forwarded. Bounded outer files remain outside the image. OS/kernel/TCP/IP/retransmission overhead is not independently counted or a packet-level quota."
+    },
+    "limitations": [
+      "Resource thresholds are sampled; transient RSS/swap/free-space and shutdown overshoot remain possible. No SIGKILL is allowed if native graceful stop/SIGTERM is ambiguous.",
+      "macOS ownership/filesystem probes are host-specific, not a portable Linux supervisor.",
+      "No reproducible-build or trusted developer-signing/notarization assurance; Calin DSA verification remains rejected by unchanged default policy.",
+      "Existing Node24 production tarball is unchanged; these checkout-only Python operator tools are not inside that previously tested artifact."
+    ]
+  },
+  "measurement": {
+    "run": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/chipnet-stage1-1649e90f",
+    "preflight": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/chipnet-preflight-a640d9c0.json",
+    "receipt": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/chipnet-stage1-1649e90f/measurement-receipt.json",
+    "post_stop": "/Users/salmshmakh/.t3/projects/blaze/.build/runtime/chipnet-stage1-1649e90f/post-stop-reconciliation.json",
+    "started_at": "2026-11-15T13:55:15.113284+00:00",
+    "finished_at": "2026-11-15T13:55:19.309444+00:00",
+    "preflight_passed": true,
+    "preflight_free_bytes": 14008975360,
+    "preflight_pressure": 1,
+    "preflight_swap_stable": true,
+    "one_attempt_consumed": true,
+    "automatic_resume": false,
+    "elapsed_seconds": 4.195791665930301,
+    "stop_reason": "memory_pressure",
+    "native_pid": 26689,
+    "watchdog_pid": 26697,
+    "native_exit_code": 0,
+    "watchdog_exit_code": 0,
+    "rpc_stop_outcome": "rpc_stop_exited",
+    "sigterm_sent": false,
+    "both_processes_absent_after_stop": true,
+    "image_detached_cleanly": true,
+    "allocated_owned_bytes": 1610686464,
+    "image_bytes": 1610612736,
+    "peak_sampled_rss_bytes": 83525632,
+    "received_remote_application_bytes": 1570,
+    "uploaded_remote_application_bytes": 783,
+    "last_native_received_counter": 0,
+    "counter_limitation": "Native last polled receive counter was 0 before handshakes; final relay counter captured 1570. Sampling peaks are not complete physical/wire peaks.",
+    "native_identity": {
+      "at": "2026-11-15T13:55:17.926884+00:00",
+      "watchdog_pid": 26697,
+      "native_genesis": "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
+      "network": "chipnet",
+      "expiry": 1826280000
+    },
+    "highest_rpc_sampled_height": 0,
+    "checkpoint_verified": false,
+    "canonical_tip_verified": false,
+    "txindex_enabled_in_log": true,
+    "getindexinfo_ready_at_canonical_tip_verified": false,
+    "representative_cashtokens_ingested": false,
+    "blaze_rest_started": false,
+    "peer_announced_height_untrusted": 332538,
+    "peer_announced_height_is_canonical_tip_evidence": false,
+    "raw_receipt_status_limitation": "Immutable initial receipt retained status=measuring after stop; exit/guard/detach fields establish the outcome. Launcher now writes terminal stopped/ambiguous status; historical receipt is preserved."
+  },
+  "remaining_feature_gap": null,
+  "next_action": "No mount/node/peer while the measured resource gates fail. Preserve conditional further-stage authorization and original data/counters. A changed host resource window must pass a fresh sustained>=60s12GiB/normal-pressure/stable-swap/no-build gate before one checked resume; no automatic repeated probes/launches. Full sync still requires >=25GiB or assigned suitable storage AND concrete root review.",
+  "historical_polling_only_checkpoint": {
+    "recorded_at": "2026-11-15T13:25:41.439638+00:00",
+    "guard_test_evidence": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s test -p test_owned_node.py -v",
+      "passed": 13,
+      "failed": 0,
+      "platform": "macOS only; other platforms fail closed",
+      "source_sha256": {
+        "scripts/owned_node.py": "7b3202ecd0b98628af917fc3b7978d85ad0fc91abb38fcfbae37aec543eca9c5",
+        "scripts/owned_node_smoke.py": "d09a9121856c5d6f1af48d67c3d578bf29192ec33c640d82b9c5b50e7410e75c",
+        "test/test_owned_node.py": "0862090f97e86f99970358133cda71fedefde5d2827f178b04259b5115dfef3c",
+        "test/helpers/owned_process_fixture.py": "416f314da262ff728c5dc0cbc9609275f46f0b15980ad649aca282f055de9510"
+      },
+      "coverage": [
+        "threshold decisions and preflight rejection",
+        "finite/bounded configuration",
+        "actual cookie-auth-style loopback RPC stop and private receipt",
+        "RPC-unavailable exact-owner SIGTERM fallback",
+        "concurrent stop claims serialize mutations",
+        "PID/UID/birth/kernel-executable/complete-argv/datadir mismatch refuses all mutation",
+        "ambiguous stop never force-kills or restarts; fixture exits itself",
+        "process-backed deadline and stalled progress",
+        "resource exhaustion, expired RPC and launcher loss",
+        "private file mode and symlink rejection",
+        "owner RPC ignores environment HTTP proxies"
+      ],
+      "limits": "Process-backed fixtures plus actual no-peer native integration; not a filesystem quota, full crash certification, Linux proof or live-chain acceptance. Test artifacts are retained under .build/runtime."
+    },
+    "guard_capability": {
+      "separate_process": true,
+      "private_exact_ledger": true,
+      "independent_stop_rpc_then_fresh_owner_sigterm": true,
+      "sigkill_or_auto_restart": false,
+      "poll_seconds_limit": 2,
+      "probe_batch_deadlines_seconds": [
+        0.9,
+        1.8
+      ],
+      "counter_journal_max_bytes": 1048576,
+      "native_log_cap_bytes": 8388608,
+      "checkpoint_expected": {
+        "height": 115252,
+        "hash": "00000000040ba9641ba98a37b2e5ceead38e4e2930ac8f145c8094f94c708727"
+      },
+      "expected_chipnet_genesis": "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
+      "actual_chipnet_genesis_verified": false,
+      "stop_headroom": {
+        "allocated_threshold_max_bytes": 1879048192,
+        "receive_threshold_max_bytes": 2080374784,
+        "deadline_trigger": "Authorization window minus graceful/signal wait and additional10 seconds"
+      },
+      "strict_byte_allocation_receive_control": false,
+      "remaining_feature_gap": "No owned hard filesystem allocation quota or independent bounded receive enforcement exists. Polling plus headroom cannot prove the authorized2 GiB ceilings through native buffering/preallocation/flush and process scheduling. This implementation deliberately refuses P2P preflight until that enforcement is established.",
+      "next_safe_implementation_boundary": "Review an explicitly owned hard-cap storage boundary and bounded receive gate, with failure/overshoot tests, before enabling any real peer. No system quota, mounted image, firewall, proxy or peer setup was performed."
+    },
+    "measurement_preflight": {
+      "at": "2026-11-15T13:25:41.417835+00:00",
+      "hostname": "MacBook-Pro-salm.local",
+      "first": {
+        "at": "2026-11-15T13:25:39.341803+00:00",
+        "free_bytes": 12194484224,
+        "swap_bytes": 14730982850,
+        "pressure": 1,
+        "reclaimable_page_estimate_bytes": 14856945664,
+        "heavy_builds": [],
+        "load_averages": [
+          12.45703125,
+          12.02734375,
+          11.18896484375
+        ]
+      },
+      "second": {
+        "at": "2026-11-15T13:25:41.417769+00:00",
+        "free_bytes": 12194504704,
+        "swap_bytes": 14730982850,
+        "pressure": 1,
+        "reclaimable_page_estimate_bytes": 14716043264,
+        "heavy_builds": [],
+        "load_averages": [
+          12.45703125,
+          12.02734375,
+          11.18896484375
+        ]
+      },
+      "reasons": [
+        "free_space_below_12GiB",
+        "strict_disk_receive_ceiling_not_established_by_polling"
+      ],
+      "chipnet_measurement_started": false,
+      "strict_allocation_receive_cap_established": false,
+      "note": "No peer connection or Chipnet datadir creation. Resource/identity polling is not a hard filesystem or receive quota."
+    },
+    "scope_budgets": {
+      "offline_max_seconds": 300,
+      "offline_max_bytes": 268435456,
+      "total_retained_runtime_and_fixture_allocated_bytes": 61407232,
+      "below_offline_disk_budget": true,
+      "audit_budget_separate": "Prior preview/OpenPGP audit250 MiB combined cap remains separate and unchanged; no new external downloads in this runtime step."
+    },
+    "stage1": {
+      "started": false,
+      "chipnet_datadir_created": false,
+      "peer_connections": 0,
+      "chain_download": false,
+      "stop_if_reaches_checkpoint": 115252,
+      "max_seconds": 1800,
+      "max_owned_allocated_bytes": 2147483648,
+      "max_received_bytes": 2147483648,
+      "automatic_resume": false,
+      "full_sync_extension_authorized": false
+    },
+    "remaining_prerequisites": [
+      "free_space_below_12GiB",
+      "strict_disk_receive_ceiling_not_established_by_polling"
+    ]
+  },
+  "stage1": {
+    "started": true,
+    "stopped": true,
+    "automatic_resume": false,
+    "one_authorized_attempt_consumed": true,
+    "highest_rpc_sampled_height": 0,
+    "checkpoint_verified": false,
+    "full_sync_extension_authorized": false,
+    "measurement": "measurement field in this document"
+  },
+  "remaining_prerequisites": [
+    "Root review before any new attempt or resume; consumed single-stage authorization is not reusable",
+    "Quiet host resource window; memory pressure changed to warning during the measured attempt",
+    "At least25GiB current free or assigned suitable storage before any full retained-sync extension",
+    "Alternatively a securely configured synchronized unpruned retained operator-owned Chipnet source and ready txindex"
+  ],
+  "later_conditional_resume": {
+    "record": "docs/chipnet-resume-control.json",
+    "authorization_supersedes_prior_no_second_stage": true,
+    "started": false,
+    "current_source_hashes_and_tests": "Separate resume record; earlier20-test/source hashes remain historical stage1 evidence."
+  }
+}

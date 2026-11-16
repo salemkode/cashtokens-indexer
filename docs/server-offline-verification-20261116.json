@@ -1,0 +1,31 @@
+{
+  "scope": "Linux server source handoff; offline validation only",
+  "date": "2026-11-16",
+  "runtime": "Node.js v24.18.0",
+  "checks": {
+    "typescript_build": "passed: npm run build",
+    "compose": "passed: Docker Compose v5.5.0 config parsing using example env files; network separation, unique volumes and ports, host networking, loopback binding, complete scan defaults and disabled test submission checked",
+    "compiled_configuration_schema": "passed: mainnet, Chipnet and root example",
+    "database_tests": {
+      "command": "node --test --test-concurrency=1 dist/test/store.test.js dist/test/storage.test.js dist/test/retention.test.js",
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0,
+      "scope": "temporary offline SQLite fixtures: exact token arithmetic, CTOR, migration, rollback, restart, finite undo and read-only storage reporting"
+    },
+    "whitespace": "passed: git diff --check"
+  },
+  "not_executed": [
+    "Docker image build or container startup",
+    "BLAZE API startup",
+    "BCHN startup or synchronization",
+    "server deployment or server compatibility checks",
+    "authenticated mainnet or Chipnet acceptance",
+    "full application test suite",
+    "clean dependency installation or source archive extraction/build on Linux"
+  ],
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "macOSNodeHosting": "excluded by user instruction",
+  "serverGuide": "deploy/server/README.md"
+}

@@ -1,0 +1,147 @@
+{
+  "scope": "Exact completed own operational evidence text; supported transparent filesystem compression only, logical bytes and paths immutable; expected inode/ctime/compression metadata change explicitly allowed. No userdata/app/source or current operation outputs.",
+  "files": [
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/compiler-candidates.json",
+      "sha256": "15d795cfbde5fe7aba724023124a2e8c59616d3c3d9945575ce484ee701b264e",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253117128,
+      "mtimeNs": 1794769184513077725,
+      "ctimeNs": 1794769184513266267,
+      "mode": 33152,
+      "logicalBytes": 11159894,
+      "allocatedBytes": 11161600
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/compiler-output-cleanup-20261116/candidate-baseline.json",
+      "sha256": "5ffca9bbbbfbcf946958bf7e4a863ec875d3b18c6637d8b6e45ed12d7a86dbc4",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253226058,
+      "mtimeNs": 1794777993464136422,
+      "ctimeNs": 1794777993464136422,
+      "mode": 33152,
+      "logicalBytes": 4549895,
+      "allocatedBytes": 4550656
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/compiler-output-cleanup-20261116/deleted-list.jsonl",
+      "sha256": "6118c2f475b421f381aa61e83f1f628f1570d062ca901b92fc497bb362385970",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253226087,
+      "mtimeNs": 1794778118991056441,
+      "ctimeNs": 1794778118991056441,
+      "mode": 33152,
+      "logicalBytes": 4612685,
+      "allocatedBytes": 4616192
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/compiler-output-cleanup-20261116/protected-after.json",
+      "sha256": "7b45b8eee28172e4bc1375ba26f2edfad18a9f9fcaf6cc0938a1d0c3e11134b4",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253226746,
+      "mtimeNs": 1794778127594147241,
+      "ctimeNs": 1794778127594147241,
+      "mode": 33152,
+      "logicalBytes": 32990743,
+      "allocatedBytes": 32993280
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/compiler-output-cleanup-20261116/protected-before.json",
+      "sha256": "df4f3106e4447e99aab0a788fc7345ce2ee547bafd15216848f5ec4a904217f6",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253226086,
+      "mtimeNs": 1794778002409088771,
+      "ctimeNs": 1794778002409088771,
+      "mode": 33152,
+      "logicalBytes": 32990743,
+      "allocatedBytes": 32993280
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/compiler-output-cleanup-six-20261116/protected-after.json",
+      "sha256": "f60d19d8af33798f3bb125182759df8757aeec237e1c20d78ce3ab0db8439fdf",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253242876,
+      "mtimeNs": 1794780302842772473,
+      "ctimeNs": 1794780302842772473,
+      "mode": 33152,
+      "logicalBytes": 32873159,
+      "allocatedBytes": 32874496
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/compiler-output-cleanup-six-20261116/protected-before.json",
+      "sha256": "f60d19d8af33798f3bb125182759df8757aeec237e1c20d78ce3ab0db8439fdf",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253242859,
+      "mtimeNs": 1794780297606936771,
+      "ctimeNs": 1794780297606936771,
+      "mode": 33152,
+      "logicalBytes": 32873159,
+      "allocatedBytes": 32874496
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/deleted-list.jsonl",
+      "sha256": "5818c07f78b4377267364340c9957f6af3b8516cbd209c362aae6493c07ec653",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253128184,
+      "mtimeNs": 1794769899413855995,
+      "ctimeNs": 1794769899413855995,
+      "mode": 33152,
+      "logicalBytes": 8015425,
+      "allocatedBytes": 8499200
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/duplicate-binaries-review-20261116/inventory-corrected.json",
+      "sha256": "c69edc2d36f8c83448c802723daa3ef09cc6142361a3d5903c0c59b6c48b5aef",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253222166,
+      "mtimeNs": 1794777172889553757,
+      "ctimeNs": 1794777172890131551,
+      "mode": 33152,
+      "logicalBytes": 6981165,
+      "allocatedBytes": 6983680
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/protected-after.json",
+      "sha256": "7c5f8c16768cddf011ba498e942fa85e807a118f8d5359dd08d692d9833aa9d1",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253132708,
+      "mtimeNs": 1794769908686947983,
+      "ctimeNs": 1794769908687511194,
+      "mode": 33152,
+      "logicalBytes": 15250900,
+      "allocatedBytes": 15253504
+    },
+    {
+      "path": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet/artifacts/storage-inventory/protected-before.json",
+      "sha256": "76831104831b5147831de4c97361d60c5b2d9365d1493f461aa29750b4374da4",
+      "uid": 501,
+      "device": 16777232,
+      "inode": 253128183,
+      "mtimeNs": 1794769487737935363,
+      "ctimeNs": 1794769487738186740,
+      "mode": 33152,
+      "logicalBytes": 15250897,
+      "allocatedBytes": 15253504
+    }
+  ],
+  "initialAllocatedBytes": 198053888,
+  "operationLimits": {
+    "maximumFiles": 11,
+    "sequential": true,
+    "copyFallbackWithoutCompressionAllowed": false,
+    "temporaryPerFileBytesMaximum": 67108864,
+    "minimumFreeBytes": 12884901888,
+    "noSourceByteOrShaChange": true
+  },
+  "sdkOrUserdataActionAuthorizedByThisFile": false
+}

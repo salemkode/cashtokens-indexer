@@ -1,0 +1,44 @@
+{
+  "inspectedAt": "2026-11-15",
+  "is_react_native": true,
+  "canonicalProject": "projects/focus-garden",
+  "canonicalMobile": "packages/mobile",
+  "before": {
+    "canonical": {
+      "packageManager": "bun",
+      "expo": "54.0.38",
+      "reactNative": "0.81.5",
+      "appId": "com.focusgarden.mobile",
+      "metroPort": 8083,
+      "webPort": 3477
+    },
+    "source": {
+      "packageManager": "npm",
+      "expo": "58.0.23",
+      "reactNative": "0.88.1",
+      "appId": "com.salemkode.libauthreactnative",
+      "nativeModule": "modules/libauth-native",
+      "historicalMetroPort": 8081
+    }
+  },
+  "existingMetro": {
+    "port": 8083,
+    "pidAtInspection": 19225,
+    "cwd": "/Users/salmshmakh/.t3/projects/blaze/projects/focus-garden/packages/mobile",
+    "policy": "Preserve existing user-started Metro."
+  },
+  "documentedDevice": {
+    "serial": "emulator-5554",
+    "avd": "FocusGarden_API36_1",
+    "liveClaimsChecked": false,
+    "warning": "Historical DEVICE_IN_USE by Brehon session; verify current ownership before interaction, never override a foreign claim."
+  },
+  "migrationRules": [
+    "One coherent Expo SDK/RN dependency set.",
+    "Preserve canonical v3 fixed external recipient and CSV time-lock.",
+    "Preserve source app identity and Keychain when retaining source wallet.",
+    "Keep distinct raw-key vs mnemonic namespaces; do not overwrite or silently reinterpret keys.",
+    "Source iOS blank 3D rendering remains unresolved; no fabricated device pass."
+  ],
+  "source": "argent_environment_inspector native explorer, read-only gather-workspace-data result"
+}

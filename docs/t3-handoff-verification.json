@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-15",
+  "projects": [
+    {
+      "key": "cashtokens-indexer",
+      "projectId": "1de76dfd-b126-4259-af50-fa7173d35202",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze",
+      "threadId": "mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8",
+      "length": 2228,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "xo-wallet",
+      "projectId": "mcp:ac61c9a9-802a-4c0d-bfd2-d0b5c8508ce5",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet",
+      "threadId": "mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95",
+      "length": 2592,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "stripe-cash",
+      "projectId": "8ee1372f-67f2-417d-b34f-9483d3e5eb33",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/stripe-cash",
+      "threadId": "mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9",
+      "length": 2634,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "cashcart",
+      "projectId": "mcp:ced5c3a7-23cf-4ed3-b83e-826259f99b61",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/cashcart",
+      "threadId": "mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd",
+      "length": 2121,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "explorer",
+      "projectId": "37122d77-93a8-4545-9d1f-3291f9b28ff6",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/explorer",
+      "threadId": "mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6",
+      "length": 1943,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "token-issuer-identity",
+      "projectId": "mcp:4f637118-7919-4f8f-a64d-ddb1cd719cea",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/token-issuer-identity",
+      "threadId": "mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441",
+      "length": 1713,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "focus-garden",
+      "projectId": "mcp:91ebb39f-4de2-41cd-82f8-6f324fe0a73c",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/focus-garden",
+      "threadId": "mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e",
+      "length": 2293,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "focus-garden-native",
+      "projectId": "4e36dd42-06e7-4519-aec6-1c2cc08ce034",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/focus-garden-native",
+      "threadId": "mcp:launch:2479b10e1e866576bc90d410ca627037bcde992a10fc8c3077603442a61ad2b2",
+      "length": 2051,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "bch-mcp",
+      "projectId": "mcp:361afc6f-7db0-4a5a-a95b-bb7a2432c278",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/bch-mcp",
+      "threadId": "mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe",
+      "length": 1999,
+      "complete": true,
+      "status": "completed"
+    },
+    {
+      "key": "react-native-libauth",
+      "projectId": "mcp:a0259a70-a5f5-4d37-82dc-e04fc52bc325",
+      "workspaceRoot": "/Users/salmshmakh/.t3/projects/blaze/projects/react-native-libauth",
+      "threadId": "mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1",
+      "length": 2105,
+      "complete": true,
+      "status": "completed"
+    }
+  ]
+}

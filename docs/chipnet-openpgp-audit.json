@@ -1,0 +1,592 @@
+{
+  "schema_version": 1,
+  "project": "Blaze Indexer",
+  "recorded_at": "2026-11-15T12:46:08.095875+00:00",
+  "status": "one_authenticated_checksum_signature_second_rejected_by_default_policy",
+  "directory": "/Users/salmshmakh/.t3/projects/blaze/.build/diagnostics/chipnet-preview-20261115T122412Z-9736ab6b/openpgp-audit-20261115T123610Z-384234f5",
+  "verifier": {
+    "name": "OpenPGP.js",
+    "version": "6.3.1",
+    "package_archive": "/Users/salmshmakh/.t3/projects/blaze/.build/diagnostics/chipnet-preview-20261115T122412Z-9736ab6b/openpgp-audit-20261115T123610Z-384234f5/openpgp-6.3.1.tgz",
+    "package_archive_sha256": "6a333c1880fecf274f01f69dd7157afc7dd03b81fb586f36e57a61f9cbfe6e10",
+    "package_integrity": "sha512-7oSPvmlKPojxFoyelT5DWPIAVmqWZh4qU/5pO6bdoShEtRpCw9Sye9IXUQj6EFM3XpgGssqccAr705YtTcLNQw==",
+    "module_sha256": "e2164ada973522def4cebb1b4794fda1c0d00c8efd70e29d509e9e39b8d71d28",
+    "registry_signature_valid": true,
+    "configuration_modified": false,
+    "lifecycle_scripts_executed": false,
+    "global_or_system_install": false,
+    "package_dependencies": [],
+    "node": "24.18.0",
+    "distribution_verification": {
+      "checked_at": "2026-11-15T12:39:24.780Z",
+      "node": "v24.18.0",
+      "package": "openpgp",
+      "version": "6.3.1",
+      "integrity": "sha512-7oSPvmlKPojxFoyelT5DWPIAVmqWZh4qU/5pO6bdoShEtRpCw9Sye9IXUQj6EFM3XpgGssqccAr705YtTcLNQw==",
+      "registry_keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+      "registry_key_expiry": null,
+      "registry_ssh_fingerprint": "256 SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U no comment (ECDSA)",
+      "registry_metadata_signature_valid": true,
+      "verification_backend": "Existing Node24 node:crypto ECDSA SHA256 and system ssh-keygen for SSH-format key ID",
+      "initial_check_correction": "Initial ad-hoc SHA256(SPKI-DER) comparison failed because registry keyid is an SSH-format fingerprint. Retained exact gate: system ssh-keygen fingerprint now matches the claimed keyid. No cryptographic signature failure was ignored and no verification policy was weakened.",
+      "trust_limit": "Registry key obtained over authenticated registry.npmjs.org HTTPS; verifies registry metadata under that service trust, not an independently authenticated package developer code-signing identity."
+    }
+  },
+  "signature_results": [
+    {
+      "claimed_name": "Calin Culianu",
+      "file": "20261112.Calin_Culianu.preview.txt.asc",
+      "primary_fingerprint": "d465135f97d0047e18e99dc321810a542031c02c",
+      "user_ids": [
+        "Calin Culianu (NilacTheGrim) <calin.culianu@gmail.com>"
+      ],
+      "primary_algorithm": {
+        "algorithm": "dsa",
+        "bits": 2048
+      },
+      "primary_created": "2017-08-20T19:53:34.000Z",
+      "primary_expiration": "never",
+      "key_packets": [
+        {
+          "fingerprint": "d465135f97d0047e18e99dc321810a542031c02c",
+          "key_id": "21810a542031c02c",
+          "created": "2017-08-20T19:53:34.000Z",
+          "algorithm": {
+            "algorithm": "dsa",
+            "bits": 2048
+          }
+        },
+        {
+          "fingerprint": "ec35eac96cf2ce2d9eb2034e3aadd4e0ad41b3d9",
+          "key_id": "3aadd4e0ad41b3d9",
+          "created": "2017-08-20T19:53:34.000Z",
+          "algorithm": {
+            "algorithm": "elgamal",
+            "bits": 2048
+          }
+        }
+      ],
+      "primary_revocation_packets_present": 0,
+      "historical_identity_binding": "Full fingerprint matches both official v29.1.0 and v29.2.0 developer-key records on GitHub; current official GitLab key bundle is identical.",
+      "signature_created": "2026-11-14T11:03:22.000Z",
+      "signature_key_id": "21810a542031c02c",
+      "primary_at_signature_time": {
+        "status": "passed",
+        "value": "valid, unrevoked and unexpired in supplied key material"
+      },
+      "primary_at_current_time": {
+        "status": "passed",
+        "value": "valid, unrevoked and unexpired in supplied key material"
+      },
+      "signing_key_at_signature_time": {
+        "status": "failed",
+        "error": "Could not verify primary key: dsa keys are considered too weak."
+      },
+      "signing_key_at_current_time": {
+        "status": "failed",
+        "error": "Could not verify primary key: dsa keys are considered too weak."
+      },
+      "verification_at_signature_time": {
+        "status": "failed",
+        "error": "Error verifying signed message: Could not verify primary key: dsa keys are considered too weak."
+      },
+      "verification_at_current_time": {
+        "status": "failed",
+        "error": "Error verifying signed message: Could not verify primary key: dsa keys are considered too weak."
+      }
+    },
+    {
+      "claimed_name": "im_uname",
+      "file": "20261112.im_uname.preview.txt.asc",
+      "primary_fingerprint": "ba578bc691d53253036d02c8a93e50646a20ed95",
+      "user_ids": [
+        "im_uname (2025) <im_uname@bitcoincashnode.org>"
+      ],
+      "primary_algorithm": {
+        "algorithm": "eddsaLegacy",
+        "curve": "ed25519Legacy"
+      },
+      "primary_created": "2025-11-07T19:16:16.000Z",
+      "primary_expiration": "2030-12-31T20:00:00.000Z",
+      "key_packets": [
+        {
+          "fingerprint": "ba578bc691d53253036d02c8a93e50646a20ed95",
+          "key_id": "a93e50646a20ed95",
+          "created": "2025-11-07T19:16:16.000Z",
+          "algorithm": {
+            "algorithm": "eddsaLegacy",
+            "curve": "ed25519Legacy"
+          }
+        },
+        {
+          "fingerprint": "64ef16de00205ada29186abee4415f8a07e5587b",
+          "key_id": "e4415f8a07e5587b",
+          "created": "2025-11-07T19:16:16.000Z",
+          "algorithm": {
+            "algorithm": "ecdh",
+            "curve": "curve25519Legacy"
+          }
+        }
+      ],
+      "primary_revocation_packets_present": 0,
+      "historical_identity_binding": "Full fingerprint matches both official v29.1.0 and v29.2.0 developer-key records on GitHub; current official GitLab key bundle is identical.",
+      "signature_created": "2026-11-13T17:58:10.000Z",
+      "signature_key_id": "a93e50646a20ed95",
+      "primary_at_signature_time": {
+        "status": "passed",
+        "value": "valid, unrevoked and unexpired in supplied key material"
+      },
+      "primary_at_current_time": {
+        "status": "passed",
+        "value": "valid, unrevoked and unexpired in supplied key material"
+      },
+      "signing_key_at_signature_time": {
+        "status": "passed",
+        "value": {
+          "fingerprint": "ba578bc691d53253036d02c8a93e50646a20ed95",
+          "is_primary": true,
+          "expiration": "2030-12-31T20:00:00.000Z"
+        }
+      },
+      "signing_key_at_current_time": {
+        "status": "passed",
+        "value": {
+          "fingerprint": "ba578bc691d53253036d02c8a93e50646a20ed95",
+          "is_primary": true,
+          "expiration": "2030-12-31T20:00:00.000Z"
+        }
+      },
+      "verification_at_signature_time": {
+        "status": "passed",
+        "value": {
+          "signatures_valid": 1,
+          "exact_artifact_hash_and_name_match": true,
+          "verified_cleartext_sha256": "d936eb8f3cfd50de43ee788d40e35b92d587b1b35d57d8b439c4dc2f30a23b9c",
+          "verified_cleartext_bytes": 1516,
+          "data_source": "Actual retained clear-signed message verified by OpenPGP.js; no reconstructed checksum message."
+        }
+      },
+      "verification_at_current_time": {
+        "status": "passed",
+        "value": {
+          "signatures_valid": 1,
+          "exact_artifact_hash_and_name_match": true,
+          "verified_cleartext_sha256": "d936eb8f3cfd50de43ee788d40e35b92d587b1b35d57d8b439c4dc2f30a23b9c",
+          "verified_cleartext_bytes": 1516,
+          "data_source": "Actual retained clear-signed message verified by OpenPGP.js; no reconstructed checksum message."
+        }
+      }
+    }
+  ],
+  "default_policy": {
+    "rejected_public_key_algorithms": [
+      16,
+      17
+    ],
+    "rejected_hash_algorithms": [
+      1,
+      3
+    ],
+    "min_rsa_bits": 2047
+  },
+  "identity_binding": {
+    "model": "Official historical developer/release records under HTTPS/project-repository trust, distinct from the preview checksum download origin. Not an in-person fingerprint ceremony.",
+    "v29.2.0_commit": "07576013c91ff4a3a74acd85f189c69121cdad1b",
+    "v29.1.0_commit": "b31ed10b4aa4ea54c0a20ed3e536cca05759887c",
+    "full_fingerprints_match_both_commit_pinned_records": true,
+    "historical_signed_release29.2.0": {
+      "source": "Official BCHN announcements repository, version29.2.0 signature linked from official download page, distinct from preview checksum origin",
+      "primary_fingerprint": "ba578bc691d53253036d02c8a93e50646a20ed95",
+      "signature_created": "2026-10-02T00:32:04.000Z",
+      "signing_key": "ba578bc691d53253036d02c8a93e50646a20ed95",
+      "direct_primary_signature": true,
+      "checks": [
+        {
+          "verification_date": "2026-10-02T00:32:04.000Z",
+          "signature_valid": true,
+          "known_stable_archive_hash_and_filename_match": true
+        },
+        {
+          "verification_date": "2026-11-15T12:44:21.900Z",
+          "signature_valid": true,
+          "known_stable_archive_hash_and_filename_match": true
+        }
+      ]
+    },
+    "official_current_bundle_matches_historical_sha256": "417d0590738697c69c0b01f81ffc57a22e42737dcaaca14bc2906a3af78cccf4",
+    "signing_subkey_relationship": "Both supplied preview signatures identify their respective primary keys directly; no signing subkey was used. im_uname signing-key lookup/primary validity succeeded at both times. Calin signing use was rejected under the unchanged algorithm policy. Encryption subkeys were not substituted as signers."
+  },
+  "current_revocation_evidence": {
+    "initial_content_assertion_correction": "The actual signed stable-release pathname has a ./ prefix. Initial bare-name assertion failed; corrected to match the exact authenticated line without altering/reconstructing clear-signed bytes or cryptographic policy.",
+    "checked_at": "2026-11-15T12:44:21.900Z",
+    "configuration_modified": false,
+    "calin_current_refresh": {
+      "full_fingerprint": "d465135f97d0047e18e99dc321810a542031c02c",
+      "official_revocation_packets": 0,
+      "refreshed_revocation_packets": 0,
+      "revoked_at_current_time": false,
+      "revoked_at_preview_signature_time": false,
+      "refresh_role": "keys.openpgp.org response requested by independently established full fingerprint; refresh cannot establish identity. OpenPGP.js validates merged certificates.",
+      "dsa_default_rejection_retained": true
+    },
+    "im_uname_current_refresh": {
+      "keyserver_by_fingerprint_http_status": 404,
+      "source_for_current_validity": "Contemporaneously fetched current official GitLab key bundle, identical to historical v29.2.0 bundle. No keyserver certificate returned; absence is not revocation or proof of no revocation."
+    },
+    "historical_im_uname_release_signature": {
+      "source": "Official BCHN announcements repository, version29.2.0 signature linked from official download page, distinct from preview checksum origin",
+      "primary_fingerprint": "ba578bc691d53253036d02c8a93e50646a20ed95",
+      "signature_created": "2026-10-02T00:32:04.000Z",
+      "signing_key": "ba578bc691d53253036d02c8a93e50646a20ed95",
+      "direct_primary_signature": true,
+      "checks": [
+        {
+          "verification_date": "2026-10-02T00:32:04.000Z",
+          "signature_valid": true,
+          "known_stable_archive_hash_and_filename_match": true
+        },
+        {
+          "verification_date": "2026-11-15T12:44:21.900Z",
+          "signature_valid": true,
+          "known_stable_archive_hash_and_filename_match": true
+        }
+      ]
+    },
+    "trust_limits": [
+      "Current key validity is bounded to available official/refreshed certificates; unpublished revocations cannot be excluded.",
+      "No registry/project public key imported into user GPG, SSH, keychain or persistent trust databases. Public SSH conversion was confined to this diagnostic folder."
+    ]
+  },
+  "trust_limits": [
+    "Exactly one preview checksum signature is cryptographically accepted. Calin DSA2048 is policy-rejected, not declared mathematically invalid and not counted as verified.",
+    "The successful key is valid/unrevoked/unexpired in available official certificates at signature time/current time; its primary expiry is2030-12-31T20:00:00Z.",
+    "Current official repository is the available im_uname revocation source; fingerprint-keyserver lookup returned404. Unpublished/newly unavailable revocations cannot be excluded.",
+    "Authenticated checksums establish publisher-key attestation to exact archive hash/name. Reproducible build, full source-to-binary equivalence, trusted macOS developer signing/notarization and runtime consensus behavior remain unproven.",
+    "No failed signature check was disabled, retried with weaker policy or promoted. Registry fingerprint-format and historical ./ pathname assertion corrections are preserved in the detailed reports."
+  ],
+  "budget": {
+    "cap_combined_bytes": 262144000,
+    "previous_network_body_bytes": 28118519,
+    "new_stage_network_body_bytes": 5067548,
+    "total_network_body_bytes": 33186067,
+    "allocated_diagnostic_bytes_before_final_reports": 36401152,
+    "protocol_and_report_allowance_bytes": 16777216,
+    "combined_plus_allowance_bytes": 86364435,
+    "minimum_free_floor_bytes": 10737418240,
+    "free_bytes_at_record": 11904962560,
+    "wire_limit": "HTTP bodies counted; TLS/TCP overhead not packet-captured and covered by conservative16 MiB allowance. All downloads were streamed/capped with reserve checks."
+  },
+  "network_files": [
+    {
+      "name": "openpgp-package-metadata.json",
+      "url": "https://registry.npmjs.org/openpgp/6.3.1",
+      "final_url": "https://registry.npmjs.org/openpgp/6.3.1",
+      "http_status": 200,
+      "server_date": "Sun, 15 Nov 2026 12:36:11 GMT",
+      "bytes": 5155,
+      "sha256": "4f7a7c7a6b0485af99adbf3dc378462c48ab8386d04ee5247f4ad81d684fb42d"
+    },
+    {
+      "name": "bchn-download-page.html",
+      "url": "https://bitcoincashnode.org/en/download.html",
+      "final_url": "https://bitcoincashnode.org/en/download.html",
+      "http_status": 200,
+      "server_date": "Sun, 15 Nov 2026 12:36:12 GMT",
+      "bytes": 21631,
+      "sha256": "ad0b22498b21025430fd1ece51e7b80a2c1bcf6ba502c073847902c5ad7f2900"
+    },
+    {
+      "name": "historical-maintainer-keys-index.json",
+      "url": "https://api.github.com/repos/bitcoin-cash-node/bitcoin-cash-node/contents/contrib/gitian-keys?ref=v29.2.0",
+      "final_url": "https://api.github.com/repos/bitcoin-cash-node/bitcoin-cash-node/contents/contrib/gitian-keys?ref=v29.2.0",
+      "http_status": 404,
+      "server_date": "Sun, 15 Nov 2026 12:36:13 GMT",
+      "bytes": 127,
+      "sha256": "e45906ce02e79f16fb87a838d86bb4e497e37a9591f97608fa013bbcd8b9cbc2"
+    },
+    {
+      "name": "npm-registry-signing-keys.json",
+      "url": "https://registry.npmjs.org/-/npm/v1/keys",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:37:24 GMT",
+      "bytes": 580,
+      "sha256": "faf23d8753d5bb79df250f10391ac89b63ecf7743e48487a544a99c847f9c8df"
+    },
+    {
+      "name": "historical-v29.2.0-fingerprints.txt",
+      "url": "https://raw.githubusercontent.com/bitcoin-cash-node/bitcoin-cash-node/v29.2.0/contrib/gitian-signing/keys.txt",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:37:25 GMT",
+      "bytes": 451,
+      "sha256": "9bced305016cda829d4e54799ab8df92b2bed25413f1d0baf0380bc873579f9f"
+    },
+    {
+      "name": "historical-v29.2.0-pubkeys.txt",
+      "url": "https://raw.githubusercontent.com/bitcoin-cash-node/bitcoin-cash-node/v29.2.0/contrib/gitian-signing/pubkeys.txt",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:37:26 GMT",
+      "bytes": 17355,
+      "sha256": "417d0590738697c69c0b01f81ffc57a22e42737dcaaca14bc2906a3af78cccf4"
+    },
+    {
+      "name": "historical-v29.1.0-fingerprints.txt",
+      "url": "https://raw.githubusercontent.com/bitcoin-cash-node/bitcoin-cash-node/v29.1.0/contrib/gitian-signing/keys.txt",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:37:26 GMT",
+      "bytes": 451,
+      "sha256": "9bced305016cda829d4e54799ab8df92b2bed25413f1d0baf0380bc873579f9f"
+    },
+    {
+      "name": "current-official-pubkeys.txt",
+      "url": "https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/raw/master/contrib/gitian-signing/pubkeys.txt",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:37:27 GMT",
+      "bytes": 17355,
+      "sha256": "417d0590738697c69c0b01f81ffc57a22e42737dcaaca14bc2906a3af78cccf4"
+    },
+    {
+      "name": "openpgp-6.3.1.tgz",
+      "url": "https://registry.npmjs.org/openpgp/-/openpgp-6.3.1.tgz",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:37:59 GMT",
+      "bytes": 4493514,
+      "sha256": "6a333c1880fecf274f01f69dd7157afc7dd03b81fb586f36e57a61f9cbfe6e10",
+      "integrity": "sha512-7oSPvmlKPojxFoyelT5DWPIAVmqWZh4qU/5pO6bdoShEtRpCw9Sye9IXUQj6EFM3XpgGssqccAr705YtTcLNQw==",
+      "integrity_matches": true
+    },
+    {
+      "name": "npm-registry-signature-documentation.html",
+      "url": "https://docs.npmjs.com/about-registry-signatures",
+      "status": 200,
+      "bytes": 504375,
+      "sha256": "1efad889c799255facd76f78a3885df19ac68aac27d2ac8daa311bc59e17c496"
+    },
+    {
+      "name": "historical-release29.2.0-im_uname.asc",
+      "url": "https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/29.2.0/SHA256SUMS.29.2.0.asc.imaginary_username",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:41:54 GMT",
+      "bytes": 2355,
+      "sha256": "413e06490ad4ffe36a6812ebf5415276891c2f30e77904665e9dc61528d4804d"
+    },
+    {
+      "name": "official-release29.2.0-commit.json",
+      "url": "https://api.github.com/repos/bitcoin-cash-node/bitcoin-cash-node/git/ref/tags/v29.2.0",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:41:55 GMT",
+      "bytes": 381,
+      "sha256": "53b8b271dc97463c778e0273a90fd56a0f2274ed8b801713329d1f8ae75d835b"
+    },
+    {
+      "name": "official-release29.1.0-commit.json",
+      "url": "https://api.github.com/repos/bitcoin-cash-node/bitcoin-cash-node/git/ref/tags/v29.1.0",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:41:56 GMT",
+      "bytes": 381,
+      "sha256": "783ad0c964e07db6adb4434385ef6026f29f26d764331cb1f73790a39b6ca252"
+    },
+    {
+      "name": "current-by-fingerprint-im_uname.asc",
+      "url": "https://keys.openpgp.org/vks/v1/by-fingerprint/BA578BC691D53253036D02C8A93E50646A20ED95",
+      "status": 404,
+      "date": "Sun, 15 Nov 2026 12:42:30 GMT",
+      "bytes": 69,
+      "sha256": "5767b72ec208f199df5b59a0504612970a8bd31c3f939ba8a753c3cff76cd553",
+      "trust_note": "Refresh/revocation source only, not an identity binding; requested by full primary fingerprint independently established from official historical records."
+    },
+    {
+      "name": "current-by-fingerprint-calin.asc",
+      "url": "https://keys.openpgp.org/vks/v1/by-fingerprint/D465135F97D0047E18E99DC321810A542031C02C",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:42:31 GMT",
+      "bytes": 2466,
+      "sha256": "614e9ca03cb835bcc09c34e2ff79e070c6e2a1b497633f346f82c0c125967ccb",
+      "trust_note": "Refresh/revocation source only, not an identity binding; requested by full primary fingerprint independently established from official historical records."
+    },
+    {
+      "name": "pinned-07576013c91ff4a3a74acd85f189c69121cdad1b-fingerprints.txt",
+      "url": "https://raw.githubusercontent.com/bitcoin-cash-node/bitcoin-cash-node/07576013c91ff4a3a74acd85f189c69121cdad1b/contrib/gitian-signing/keys.txt",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:42:59 GMT",
+      "bytes": 451,
+      "sha256": "9bced305016cda829d4e54799ab8df92b2bed25413f1d0baf0380bc873579f9f",
+      "matches_tag_snapshot": true
+    },
+    {
+      "name": "pinned-b31ed10b4aa4ea54c0a20ed3e536cca05759887c-fingerprints.txt",
+      "url": "https://raw.githubusercontent.com/bitcoin-cash-node/bitcoin-cash-node/b31ed10b4aa4ea54c0a20ed3e536cca05759887c/contrib/gitian-signing/keys.txt",
+      "status": 200,
+      "date": "Sun, 15 Nov 2026 12:42:59 GMT",
+      "bytes": 451,
+      "sha256": "9bced305016cda829d4e54799ab8df92b2bed25413f1d0baf0380bc873579f9f",
+      "matches_tag_snapshot": true
+    }
+  ],
+  "local_verifier_and_evidence_files": [
+    {
+      "name": "audit-ledger.json",
+      "bytes": 7910,
+      "sha256": "4311991d63a0ad0ca3ad419e26b7d56cf1b141e76dd33c31f796a1513fd6ce6e"
+    },
+    {
+      "name": "bchn-download-page.html",
+      "bytes": 21631,
+      "sha256": "ad0b22498b21025430fd1ece51e7b80a2c1bcf6ba502c073847902c5ad7f2900"
+    },
+    {
+      "name": "check-historical-and-revocations-v2.mjs",
+      "bytes": 4313,
+      "sha256": "7ee3b763d550ed42c779e4338a1d3e867b62ed26c9a886034228ff1afddc9851"
+    },
+    {
+      "name": "check-historical-and-revocations.mjs",
+      "bytes": 4051,
+      "sha256": "57f438c50a69a88352ad1f98001c6d15ca1f28d31f2fe5c66c820107703bc8ef"
+    },
+    {
+      "name": "current-by-fingerprint-calin.asc",
+      "bytes": 2466,
+      "sha256": "614e9ca03cb835bcc09c34e2ff79e070c6e2a1b497633f346f82c0c125967ccb"
+    },
+    {
+      "name": "current-by-fingerprint-im_uname.asc",
+      "bytes": 69,
+      "sha256": "5767b72ec208f199df5b59a0504612970a8bd31c3f939ba8a753c3cff76cd553"
+    },
+    {
+      "name": "current-official-pubkeys.txt",
+      "bytes": 17355,
+      "sha256": "417d0590738697c69c0b01f81ffc57a22e42737dcaaca14bc2906a3af78cccf4"
+    },
+    {
+      "name": "historical-maintainer-keys-index.json",
+      "bytes": 127,
+      "sha256": "e45906ce02e79f16fb87a838d86bb4e497e37a9591f97608fa013bbcd8b9cbc2"
+    },
+    {
+      "name": "historical-release-and-revocation-verification.json",
+      "bytes": 2259,
+      "sha256": "61b8cf519ab5ff57a2335ef2162cbe56fc56f7213eb9e548c2ed8ccfa4304449"
+    },
+    {
+      "name": "historical-release29.2.0-im_uname.asc",
+      "bytes": 2355,
+      "sha256": "413e06490ad4ffe36a6812ebf5415276891c2f30e77904665e9dc61528d4804d"
+    },
+    {
+      "name": "historical-v29.1.0-fingerprints.txt",
+      "bytes": 451,
+      "sha256": "9bced305016cda829d4e54799ab8df92b2bed25413f1d0baf0380bc873579f9f"
+    },
+    {
+      "name": "historical-v29.2.0-fingerprints.txt",
+      "bytes": 451,
+      "sha256": "9bced305016cda829d4e54799ab8df92b2bed25413f1d0baf0380bc873579f9f"
+    },
+    {
+      "name": "historical-v29.2.0-pubkeys.txt",
+      "bytes": 17355,
+      "sha256": "417d0590738697c69c0b01f81ffc57a22e42737dcaaca14bc2906a3af78cccf4"
+    },
+    {
+      "name": "npm-registry-signature-documentation.html",
+      "bytes": 504375,
+      "sha256": "1efad889c799255facd76f78a3885df19ac68aac27d2ac8daa311bc59e17c496"
+    },
+    {
+      "name": "npm-registry-signing-keys.json",
+      "bytes": 580,
+      "sha256": "faf23d8753d5bb79df250f10391ac89b63ecf7743e48487a544a99c847f9c8df"
+    },
+    {
+      "name": "official-release29.1.0-commit.json",
+      "bytes": 381,
+      "sha256": "783ad0c964e07db6adb4434385ef6026f29f26d764331cb1f73790a39b6ca252"
+    },
+    {
+      "name": "official-release29.2.0-commit.json",
+      "bytes": 381,
+      "sha256": "53b8b271dc97463c778e0273a90fd56a0f2274ed8b801713329d1f8ae75d835b"
+    },
+    {
+      "name": "openpgp-6.3.1.tgz",
+      "bytes": 4493514,
+      "sha256": "6a333c1880fecf274f01f69dd7157afc7dd03b81fb586f36e57a61f9cbfe6e10"
+    },
+    {
+      "name": "openpgp-package-metadata.json",
+      "bytes": 5155,
+      "sha256": "4f7a7c7a6b0485af99adbf3dc378462c48ab8386d04ee5247f4ad81d684fb42d"
+    },
+    {
+      "name": "openpgp-verification.json",
+      "bytes": 7714,
+      "sha256": "33c27fd5d02e2bce946ad5acf88504f54bec03d56149915fa0d9d08d90914433"
+    },
+    {
+      "name": "openpgp.mjs",
+      "bytes": 1196811,
+      "sha256": "e2164ada973522def4cebb1b4794fda1c0d00c8efd70e29d509e9e39b8d71d28"
+    },
+    {
+      "name": "pinned-07576013c91ff4a3a74acd85f189c69121cdad1b-fingerprints.txt",
+      "bytes": 451,
+      "sha256": "9bced305016cda829d4e54799ab8df92b2bed25413f1d0baf0380bc873579f9f"
+    },
+    {
+      "name": "pinned-b31ed10b4aa4ea54c0a20ed3e536cca05759887c-fingerprints.txt",
+      "bytes": 451,
+      "sha256": "9bced305016cda829d4e54799ab8df92b2bed25413f1d0baf0380bc873579f9f"
+    },
+    {
+      "name": "registry-key.pem",
+      "bytes": 178,
+      "sha256": "ab18a3e11ef0c213b7bf7794647580e71d52badd4c4566a43f1d539384bb78b3"
+    },
+    {
+      "name": "registry-key.ssh.pub",
+      "bytes": 161,
+      "sha256": "e1c14e57b6ec2a75065d2af95abcec535aa0d2de4fe5347c7edc993ff6e3b622"
+    },
+    {
+      "name": "verifier-LICENSE",
+      "bytes": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "name": "verifier-distribution-verification.json",
+      "bytes": 1122,
+      "sha256": "8ad7b68f94005f8727f508d752d646a208dd058120675173ab54ea3a1baf6fca"
+    },
+    {
+      "name": "verifier-package.json",
+      "bytes": 4784,
+      "sha256": "133bbbdb00eba6f97ec033c26f8fb2623a63be49f1909fcb1d911fad97e731fb"
+    },
+    {
+      "name": "verify-signatures.mjs",
+      "bytes": 7301,
+      "sha256": "cd1199dc4afce4a72dc6169f96ea731d85d67dae0cf9e1ef9ffecfd7399e7b86"
+    }
+  ],
+  "permissions": {
+    "new_directory_mode": "0o700",
+    "user_gpg_keychain_trust_database_modified": false,
+    "persistent_defaults_modified": false
+  },
+  "actions": {
+    "standard_verifier_executed": true,
+    "verifier_installed_only_in_exclusive_diagnostics_subdirectory": true,
+    "bchn_extracted_or_executed": false,
+    "bchn_installed_or_replaced": false,
+    "active_config_changed": false,
+    "node_peer_or_sync_started": false,
+    "product_tests_rerun": false,
+    "foreign_process_device_or_sibling_modified": false,
+    "old_files_deleted_or_moved": false
+  },
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "execution_or_sync_authorized": false,
+  "next_root_decision": "Review the one authenticated checksum attestation and explicit second-signature default-policy rejection. Decide whether additional independent attestation is required. No BCHN execution is authorized here; existing storage/load/watchdog/25 GiB full-sync gates remain."
+}

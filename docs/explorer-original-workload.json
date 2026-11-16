@@ -1,0 +1,202 @@
+{
+  "repository": "https://github.com/salemkode/explorer",
+  "base_commit": "87af1dfe67d918df9c29c7996e9be11b4b5183e4",
+  "purpose": "Original query inventory for concrete replacement analysis; this is not a live-node test result. Direct references do not include transitive hook/component consumers.",
+  "operations": [
+    {
+      "name": "GetTx",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 1,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/pages/tx/[txid].vue"
+      ],
+      "document": "query GetTx($network: String, $hash: bytea) {\n    transaction(\n      where: {\n        block_inclusions: {\n          block: { accepted_by: { node: { name: { _regex: $network } } } }\n        }\n        hash: { _eq: $hash }\n      }\n    ) {\n      hash\n      input_value_satoshis\n      output_value_satoshis\n      is_coinbase\n      block_inclusions {\n        block {\n          hash\n          timestamp\n        }\n      }\n      inputs {\n        unlocking_bytecode\n        value_satoshis\n        outpoint {\n          token_category\n          fungible_token_amount\n          nonfungible_token_commitment\n          nonfungible_token_capability\n          locking_bytecode\n          value_satoshis\n        }\n      }\n      outputs {\n        token_category\n        fungible_token_amount\n        nonfungible_token_commitment\n        nonfungible_token_capability\n        locking_bytecode\n        value_satoshis\n      }\n      block_inclusions {\n        block {\n          height\n        }\n      }\n    }\n    node(where: { name: { _regex: $network } }) {\n      accepted_blocks(limit: 1, order_by: { block: { height: desc } }) {\n        block {\n          hash\n          timestamp\n          height\n        }\n      }\n      unconfirmed_transactions(\n        where: { transaction: { hash: { _eq: $hash } } }\n        order_by: { validated_at: desc }\n      ) {\n        transaction {\n          hash\n          input_value_satoshis\n          output_value_satoshis\n          is_coinbase\n          block_inclusions {\n            block {\n              hash\n              timestamp\n            }\n          }\n          inputs {\n            unlocking_bytecode\n            value_satoshis\n            outpoint {\n              token_category\n              fungible_token_amount\n              nonfungible_token_commitment\n              nonfungible_token_capability\n              locking_bytecode\n              value_satoshis\n            }\n          }\n          outputs {\n            token_category\n            fungible_token_amount\n            nonfungible_token_commitment\n            nonfungible_token_capability\n            locking_bytecode\n            value_satoshis\n          }\n          block_inclusions {\n            block {\n              height\n            }\n          }\n        }\n      }\n    }\n  }"
+    },
+    {
+      "name": "LastTransaction",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 101,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": false,
+      "direct_reference_files": [],
+      "document": "query LastTransaction($network: String) {\n    block(\n      limit: 1\n      order_by: { height: desc }\n      where: { accepted_by: { node: { name: { _regex: $network } } } }\n    ) {\n      height\n      transactions(limit: 10) {\n        transaction {\n          hash\n          input_count\n          output_count\n          output_value_satoshis\n          input_value_satoshis\n          inputs {\n            outpoint {\n              token_category\n              fungible_token_amount\n            }\n          }\n          outputs {\n            token_category\n            fungible_token_amount\n          }\n          size_bytes\n        }\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetLastBlock",
+      "kind": "subscription",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 133,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/store/state.ts"
+      ],
+      "document": "subscription GetLastBlock($network: String) {\n    node_block(\n      where: { node: { name: { _regex: $network } } }\n      order_by: { block: { height: desc } }\n      limit: 1\n    ) {\n      block {\n        height\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetBlock",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 147,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/pages/block/[slug].vue"
+      ],
+      "document": "query GetBlock(\n    $network: String\n    $height: bigint\n    $hash: bytea\n    $limitTxs: Int\n    $offsetTxs: Int\n  ) {\n    block(\n      limit: 1\n      offset: 0\n      order_by: { height: desc }\n      where: {\n        accepted_by: { node: { name: { _regex: $network } } }\n        _or: [{ height: { _eq: $height } }, { hash: { _eq: $hash } }]\n      }\n    ) {\n      height\n      hash\n      transaction_count\n      input_count\n      input_value_satoshis\n      output_count\n      output_value_satoshis\n      fee_satoshis\n      generated_value_satoshis\n      transactions(\n        limit: $limitTxs\n        offset: $offsetTxs\n        order_by: { transaction_index: asc }\n      ) {\n        transaction {\n          hash\n          input_value_satoshis\n          output_value_satoshis\n          is_coinbase\n          inputs {\n            outpoint {\n              token_category\n              fungible_token_amount\n              nonfungible_token_capability\n              nonfungible_token_commitment\n              locking_bytecode\n              value_satoshis\n            }\n          }\n          outputs {\n            token_category\n            fungible_token_amount\n            nonfungible_token_capability\n            nonfungible_token_commitment\n            locking_bytecode\n            value_satoshis\n          }\n        }\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetBlocks",
+      "kind": "subscription",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 207,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/components/home/BlocksList.vue"
+      ],
+      "document": "subscription GetBlocks($limit: Int, $offset: Int, $network: String) {\n    block(\n      where: { accepted_by: { node: { name: { _regex: $network } } } }\n      order_by: { height: desc }\n      limit: $limit\n      offset: $offset\n    ) {\n      hash\n      height\n      transaction_count\n      input_count\n      output_count\n      output_value_satoshis\n      size_bytes\n      generated_value_satoshis\n      timestamp\n    }\n  }"
+    },
+    {
+      "name": "MonitorMempools",
+      "kind": "subscription",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 228,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/components/home/UnconfirmedTransaction.vue"
+      ],
+      "document": "subscription MonitorMempools($limit: Int, $offset: Int, $network: String) {\n    node(where: { name: { _regex: $network } }) {\n      name\n      user_agent\n      unconfirmed_transaction_count\n      unconfirmed_transactions(\n        limit: $limit\n        offset: $offset\n        order_by: { validated_at: desc }\n      ) {\n        validated_at\n        transaction {\n          hash\n          input_value_satoshis\n          output_value_satoshis\n          is_coinbase\n          inputs {\n            outpoint {\n              token_category\n              fungible_token_amount\n              nonfungible_token_capability\n              nonfungible_token_commitment\n              locking_bytecode\n              value_satoshis\n            }\n          }\n          outputs {\n            token_category\n            fungible_token_amount\n            nonfungible_token_capability\n            nonfungible_token_commitment\n            locking_bytecode\n            value_satoshis\n          }\n        }\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetTransactions",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 269,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/components/address/AddressTransaction.vue"
+      ],
+      "document": "query GetTransactions($network: String, $hashes: [bytea!]) {\n    transaction(\n      where: {\n        block_inclusions: {\n          block: { accepted_by: { node: { name: { _regex: $network } } } }\n        }\n        hash: { _in: $hashes }\n      }\n    ) {\n      hash\n      input_value_satoshis\n      output_value_satoshis\n      is_coinbase\n      inputs {\n        outpoint {\n          token_category\n          fungible_token_amount\n          nonfungible_token_capability\n          nonfungible_token_commitment\n          locking_bytecode\n          value_satoshis\n        }\n      }\n      outputs {\n        token_category\n        fungible_token_amount\n        nonfungible_token_capability\n        nonfungible_token_commitment\n        locking_bytecode\n        value_satoshis\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetTokenAddress",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 305,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/components/token/Address.vue"
+      ],
+      "document": "query GetTokenAddress(\n    $limit: Int\n    $offset: Int\n    $network: String\n    $tokenCategory: bytea\n  ) {\n    output(\n      limit: $limit\n      offset: $offset\n      order_by: { fungible_token_amount: desc_nulls_last }\n      where: {\n        token_category: { _eq: $tokenCategory }\n        transaction: {\n          block_inclusions: {\n            block: { accepted_by: { node: { name: { _regex: $network } } } }\n          }\n        }\n        _not: { spent_by: { transaction: { hash: { _gt: \"\" } } } }\n      }\n    ) {\n      value_satoshis\n      locking_bytecode\n      transaction_hash\n      output_index\n      fungible_token_amount\n      spent_by {\n        transaction {\n          hash\n        }\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetTokenTxs",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 340,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/components/token/Transaction.vue"
+      ],
+      "document": "query GetTokenTxs(\n    $limit: Int\n    $offset: Int\n    $network: String\n    $tokenCategory: bytea\n  ) {\n    block_transaction(\n      limit: $limit\n      offset: $offset\n      order_by: { block: { height: desc } }\n      where: {\n        block: { accepted_by: { node: { name: { _regex: $network } } } }\n        transaction: { outputs: { token_category: { _eq: $tokenCategory } } }\n      }\n    ) {\n      block {\n        height\n        timestamp\n      }\n      transaction {\n        hash\n        input_value_satoshis\n        output_value_satoshis\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetAuthChains",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 369,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/hooks/authchains.ts",
+        "src/pages/doctor.vue"
+      ],
+      "document": "query GetAuthChains($network: String, $tokenCategory: [bytea!]) {\n    transaction(\n      where: {\n        block_inclusions: {\n          block: { accepted_by: { node: { name: { _regex: $network } } } }\n        }\n        hash: { _in: $tokenCategory }\n      }\n    ) {\n      hash\n      authchains {\n        authchain_length\n        authhead {\n          hash\n          identity_output {\n            fungible_token_amount\n          }\n        }\n        migrations(\n          where: {\n            _or: [\n              {\n                transaction: {\n                  outputs: { locking_bytecode_pattern: { _regex: \"6a04\" } }\n                }\n              }\n              {\n                transaction: {\n                  inputs: {\n                    outpoint_transaction_hash: { _in: $tokenCategory }\n                    outpoint_index: { _eq: 0 }\n                  }\n                }\n              }\n            ]\n          }\n        ) {\n          transaction {\n            hash\n            block_inclusions {\n              block {\n                timestamp\n              }\n            }\n            inputs(where: { outpoint_index: { _eq: 0 } }) {\n              outpoint_transaction_hash\n            }\n            outputs {\n              token_category\n              locking_bytecode\n              fungible_token_amount\n              nonfungible_token_capability\n              nonfungible_token_commitment\n            }\n          }\n        }\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetOpreturn",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 431,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": false,
+      "direct_reference_files": [],
+      "document": "query GetOpreturn($network: String, $tokenCategory: bytea) {\n    transaction(\n      where: {\n        block_inclusions: {\n          block: { accepted_by: { node: { name: { _regex: $network } } } }\n        }\n        inputs: {\n          outpoint_transaction_hash: { _eq: $tokenCategory }\n          outpoint_index: { _eq: 0 }\n        }\n      }\n    ) {\n      hash\n      outputs {\n        fungible_token_amount\n        nonfungible_token_capability\n        nonfungible_token_commitment\n        locking_bytecode\n      }\n    }\n  }"
+    },
+    {
+      "name": "GetTokenChild",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 455,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/components/token/Child.vue"
+      ],
+      "document": "query GetTokenChild(\n    $limit: Int\n    $offset: Int\n    $network: String\n    $tokenCategory: bytea\n  ) {\n    output(\n      limit: $limit\n      offset: $offset\n      where: {\n        transaction: {\n          block_inclusions: {\n            block: { accepted_by: { node: { name: { _regex: $network } } } }\n          }\n        }\n        token_category: { _eq: $tokenCategory }\n        nonfungible_token_capability: { _nin: \"minting\" }\n        _not: { spent_by: { transaction: { hash: { _gt: \"\" } } } }\n      }\n    ) {\n      locking_bytecode\n      nonfungible_token_capability\n      nonfungible_token_commitment\n    }\n  }"
+    },
+    {
+      "name": "GetAddressNFTs",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 483,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/components/address/AddressNFTs.vue"
+      ],
+      "document": "query GetAddressNFTs(\n    $limit: Int\n    $offset: Int\n    $network: String\n    $lockingBytecode: _text\n  ) {\n    search_output(\n      limit: $limit\n      offset: $offset\n      args: { locking_bytecode_hex: $lockingBytecode }\n      where: {\n        token_category: { _is_null: false }\n        transaction: {\n          block_inclusions: {\n            block: { accepted_by: { node: { name: { _regex: $network } } } }\n          }\n        }\n        nonfungible_token_capability: { _is_null: false }\n        _not: { spent_by: { transaction: { hash: { _gt: \"\" } } } }\n      }\n    ) {\n      token_category\n      nonfungible_token_capability\n      nonfungible_token_commitment\n    }\n  }"
+    },
+    {
+      "name": "GetAddressTokens",
+      "kind": "query",
+      "source": "src/module/chaingraph.ts",
+      "source_line": 512,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/module/chaingraph.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [
+        "src/components/address/AddressTokens.vue"
+      ],
+      "document": "query GetAddressTokens(\n    $limit: Int\n    $offset: Int\n    $network: String\n    $lockingBytecode: _text\n  ) {\n    search_output(\n      limit: $limit\n      offset: $offset\n      args: { locking_bytecode_hex: $lockingBytecode }\n      where: {\n        token_category: { _is_null: false }\n        transaction: {\n          block_inclusions: {\n            block: { accepted_by: { node: { name: { _regex: $network } } } }\n          }\n        }\n        nonfungible_token_capability: { _is_null: true }\n        _not: { spent_by: { transaction: { hash: { _gt: \"\" } } } }\n      }\n    ) {\n      token_category\n      fungible_token_amount\n    }\n  }"
+    },
+    {
+      "name": "GetUseNonBurnTokens",
+      "kind": "query",
+      "source": "src/hooks/nonSpentToken.ts",
+      "source_line": 3,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/hooks/nonSpentToken.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [],
+      "document": "query GetUseNonBurnTokens($tokenCategory: bytea, $offset: Int, $limit: Int) {\n      output(\n        offset: $offset\n        limit: $limit\n        where: {\n          token_category: { _eq: $tokenCategory }\n          _not: { spent_by: {} }\n        }\n      ) {\n        locking_bytecode\n        fungible_token_amount\n      }\n    }"
+    },
+    {
+      "name": "GetSupplyNFTs",
+      "kind": "query",
+      "source": "src/hooks/nftSupply.ts",
+      "source_line": 3,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/hooks/nftSupply.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [],
+      "document": "query GetSupplyNFTs($offset: Int, $tokenCategory: bytea) {\n    output(\n      offset: $offset\n      where: {\n        token_category: { _eq: $tokenCategory }\n        _and: [{ nonfungible_token_capability: { _eq: \"none\" } }]\n        _not: { spent_by: {} }\n      }\n    ) {\n      locking_bytecode\n    }\n  }"
+    },
+    {
+      "name": "GetMintingToken",
+      "kind": "query",
+      "source": "src/hooks/activeMinting.ts",
+      "source_line": 3,
+      "source_url": "https://github.com/salemkode/explorer/blob/87af1dfe67d918df9c29c7996e9be11b4b5183e4/src/hooks/activeMinting.ts",
+      "referenced_by_app": true,
+      "direct_reference_files": [],
+      "document": "query GetMintingToken($tokenCategory: bytea) {\n    output(\n      limit: 1\n      where: {\n        token_category: { _eq: $tokenCategory }\n        _and: { nonfungible_token_capability: { _eq: \"minting\" } }\n        _not: { spent_by: {} }\n      }\n    ) {\n      locking_bytecode\n    }\n  }"
+    }
+  ]
+}

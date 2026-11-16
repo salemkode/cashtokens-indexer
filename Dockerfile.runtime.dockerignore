@@ -1,0 +1,14 @@
+.git
+.build
+node_modules
+projects
+data
+.env
+**/*.env
+*.sqlite*
+src
+scripts
+test
+integration
+dist/test
+docs

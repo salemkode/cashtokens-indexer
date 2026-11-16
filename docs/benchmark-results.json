@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-14",
+  "runtime": "Node.js v26.5.0",
+  "workload": "Synthetic in-memory SQLite plus Fastify injection, 20000 UTXOs, 1000 holders, 100 sequential requests per endpoint after 10 warm-ups",
+  "before_materialized_totals": {
+    "summary_p95_ms": 20.575833,
+    "holders_p95_ms": 19.832333,
+    "utxos_p95_ms": 2.057542,
+    "ingestion_ms": 96.924792
+  },
+  "after_materialized_totals": {
+    "summary_p95_ms": 0.093,
+    "holders_p95_ms": 0.083,
+    "utxos_p95_ms": 2.125,
+    "ingestion_ms": 287
+  },
+  "limitations": "Separate local runs under concurrent development load, not a controlled production benchmark. No network, disk, BCHN catch-up, hosting price, or Chaingraph measurement. Materialized totals add indexing work.",
+  "status": "microbenchmark_only_not_acceptance_or_capacity_evidence",
+  "excluded_from_capacity_planning": true
+}

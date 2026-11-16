@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-15",
+  "status": "implemented_tested_live_check_ready_no_new_send",
+  "purpose": "Avoid repeated faucet/CAPTCHA requests by funding approved dedicated test wallets from the existing project-owned Chipnet treasury. CAPTCHA solving or bypass is not automated.",
+  "ownerThreadId": "mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9",
+  "implementation": "Finite existing local CashRelay ensure-funded command delivered; no public faucet API or background scheduler.",
+  "network": "chipnet",
+  "approvedRecipients": {
+    "ox": {
+      "address": "bchtest:qp4nwsnecr0kdpqtt3a7k74f6ynkff4n2549xmf3w4",
+      "identity": "New native Wallet1, fixed m/44'/1'/0'/0/0; same identity after in-place update/restart",
+      "fundingTxid": "90d2fcad113be4e961db658c91b23768dfebc0c4d0e8ff91fca7ed1693a4cffc",
+      "vout": 0,
+      "satoshis": 50000,
+      "ownerReportedConfirmations": 23,
+      "block": 332445,
+      "tip": 332467,
+      "ownerObservedAt": "2026-11-15T12:52:23.621Z",
+      "actualNativeBalanceTBCH": "0.00019764",
+      "additionalFundingRequiredNow": false,
+      "commandRecipient": "ox-wallet",
+      "postPaymentBalanceSatoshis": 19764,
+      "lastNativePaymentTxid": "77f6220f0e0712d6348796c3efef67f1a0ef073f0bfe167a1e1c74790cc08235"
+    }
+  },
+  "limits": {
+    "targetBalanceSatoshis": 50000,
+    "maximumTopUpOutputSatoshis": 50000,
+    "maximumFeeSatoshis": 2000,
+    "maximumDailySpendIncludingFees": 500000,
+    "maximumSessionSpendIncludingFees": 500000,
+    "minimumUnreservedTreasuryReserveSatoshis": 100000,
+    "minimumConfirmations": 1
+  },
+  "rules": [
+    "Registered, owner-verified dedicated recipient only; no arbitrary address or network substitution.",
+    "Check confirmed balance, prior receipts, pending incoming/outgoing and unresolved submissions before funding.",
+    "Preserve pass/baton reservations and input leases; private treasury keys remain outside repositories and logs.",
+    "Persist exact bytes/txid and request id under lock before one submission; reconcile uncertainty without automatic resend.",
+    "Already-funded or pending requests never produce another transfer or faucet prompt.",
+    "Insufficient treasury returns a single explicit blocked/needs-topup status; no CAPTCHA solver or bypass."
+  ],
+  "currentValidationRequired": "Completed: actual full CLI returned ready50000sat/23conf with zero new spend. Evidence is a no-op, not a positive live top-up test.",
+  "delivery": {
+    "status": "implemented_tested_live_check_ready_no_new_send",
+    "contract": "projects/stripe-cash/docs/TEST-TREASURY.md",
+    "workingDirectory": "projects/stripe-cash",
+    "runtime": "Node24+ with existing dependencies",
+    "checkCommand": "node apps/server/src/chipnet.ts ensure-funded /Users/salmshmakh/.local/share/cashrelay-chipnet/acceptance-3yTcuD ox-wallet --check",
+    "approvedCommandRecipient": "ox-wallet",
+    "onlyRegisteredRecipient": "OX dedicated fixed Chipnet identity; other recipients require owner/coordinator network/identity verification and code/tests registration.",
+    "evidence": "projects/stripe-cash/docs/proof/treasury-ready-2026-11-15.json",
+    "sha256": "545e53064a6b20ad66199fe0657c865e6d802a1f5be85b59487f6047f1ae7418",
+    "liveObservedAt": "2026-11-15T12:52:23.621Z",
+    "liveResult": {
+      "status": "ready",
+      "confirmedSpendableSatoshis": 50000,
+      "confirmations": 23,
+      "tip": 332467,
+      "broadcast": false,
+      "newSpendSatoshis": 0
+    },
+    "positiveSendEvidence": "VM/synthetic-chain tests only; no extra live top-up used for helper validation.",
+    "ownerReportedTests": {
+      "treasuryLifecyclePolicy": 10,
+      "fullSuite": 202,
+      "typecheck": "passed"
+    },
+    "rules": "Finite approved recipient/deficit/budget/reserve/lease/idempotency/ambiguous-no-resend guards. Exhaustion returns one blocked/needs-topup state, no repeated user faucet cards.",
+    "liveResultScope": "Historical ready/no-send observation at12:52:23Z, before actual1042 payment. Do not infer current balance50000; current native reported19764 after confirmed payment. No extra funding authorized for this journey."
+  }
+}

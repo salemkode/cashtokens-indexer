@@ -1,0 +1,68 @@
+# Linux server only. Host networking reaches server-local BCHN RPC on loopback.
+name: blaze-server
+
+x-indexer: &indexer
+  image: blaze-indexer:server
+  build:
+    context: ../..
+    dockerfile: ${BLAZE_DOCKERFILE:-Dockerfile}
+  network_mode: host
+  restart: on-failure:3
+  init: true
+  stop_grace_period: 30s
+  read_only: true
+  tmpfs:
+    - /tmp:rw,noexec,nosuid,size=64m
+  mem_limit: ${BLAZE_INDEXER_MEMORY_LIMIT:-2g}
+  cpus: ${BLAZE_INDEXER_CPUS:-2}
+  pids_limit: 128
+  logging:
+    driver: local
+    options:
+      max-size: 10m
+      max-file: "3"
+
+x-runtime: &runtime
+  HOST: 127.0.0.1
+  DATABASE_PATH: /app/data/cashtokens.sqlite
+  MIN_FREE_BYTES: ${BLAZE_MIN_FREE_BYTES:-68719476736}
+  NODE_OPTIONS: --max-old-space-size=${BLAZE_NODE_HEAP_MIB:-1024}
+
+services:
+  mainnet:
+    <<: *indexer
+    env_file: mainnet.env
+    environment:
+      <<: *runtime
+      NETWORK: mainnet
+      PORT: "3001"
+    volumes:
+      - type: bind
+        source: ${BLAZE_DATA_ROOT:?Set an absolute data directory on the large disk}/mainnet
+        target: /app/data
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${BLAZE_BACKUP_ROOT:?Set an absolute backup directory}/mainnet
+        target: /app/backups
+        bind:
+          create_host_path: false
+
+  chipnet:
+    <<: *indexer
+    env_file: chipnet.env
+    environment:
+      <<: *runtime
+      NETWORK: chipnet
+      PORT: "3101"
+    volumes:
+      - type: bind
+        source: ${BLAZE_DATA_ROOT:?Set an absolute data directory on the large disk}/chipnet
+        target: /app/data
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${BLAZE_BACKUP_ROOT:?Set an absolute backup directory}/chipnet
+        target: /app/backups
+        bind:
+          create_host_path: false

@@ -1,0 +1,51 @@
+[
+  {
+    "key": "xo-wallet",
+    "oldPath": "/Users/salmshmakh/.t3/projects/xo-react-native-wallet",
+    "newPath": "/Users/salmshmakh/.t3/projects/blaze/projects/xo-wallet",
+    "inode": 247972976,
+    "compatibilityLink": true
+  },
+  {
+    "key": "stripe-cash",
+    "oldPath": "/Users/salmshmakh/.t3/projects/stripe-cash",
+    "newPath": "/Users/salmshmakh/.t3/projects/blaze/projects/stripe-cash",
+    "inode": 203539740,
+    "compatibilityLink": true
+  },
+  {
+    "key": "cashcart",
+    "oldPath": "/Users/salmshmakh/.t3/projects/cashcart",
+    "newPath": "/Users/salmshmakh/.t3/projects/blaze/projects/cashcart",
+    "inode": 249772456,
+    "compatibilityLink": true
+  },
+  {
+    "key": "explorer",
+    "oldPath": "/Users/salmshmakh/Projects/explorer",
+    "newPath": "/Users/salmshmakh/.t3/projects/blaze/projects/explorer",
+    "inode": 5596596,
+    "compatibilityLink": true
+  },
+  {
+    "key": "focus-garden",
+    "oldPath": "/Users/salmshmakh/.t3/projects/focus-garden",
+    "newPath": "/Users/salmshmakh/.t3/projects/blaze/projects/focus-garden",
+    "inode": 249374483,
+    "compatibilityLink": true
+  },
+  {
+    "key": "focus-garden-native",
+    "oldPath": "/Users/salmshmakh/.t3/projects/libauth-react-native",
+    "newPath": "/Users/salmshmakh/.t3/projects/blaze/projects/focus-garden-native",
+    "inode": 234911911,
+    "compatibilityLink": true
+  },
+  {
+    "key": "react-native-libauth",
+    "oldPath": "/Users/salmshmakh/.t3/scratch/2026-11-13-i-want-new-project-that-a11a7fa9",
+    "newPath": "/Users/salmshmakh/.t3/projects/blaze/projects/react-native-libauth",
+    "inode": 243692392,
+    "compatibilityLink": true
+  }
+]

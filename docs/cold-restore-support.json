@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-11-15T19:12:09.791140+00:00",
+  "status": "restore_and_new_inode_admission_implemented_small_fixture_verified",
+  "testnetFunctionalReady": false,
+  "publicReleaseReady": false,
+  "source_sha256": {
+    "scripts/cold_restore.py": "0fcaa252997dcdf2d42e61173c83d35c66e3bf7c4f9d2a17f77a682148f0a21f",
+    "scripts/cold_archive.py": "d07a78cbf01e87db4394bc454f1725f8150c49d220b1ed5d332e79381534c373",
+    "scripts/chipnet_resume.py": "a87369ef7e4d7139b278bf41250a3e5a6404a63295819f05cea1b92d0e1de683",
+    "scripts/owned_node.py": "a3d85ae7152704fd48354cad723998ad32f4dbe7b30ad211a15b7d4570165bd6",
+    "test/test_cold_restore.py": "506f3f3ac481e5a392033b44261a17050c5627721c648b7c8097a007aac3d476"
+  },
+  "tests": {
+    "restore_cases_passed": 14,
+    "affected_archive_cases_passed": 5,
+    "affected_resume_cases_passed": 8,
+    "commands": [
+      "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_cold_restore.py' -v",
+      "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_cold_archive.py' -v",
+      "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s test -p 'test_chipnet_resume.py' -v"
+    ],
+    "coverage": [
+      "Full archive SHA/length and decoded SHA/length with exclusive private destination",
+      "Atomic no-replace restoration receipt after decoded file/parent fsync",
+      "Historical ledger/receipt hashes unchanged; new identity admitted through explicit custody proof",
+      "Interrupted decode, crash before receipt, failed fsync and partial output reject admission/retry",
+      "Wrong archive, decoded SHA mismatch, changed history/config/data, symlink/existing file and low space/pressure refuse",
+      "Retained archive allocation included in resume budget"
+    ],
+    "scope": "SMALL synthetic owned file fixtures only; mocked host/idle admission. No real stage restore, HFS mount or node integration proof."
+  },
+  "allocation_evidence": {
+    "retained_small_fixture_allocated_bytes": 5476352,
+    "measurement": "lstat file blocks; no symlink traversal (negative fixtures intentionally contain symlinks)",
+    "cap_bytes": 134217728,
+    "actual_stage_restore_claim": false,
+    "actual_stage_image_recreated": false,
+    "stage2_process_claim": false
+  },
+  "restoration_api": "cold_restore.restore_image(custody_path,quiet_report)",
+  "admission_api": "cold_restore.verify_restored called by chipnet_resume.resume_plan when restoration claim/receipt exists",
+  "durability": "Exclusive fsynced claim before target creation; decoded file+parent fsynced; complete private new receipt fsynced then atomically hard-linked under final exclusive name and parent fsynced. Interrupted temporary links/partial files require manual review; no cleanup/retry.",
+  "safeguards": "Historical fixed-store/exit/custody records never edited. New receipt binds original record hashes, archive hash/length, decoded hash/length, old/new identity, empty diagnostic config, and claim hash. No mount/launch step exists in restore function.",
+  "actual_restore_performed": false,
+  "actual_restore_or_native_resume_verified": false,
+  "stage2_process_claim_consumed": false,
+  "actual_stage_original_still_absent": true,
+  "actual_restoration_receipts_created": false,
+  "entry_gates": "Fresh passed sustained>=60s normal-pressure/stable-swap/no-build report plus current free >= decoded length +12GiB +64MiB headroom. Rechecked while decoding. Existing/partial target or claim denies repeat. Full sync still>=25GiB or assigned storage AND root review.",
+  "host_cleanup_status": "OX cleanup reported approved/underway, receipt pending; no gain or new quiet window assumed. No new actual resource probe performed."
+}

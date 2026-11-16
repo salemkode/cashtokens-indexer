@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-11-15",
+  "executionMode": "visible_top_level_threads",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "high",
+  "projects": [
+    {
+      "project": "Blaze Indexer",
+      "threadId": "mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8",
+      "link": "[Blaze Indexer — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:02e5f777423e80c22415328bea9c31f0508bdd728a8ba9efb77442c89a8de5f8)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    },
+    {
+      "project": "OX Wallet",
+      "threadId": "mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95",
+      "link": "[OX Wallet — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8a135c3b11b8b68bf16797c77e5082c0e0cebd9505911cc1fe827d131edb2e95)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    },
+    {
+      "project": "CashRelay",
+      "threadId": "mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9",
+      "link": "[CashRelay — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:9ace652f9571904416006610ee7239f07a9db8e1b39ad871d61852c737b4ede9)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    },
+    {
+      "project": "CashCart",
+      "threadId": "mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd",
+      "link": "[CashCart — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:fa7b48a922f6f90d8de168e45f23ee5afc1e37d97685a9eac09b4d8bb50c12cd)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    },
+    {
+      "project": "BCH Explorer",
+      "threadId": "mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6",
+      "link": "[BCH Explorer — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:699574de7b47d7615f9ba90fde3e3a16c0216316fc4ed706f6c596d31c0ef5d6)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    },
+    {
+      "project": "Issuer Identity",
+      "threadId": "mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441",
+      "link": "[Issuer Identity — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:3d87e45418b4130a42c9a105488fcedb763bbb72a98f44803587c0e58c83f441)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    },
+    {
+      "project": "Focus Garden",
+      "threadId": "mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e",
+      "link": "[Focus Garden — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:58deccbf2adddf77f0f46e26f5ee843598a8bbe4eb384960636d691d5952124e)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    },
+    {
+      "project": "BCH MCP",
+      "threadId": "mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe",
+      "link": "[BCH MCP — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:8f7e096ac174b93c5f6a5cb622ee411a20adc9837e991310b879f0ecb31abafe)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    },
+    {
+      "project": "React Native Libauth",
+      "threadId": "mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1",
+      "link": "[React Native Libauth — Execution](t3-thread://v2/cd548199-0437-465a-8ac9-7bbb4a94b98c/mcp:launch:a6e7bab7db6f550e3c14787e0e0dc6c566aa140a2e1bee7bafbe7760fc5f77f1)",
+      "status": "running",
+      "model": "gpt-6.1-sol",
+      "projectMatches": true
+    }
+  ],
+  "note": "Historical execution snapshot; names/links updated to English. T3 Code shows live state.",
+  "language": "en"
+}
